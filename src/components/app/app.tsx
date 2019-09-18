@@ -1,8 +1,8 @@
-import React from "react"
-import logo from "./logo.svg"
-import "./App.css"
+import React, { FC } from "react"
+import logo from "../../assets/images/logo.svg"
+import "./app.css"
 
-const App: React.FC = () => {
+const App: FC = () => {
   return (
     <div className="App">
       <header className="App-header">
