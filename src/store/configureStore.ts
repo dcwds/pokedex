@@ -2,7 +2,7 @@ import { configureStore, getDefaultMiddleware } from "redux-starter-kit"
 import { postsReducer } from "./posts/posts.slice"
 import logger from "redux-logger"
 
-const reducer = {
+export const reducer = {
   posts: postsReducer
 }
 
