@@ -16,7 +16,7 @@ const PostItem: FC<Post> = ({ title, body, author }: Post) => (
 
 const Posts: FC = () => {
   const dispatch = useDispatch()
-  const posts = useSelector(postsSelectors.selectPostsItems)
+  const posts = useSelector(postsSelectors.selectPosts)
   const loading = useSelector(postsSelectors.selectLoading)
 
   useEffect(() => {

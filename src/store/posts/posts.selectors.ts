@@ -1,14 +1,14 @@
 import { AppState } from ".."
 import { createSelector } from "redux-starter-kit"
 
-export const selectPosts = (s: AppState) => s.posts
+export const selectPostsState = (s: AppState) => s.posts
 
 export const selectLoading = createSelector(
-  selectPosts,
+  selectPostsState,
   posts => posts.loading
 )
 
-export const selectPostsItems = createSelector(
-  selectPosts,
+export const selectPosts = createSelector(
+  selectPostsState,
   posts => posts.items
 )
