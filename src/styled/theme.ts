@@ -1,3 +1,5 @@
+const SYSTEM_FONT_STACK = `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`
+
 const breakpoints: any = ["40em", "52em", "60em"]
 // aliases
 breakpoints.sm = breakpoints[0]
@@ -15,6 +17,10 @@ space.lg = space[5]
 space.xl = space[6]
 space.xxl = space[7]
 
+const fonts = {
+  body: SYSTEM_FONT_STACK
+}
+
 const fontSizes: any = [12, 14, 16, 20, 24, 32, 48, 64]
 // aliases
 fontSizes.xxs = fontSizes[0]
@@ -26,4 +32,4 @@ fontSizes.xl = fontSizes[5]
 fontSizes.xxl = fontSizes[6]
 fontSizes.ub = fontSizes[7]
 
-export default { breakpoints, space, fontSizes }
+export default { breakpoints, space, fonts, fontSizes }
