@@ -7,7 +7,7 @@ import store from "./store"
 
 import { ThemeProvider } from "emotion-theming"
 import { Global, css } from "@emotion/core"
-import theme from "./styled/theme"
+import theme from "./styles/theme"
 
 import * as serviceWorker from "./serviceWorker"
 
