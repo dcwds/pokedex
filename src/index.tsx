@@ -19,7 +19,9 @@ ReactDOM.render(
           styles={css`
             html,
             body {
+              height: 100vh;
               margin: 0;
+              min-height: 100vh;
             }
           `}
         />
