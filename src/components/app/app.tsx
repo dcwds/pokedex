@@ -5,14 +5,7 @@ import Posts from "../posts"
 
 const App: FC = () => {
   return (
-    <Box
-      sx={{
-        bg: "gray.1",
-        color: "white",
-        minHeight: "100vh"
-      }}
-      variant="styles.root"
-    >
+    <Box variant="styles.root">
       <Header />
       <Box as="main" sx={{ p: 4 }}>
         <Posts />

@@ -40,19 +40,22 @@ export const lineHeights = {
 
 export const text = {
   heading: {
-    fontFamily: fonts.heading,
-    lineHeight: lineHeights.heading
+    fontFamily: "heading",
+    lineHeight: "heading"
   },
   display: {
-    fontFamily: fonts.heading,
-    lineHeight: lineHeights.heading
+    fontFamily: "heading",
+    lineHeight: "heading"
   }
 }
 
 export const styles = {
   root: {
-    fontFamily: fonts.body,
-    lineHeight: lineHeights.body
+    fontFamily: "body",
+    lineHeight: "heading",
+    bg: "gray.1",
+    color: "white",
+    minHeight: "100vh"
   }
 }
 
