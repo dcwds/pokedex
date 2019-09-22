@@ -1,12 +1,12 @@
 import React, { Fragment } from "react"
 import ReactDOM from "react-dom"
 import App from "./components/app"
-import GlobalStyle from "./styled/global-style"
 
 import { Provider } from "react-redux"
 import store from "./store"
 
-import { ThemeProvider } from "styled-components"
+import { ThemeProvider } from "emotion-theming"
+import { Global, css } from "@emotion/core"
 import theme from "./styled/theme"
 
 import * as serviceWorker from "./serviceWorker"
@@ -15,7 +15,14 @@ ReactDOM.render(
   <Provider store={store}>
     <ThemeProvider theme={theme}>
       <Fragment>
-        <GlobalStyle />
+        <Global
+          styles={css`
+            html,
+            body {
+              margin: 0;
+            }
+          `}
+        />
         <App />
       </Fragment>
     </ThemeProvider>
