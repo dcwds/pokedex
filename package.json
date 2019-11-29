@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm:start:*\"",
+    "start:client": "react-scripts start",
+    "start:mock-server": "json-server --watch src/mocks/posts-db.json --port 3001",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:ts": "eslint src/**/*.{ts,tsx}",
-    "lint:ts:fix": "eslint --fix src/**/*.{ts,tsx}",
-    "start:mock-backend": "json-server --watch src/mocks/posts-db.json --port 3001"
+    "lint:ts:fix": "eslint --fix src/**/*.{ts,tsx}"
   },
   "browserslist": {
     "production": [
@@ -45,6 +46,7 @@
     "typescript": "3.6.3"
   },
   "devDependencies": {
+    "concurrently": "^5.0.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.0",
     "husky": "^3.0.5",
