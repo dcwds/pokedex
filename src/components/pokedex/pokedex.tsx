@@ -2,12 +2,22 @@ import React, { FC, useEffect } from "react"
 import { Box, Heading, Text } from "rebass"
 
 import { useDispatch, useSelector } from "react-redux"
-import { Pokemon, pokedexActions, pokedexSelectors } from "../../store/pokedex"
+import {
+  Pokemon,
+  pokedexActions,
+  pokedexSelectors,
+  fetchPokemon
+} from "../../store/pokedex"
 
 import { map } from "lodash/fp"
 
 const Pokedex: FC = () => {
-  return <Box as="article"></Box>
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(fetchPokemon())
+  }, [dispatch])
+
+  return <Box as="article">Hello</Box>
 }
 
 export default Pokedex
