@@ -17,7 +17,7 @@ const Header: FC = () => (
         fontSize: 2
       }}
     >
-      React Redux Boilerplate
+      Pokedex
     </Heading>
   </Box>
 )

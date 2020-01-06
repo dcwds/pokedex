@@ -1,8 +1,8 @@
 import store from "./configureStore"
-import { PostsState } from "./posts"
+import { PokedexState } from "./pokedex"
 
 export type AppState = {
-  posts: PostsState
+  pokedex: PokedexState
 }
 
 export default store

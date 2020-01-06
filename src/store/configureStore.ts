@@ -1,9 +1,9 @@
 import { configureStore, getDefaultMiddleware } from "redux-starter-kit"
-import { postsReducer } from "./posts/posts.slice"
+import { pokedexReducer } from "./pokedex/pokedex.slice"
 import logger from "redux-logger"
 
 export const reducer = {
-  posts: postsReducer
+  pokedex: pokedexReducer
 }
 
 const middleware = [...getDefaultMiddleware(), logger]
