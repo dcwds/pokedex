@@ -17,8 +17,7 @@ const PokemonList: FC<PokemonListProps> = ({ pokemon }) => (
     sx={{
       display: "grid",
       gap: ".5rem",
-      minHeight: "inherit",
-      gridTemplateColumns: "repeat(auto-fill, minmax(60px, 1fr))"
+      gridTemplateColumns: "repeat(auto-fill, minmax(80px, 1fr))"
     }}
   >
     {map(

@@ -12,11 +12,24 @@ const PokemonItem: FC<Pokemon> = ({ id, name }) => (
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        p: 1
+        p: 2,
+        "&:hover": {
+          bg: "gray.2"
+        }
       }}
     >
-      <Image src={`/images/pokemon/${id}.webp`} alt={name} height={35} />
-      <Text sx={{ fontSize: 0, fontWeight: "heading", mt: 1, opacity: 0.5 }}>
+      <Image src={`/images/pokemon/${id}.webp`} alt={name} height={40} />
+      <Text
+        variant="styles.ellipse"
+        sx={{
+          fontSize: 0,
+          fontWeight: "heading",
+          mt: 1,
+          opacity: 0.5,
+          textAlign: "center",
+          width: "120%"
+        }}
+      >
         {name}
       </Text>
     </Box>

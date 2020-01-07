@@ -27,7 +27,6 @@ export const fonts = {
 }
 
 export const fontSizes = [
-  "0.6rem",
   "0.8rem", // 13px
   "1rem", // 16px
   "1.25rem", // 20px
@@ -70,11 +69,13 @@ export const styles = {
   },
   container: {
     bg: "gray.0",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
     borderRadius: ".25rem",
     minHeight: "80vh"
+  },
+  ellipse: {
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+    overflow: "hidden"
   }
 }
 
