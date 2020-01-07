@@ -1,10 +1,44 @@
 import { createSlice, Action, PayloadAction } from "redux-starter-kit"
-import { PokedexState, AllPokemon } from "."
+import { PokedexState, Pokemon, PokeType } from "."
+
+const primitivePokeTypes = [
+  "Normal",
+  "Fighting",
+  "Flying",
+  "Poison",
+  "Ground",
+  "Rock",
+  "Bug",
+  "Ghost",
+  "Steel",
+  "Fire",
+  "Water",
+  "Grass",
+  "Electic",
+  "Psychic",
+  "Ice",
+  "Dragon",
+  "Dark",
+  "Fairy"
+]
+
+const pokeTypes = primitivePokeTypes.reduce(
+  (types, type, i) => {
+    types.push({
+      id: i + 1,
+      name: type
+    })
+
+    return types
+  },
+  [] as PokeType[]
+)
 
 const initialState: PokedexState = {
   loading: false,
   error: null,
-  pokemon: []
+  pokemon: [],
+  types: pokeTypes
 }
 
 const { actions, reducer } = createSlice({
@@ -16,7 +50,7 @@ const { actions, reducer } = createSlice({
     },
     setPokedexSuccess: (
       s: PokedexState,
-      { payload }: PayloadAction<AllPokemon>
+      { payload }: PayloadAction<Pokemon[]>
     ) => {
       s.loading = false
       s.pokemon = payload

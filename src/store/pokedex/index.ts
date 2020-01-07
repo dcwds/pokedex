@@ -5,26 +5,34 @@ import * as pokedexSelectors from "./pokedex.selectors"
 import { pokedexActions, pokedexReducer } from "./pokedex.slice"
 import { getAllPokemon } from "../../api"
 
+import { AppState } from "../"
+
 export type Pokemon = {
   id: number
   name: string
-  types: string[]
+  keywords: string[]
+  typeIds: number[]
 }
 
-export type AllPokemon = Pokemon[]
+export type PokeType = {
+  id: number
+  name: string
+}
 
 export type PokedexState = {
   loading: boolean
   error: string | null
-  pokemon: AllPokemon
+  pokemon: Pokemon[]
+  types: PokeType[]
 }
 
 export const fetchPokemon = () => async (
-  dispatch: Dispatch<PayloadAction>
+  dispatch: Dispatch<PayloadAction>,
+  getState: () => AppState
 ): Promise<Action> => {
   dispatch(pokedexActions.setPokedex())
   try {
-    const pokemon = await getAllPokemon()
+    const pokemon = await getAllPokemon(getState())
     return dispatch(pokedexActions.setPokedexSuccess(pokemon))
   } catch (e) {
     return dispatch(pokedexActions.setPokedexFailure(e.message))

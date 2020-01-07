@@ -4,12 +4,12 @@ import PokemonItem from "../pokemon"
 import Loader from "../loader"
 
 import { useDispatch, useSelector } from "react-redux"
-import { pokedexSelectors, fetchPokemon, AllPokemon } from "../../store/pokedex"
+import { pokedexSelectors, fetchPokemon, Pokemon } from "../../store/pokedex"
 
 import { map } from "lodash/fp"
 
 type PokemonListProps = {
-  pokemon: AllPokemon
+  pokemon: Pokemon[]
 }
 
 const PokemonList: FC<PokemonListProps> = ({ pokemon }) => (
@@ -30,7 +30,7 @@ const PokemonList: FC<PokemonListProps> = ({ pokemon }) => (
   </Box>
 )
 
-const Pokedex: FC = () => {
+const PokePicker: FC = () => {
   const dispatch = useDispatch()
   const { selectLoading, selectPokemon } = pokedexSelectors
 
@@ -49,4 +49,4 @@ const Pokedex: FC = () => {
   )
 }
 
-export default Pokedex
+export default PokePicker

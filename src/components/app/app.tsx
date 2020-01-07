@@ -9,7 +9,7 @@ import { Global, css } from "@emotion/core"
 import theme from "../../styles/theme"
 
 import Header from "../header"
-import Pokedex from "../pokedex"
+import PokePicker from "../poke-picker"
 
 const App: FC = () => {
   return (
@@ -30,7 +30,7 @@ const App: FC = () => {
           <Box variant="styles.root">
             <Header />
             <Box as="main" sx={{ p: 4 }}>
-              <Pokedex />
+              <PokePicker />
             </Box>
           </Box>
         </Fragment>

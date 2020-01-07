@@ -1,17 +1,37 @@
-import { Pokemon } from "../store/pokedex"
+import { Pokemon, PokeType } from "../store/pokedex"
 import { formatName } from "../utils"
-import { map, reverse } from "lodash/fp"
+import { concat, find, map, reverse, reduce } from "lodash/fp"
 
-export const getAllPokemon = () => {
+import { AppState } from "../store"
+
+export const getAllPokemon = (state: AppState) => {
   const pokeIds = Array.from(Array(152).keys()).slice(1)
   const allPokemon = map(async (id: number) => {
     const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
     const data = await pokemon.json()
 
+    const pokeName = formatName(data.name)
+    const pokeTypes = map(
+      ({ type }) => formatName(type.name),
+      reverse(data.types)
+    )
+    const pokeKeywords = concat(pokeName, pokeTypes)
+
     return {
       id: data.id,
-      name: formatName(data.name),
-      types: map(({ type }) => formatName(type.name), reverse(data.types))
+      name: pokeName,
+      typeIds: reduce(
+        (ids: number[], type: PokeType) => {
+          if (find(name => name === type.name, pokeTypes)) {
+            ids.push(type.id)
+          }
+
+          return ids
+        },
+        [],
+        state.pokedex.types
+      ),
+      keywords: pokeKeywords
     } as Pokemon
   }, pokeIds)
 
