@@ -8,7 +8,6 @@ import { getAllPokemon } from "../../api"
 export type Pokemon = {
   id: number
   name: string
-  imageUrl: string
 }
 
 export type AllPokemon = Pokemon[]

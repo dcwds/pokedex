@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from "react"
-import { Box, Heading, Text } from "rebass"
+import { Box } from "rebass"
 import PokemonItem from "../pokemon"
 
 import { useDispatch, useSelector } from "react-redux"
@@ -19,9 +19,15 @@ const Pokedex: FC = () => {
   }, [dispatch])
 
   return (
-    <Box as="article">
+    <Box
+      sx={{
+        display: "grid",
+        gap: "1rem",
+        gridTemplateColumns: "repeat(auto-fill, minmax(50px, 1fr))"
+      }}
+    >
       {loading && "Loading..."}{" "}
-      {!!pokemon.length && map(p => <PokemonItem {...p} />, pokemon)}
+      {!!pokemon.length && map(p => <PokemonItem key={p.id} {...p} />, pokemon)}
     </Box>
   )
 }

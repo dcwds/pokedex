@@ -1,6 +1,8 @@
 export const SYSTEM_FONT_STACK = `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`
+export const VERTICAL_RHYTHM = 1.5
 
-export const breakpoints = ["40em", "52em", "60em"]
+export const intervals = [0, 0.25, 0.5, 1, 2, 4, 8, 16]
+export const breakpoints = ["40rem", "52rem", "60rem"]
 
 export const colors = {
   gray: [
@@ -17,14 +19,23 @@ export const colors = {
   ]
 }
 
-export const space = [0, 4, 8, 16, 32, 64, 128, 256]
+export const space = intervals.map(num => `${num * VERTICAL_RHYTHM}rem`)
 
 export const fonts = {
   body: SYSTEM_FONT_STACK,
   heading: "inherit"
 }
 
-export const fontSizes = [12, 14, 16, 20, 24, 32, 48, 64]
+export const fontSizes = [
+  "0.65rem",
+  "0.8rem", // 13px
+  "1rem", // 16px
+  "1.25rem", // 20px
+  "1.563rem", // 25px
+  "1.953rem", // 31px
+  "2.441rem", // 39px
+  "3.052rem" // 49px
+]
 
 export const fontWeights = {
   body: 400,

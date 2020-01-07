@@ -10,8 +10,7 @@ export const getAllPokemon = () => {
 
     return {
       id: data.id,
-      name: formatName(data.name),
-      imageUrl: data.sprites.front_default
+      name: formatName(data.name)
     } as Pokemon
   }, pokeIds)
 
