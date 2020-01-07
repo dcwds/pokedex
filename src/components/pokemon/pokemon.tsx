@@ -16,7 +16,7 @@ const PokemonItem: FC<Pokemon> = ({ id, name }) => (
       }}
     >
       <Image src={`/images/pokemon/${id}.webp`} alt={name} height={35} />
-      <Text sx={{ fontSize: 0, fontWeight: "heading", mt: 1, opacity: 0.9 }}>
+      <Text sx={{ fontSize: 0, fontWeight: "heading", mt: 1, opacity: 0.5 }}>
         {name}
       </Text>
     </Box>

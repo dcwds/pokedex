@@ -6,7 +6,7 @@ export const breakpoints = ["40rem", "52rem", "60rem"]
 
 export const colors = {
   gray: [
-    "#1A1A1A",
+    "#1C1C1C",
     "#1E1E1E",
     "#232323",
     "#252525",
@@ -70,7 +70,11 @@ export const styles = {
   },
   container: {
     bg: "gray.0",
-    borderRadius: ".25rem"
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    borderRadius: ".25rem",
+    minHeight: "80vh"
   }
 }
 
