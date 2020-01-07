@@ -7,7 +7,7 @@ const Header: FC = () => (
     sx={{
       color: "white",
       fontSize: 2,
-      mb: 5,
+      mb: 4,
       p: 4
     }}
   >

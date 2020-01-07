@@ -19,15 +19,18 @@ const Pokedex: FC = () => {
   }, [dispatch])
 
   return (
-    <Box
-      sx={{
-        display: "grid",
-        gap: "1rem",
-        gridTemplateColumns: "repeat(auto-fill, minmax(50px, 1fr))"
-      }}
-    >
-      {loading && "Loading..."}{" "}
-      {!!pokemon.length && map(p => <PokemonItem key={p.id} {...p} />, pokemon)}
+    <Box variant="styles.container" sx={{ padding: 2 }}>
+      <Box
+        sx={{
+          display: "grid",
+          gap: ".5rem",
+          gridTemplateColumns: "repeat(auto-fill, minmax(60px, 1fr))"
+        }}
+      >
+        {loading && "Loading..."}{" "}
+        {!!pokemon.length &&
+          map(p => <PokemonItem key={p.id} {...p} />, pokemon)}
+      </Box>
     </Box>
   )
 }

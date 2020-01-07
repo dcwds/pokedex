@@ -6,7 +6,7 @@ export const breakpoints = ["40rem", "52rem", "60rem"]
 
 export const colors = {
   gray: [
-    "#121212",
+    "#1A1A1A",
     "#1E1E1E",
     "#232323",
     "#252525",
@@ -27,7 +27,7 @@ export const fonts = {
 }
 
 export const fontSizes = [
-  "0.65rem",
+  "0.6rem",
   "0.8rem", // 13px
   "1rem", // 16px
   "1.25rem", // 20px
@@ -67,6 +67,18 @@ export const styles = {
     bg: "gray.1",
     color: "white",
     minHeight: "100vh"
+  },
+  container: {
+    bg: "gray.0",
+    borderRadius: ".25rem"
+  }
+}
+
+export const buttons = {
+  listPrimary: {
+    color: "white",
+    bg: "gray.1",
+    borderRadius: ".25rem"
   }
 }
 
@@ -79,5 +91,6 @@ export default {
   fontWeights,
   lineHeights,
   text,
-  styles
+  styles,
+  buttons
 }

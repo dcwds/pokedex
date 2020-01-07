@@ -1,6 +1,6 @@
 import { Pokemon } from "../store/pokedex"
 import { formatName } from "../utils"
-import { map } from "lodash/fp"
+import { map, reverse } from "lodash/fp"
 
 export const getAllPokemon = () => {
   const pokeIds = Array.from(Array(152).keys()).slice(1)
@@ -10,7 +10,8 @@ export const getAllPokemon = () => {
 
     return {
       id: data.id,
-      name: formatName(data.name)
+      name: formatName(data.name),
+      types: map(({ type }) => formatName(type.name), reverse(data.types))
     } as Pokemon
   }, pokeIds)
 
