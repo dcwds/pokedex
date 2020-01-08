@@ -32,6 +32,7 @@
     "@types/lodash": "^4.14.138",
     "@types/node": "12.7.5",
     "@types/react": "16.9.2",
+    "@types/react-custom-scrollbars": "^4.0.6",
     "@types/react-dom": "16.9.0",
     "@types/react-redux": "^7.1.2",
     "@types/rebass": "^4.0.0",
@@ -39,13 +40,16 @@
     "@types/redux-logger": "^3.0.7",
     "emotion": "^10.0.17",
     "emotion-theming": "^10.0.19",
+    "lodash": "^4.17.15",
     "react": "^16.9.0",
+    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
     "react-scripts": "^3.3.0",
     "rebass": "^4.0.5",
     "redux": "^4.0.4",
     "redux-starter-kit": "^0.7.0",
+    "redux-thunk": "^2.3.0",
     "typescript": "3.6.3"
   },
   "devDependencies": {
@@ -56,10 +60,8 @@
     "imagemin": "^7.0.1",
     "imagemin-webp": "^5.1.0",
     "lint-staged": "^9.2.5",
-    "lodash": "^4.17.15",
     "prettier": "^1.18.2",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
     "ts-node": "^8.5.4"
   }
 }

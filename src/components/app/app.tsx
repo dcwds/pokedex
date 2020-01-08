@@ -1,5 +1,5 @@
 import React, { FC, Fragment } from "react"
-import { Box } from "rebass"
+import { Box, Flex } from "rebass"
 
 import { Provider } from "react-redux"
 import store from "../../store"
@@ -29,8 +29,13 @@ const App: FC = () => {
           />
           <Box variant="styles.root">
             <Header />
-            <Box as="main" sx={{ p: 4 }}>
-              <PokePicker />
+            <Box as="main" sx={{ p: 4, flex: "1 1 0" }}>
+              <Flex sx={{ height: "100%" }}>
+                <Flex sx={{ flexDirection: "column" }} width={2 / 5}>
+                  <PokePicker />
+                </Flex>
+                <Box />
+              </Flex>
             </Box>
           </Box>
         </Fragment>

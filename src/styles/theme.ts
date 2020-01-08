@@ -1,12 +1,12 @@
 export const SYSTEM_FONT_STACK = `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`
 export const VERTICAL_RHYTHM = 1.5
 
-export const intervals = [0, 0.25, 0.5, 1, 2, 4, 8, 16]
+export const intervals = [0, 0.25, 0.5, 0.75, 1, 2, 4, 8, 16]
 export const breakpoints = ["40rem", "52rem", "60rem"]
 
 export const colors = {
   gray: [
-    "#1C1C1C",
+    "#1A1A1A",
     "#1E1E1E",
     "#232323",
     "#252525",
@@ -59,22 +59,37 @@ export const text = {
   }
 }
 
+export const radii = [".25rem"]
+
+const inputStyles = {
+  bg: "gray.0",
+  borderRadius: radii[0],
+  border: "none",
+  appearance: "none",
+  p: 3
+}
+
 export const styles = {
   root: {
     fontFamily: "body",
     lineHeight: "heading",
     bg: "gray.1",
     color: "white",
+    display: "flex",
+    flexDirection: "column",
     minHeight: "100vh"
   },
   container: {
     bg: "gray.0",
-    borderRadius: ".25rem"
+    borderRadius: radii[0]
   },
   ellipse: {
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",
     overflow: "hidden"
+  },
+  input: {
+    ...inputStyles
   }
 }
 
@@ -89,7 +104,7 @@ export const buttons = {
     ...buttonStyles,
     color: "rgba(255,255,255,0.5)",
     bg: "gray.1",
-    borderRadius: ".25rem",
+    borderRadius: radii[0],
     "&:hover": {
       bg: "gray.2",
       color: "white"
@@ -106,6 +121,7 @@ export default {
   fontWeights,
   lineHeights,
   text,
+  radii,
   styles,
   buttons
 }

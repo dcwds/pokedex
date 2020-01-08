@@ -7,6 +7,10 @@ const PokeSearch: FC = () => {
   const dispatch = useDispatch()
   return (
     <Input
+      variant="styles.input"
+      sx={{
+        mb: 2
+      }}
       type="text"
       placeholder="Search for pokemon by name or type."
       onChange={e =>

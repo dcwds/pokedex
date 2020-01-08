@@ -1,5 +1,6 @@
-import React, { FC, useEffect } from "react"
+import React, { FC, Fragment, useEffect } from "react"
 import { Box } from "rebass"
+import { Scrollbars as Scroll, ScrollbarProps } from "react-custom-scrollbars"
 import PokemonItem from "../pokemon"
 import Loader from "../loader"
 import PokeSearch from "../poke-search"
@@ -18,7 +19,8 @@ const PokemonList: FC<PokemonListProps> = ({ pokemon }) => (
     sx={{
       display: "grid",
       gap: ".5rem",
-      gridTemplateColumns: "repeat(auto-fill, minmax(80px, 1fr))"
+      margin: ".5rem",
+      gridTemplateColumns: "repeat(auto-fill, minmax(75px, 1fr))"
     }}
   >
     {map(
@@ -37,16 +39,31 @@ const PokePicker: FC = () => {
   const loading = useSelector(selectLoading)
   const pokemon = useSelector(selectFilteredPokemon)
 
+  const renderThumb: FC<ScrollbarProps> = (style, ...props) => {
+    const thumbStyle = {
+      backgroundColor: "rgba(255,255,255, 0.3)",
+      borderRadius: "5px"
+    }
+    return <div style={{ ...style, ...thumbStyle }} {...props} />
+  }
+
   useEffect(() => {
     dispatch(fetchPokemon())
   }, [dispatch])
 
   return (
-    <Box variant="styles.container" sx={{ padding: 2 }}>
+    <Fragment>
       <PokeSearch />
-      {loading && <Loader />}
-      {!!pokemon.length && <PokemonList pokemon={pokemon} />}
-    </Box>
+      <Box variant="styles.container" sx={{ flexGrow: 1 }}>
+        <Scroll
+          renderThumbHorizontal={renderThumb}
+          renderThumbVertical={renderThumb}
+        >
+          {loading && <Loader />}
+          {!!pokemon.length && <PokemonList pokemon={pokemon} />}
+        </Scroll>
+      </Box>
+    </Fragment>
   )
 }
 

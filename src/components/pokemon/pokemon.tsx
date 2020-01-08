@@ -12,7 +12,7 @@ const PokemonItem: FC<Pokemon> = ({ id, name }) => (
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        p: 2
+        p: 1
       }}
     >
       <Image src={`/images/pokemon/${id}.webp`} alt={name} height={40} />
@@ -25,7 +25,7 @@ const PokemonItem: FC<Pokemon> = ({ id, name }) => (
           fontWeight: "heading",
           mt: 1,
           textAlign: "center",
-          width: "120%"
+          width: "90%"
         }}
       >
         {name}
