@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.17",
+    "@rebass/forms": "^4.0.6",
     "@types/imagemin": "^7.0.0",
     "@types/imagemin-webp": "^5.1.0",
     "@types/jest": "24.0.18",
@@ -34,6 +35,7 @@
     "@types/react-dom": "16.9.0",
     "@types/react-redux": "^7.1.2",
     "@types/rebass": "^4.0.0",
+    "@types/rebass__forms": "^4.0.0",
     "@types/redux-logger": "^3.0.7",
     "emotion": "^10.0.17",
     "emotion-theming": "^10.0.19",

@@ -12,20 +12,18 @@ const PokemonItem: FC<Pokemon> = ({ id, name }) => (
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        p: 2,
-        "&:hover": {
-          bg: "gray.2"
-        }
+        p: 2
       }}
     >
       <Image src={`/images/pokemon/${id}.webp`} alt={name} height={40} />
       <Text
+        as="span"
         variant="styles.ellipse"
         sx={{
+          display: "block",
           fontSize: 0,
           fontWeight: "heading",
           mt: 1,
-          opacity: 0.5,
           textAlign: "center",
           width: "120%"
         }}

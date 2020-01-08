@@ -2,6 +2,7 @@ import React, { FC, useEffect } from "react"
 import { Box } from "rebass"
 import PokemonItem from "../pokemon"
 import Loader from "../loader"
+import PokeSearch from "../poke-search"
 
 import { useDispatch, useSelector } from "react-redux"
 import { pokedexSelectors, fetchPokemon, Pokemon } from "../../store/pokedex"
@@ -31,10 +32,10 @@ const PokemonList: FC<PokemonListProps> = ({ pokemon }) => (
 
 const PokePicker: FC = () => {
   const dispatch = useDispatch()
-  const { selectLoading, selectPokemon } = pokedexSelectors
+  const { selectLoading, selectFilteredPokemon } = pokedexSelectors
 
   const loading = useSelector(selectLoading)
-  const pokemon = useSelector(selectPokemon)
+  const pokemon = useSelector(selectFilteredPokemon)
 
   useEffect(() => {
     dispatch(fetchPokemon())
@@ -42,6 +43,7 @@ const PokePicker: FC = () => {
 
   return (
     <Box variant="styles.container" sx={{ padding: 2 }}>
+      <PokeSearch />
       {loading && <Loader />}
       {!!pokemon.length && <PokemonList pokemon={pokemon} />}
     </Box>

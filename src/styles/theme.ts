@@ -69,8 +69,7 @@ export const styles = {
   },
   container: {
     bg: "gray.0",
-    borderRadius: ".25rem",
-    minHeight: "80vh"
+    borderRadius: ".25rem"
   },
   ellipse: {
     textOverflow: "ellipsis",
@@ -79,11 +78,22 @@ export const styles = {
   }
 }
 
+const buttonStyles = {
+  cursor: "pointer",
+  userSelect: "none",
+  transition: "all 0.25s ease-in-out"
+}
+
 export const buttons = {
   listPrimary: {
-    color: "white",
+    ...buttonStyles,
+    color: "rgba(255,255,255,0.5)",
     bg: "gray.1",
-    borderRadius: ".25rem"
+    borderRadius: ".25rem",
+    "&:hover": {
+      bg: "gray.2",
+      color: "white"
+    }
   }
 }
 
