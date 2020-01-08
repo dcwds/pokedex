@@ -4,6 +4,7 @@ import { Scrollbars as Scroll, ScrollbarProps } from "react-custom-scrollbars"
 import PokemonItem from "../pokemon"
 import Loader from "../loader"
 import PokeSearch from "../poke-search"
+import PokeFilters from "../poke-filters"
 
 import { useDispatch, useSelector } from "react-redux"
 import { pokedexSelectors, fetchPokemon, Pokemon } from "../../store/pokedex"
@@ -18,8 +19,8 @@ const PokemonList: FC<PokemonListProps> = ({ pokemon }) => (
   <Box
     sx={{
       display: "grid",
-      gap: ".5rem",
-      margin: ".5rem",
+      gap: ".6rem",
+      margin: ".6rem",
       gridTemplateColumns: "repeat(auto-fill, minmax(75px, 1fr))"
     }}
   >
@@ -54,6 +55,7 @@ const PokePicker: FC = () => {
   return (
     <Fragment>
       <PokeSearch />
+      <PokeFilters />
       <Box variant="styles.container" sx={{ flexGrow: 1 }}>
         <Scroll
           renderThumbHorizontal={renderThumb}

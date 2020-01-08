@@ -18,6 +18,11 @@ export const selectPokemon = createSelector(
   pokedex => pokedex.pokemon
 )
 
+export const selectPokeTypes = createSelector(
+  selectPokedexState,
+  pokedex => pokedex.types
+)
+
 export const selectPokemonBySearchTerm = createSelector(
   selectPokemon,
   selectSearchTerm,

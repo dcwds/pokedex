@@ -2,7 +2,8 @@ import { createSlice, PayloadAction } from "redux-starter-kit"
 import { FiltersState } from "."
 
 const initialState: FiltersState = {
-  searchTerm: ""
+  searchTerm: "",
+  activeFilterIds: []
 }
 
 const { actions, reducer } = createSlice({

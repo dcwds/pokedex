@@ -14,11 +14,10 @@ const primitivePokeTypes = [
   "Fire",
   "Water",
   "Grass",
-  "Electic",
+  "Electric",
   "Psychic",
   "Ice",
   "Dragon",
-  "Dark",
   "Fairy"
 ]
 
