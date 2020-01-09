@@ -66,7 +66,7 @@ const inputStyles = {
   borderRadius: radii[0],
   border: "none",
   appearance: "none",
-  p: 3
+  p: 2
 }
 
 export const styles = {
@@ -96,6 +96,7 @@ export const styles = {
 const buttonStyles = {
   cursor: "pointer",
   userSelect: "none",
+  outline: "none",
   transition: "all 0.25s ease-in-out"
 }
 

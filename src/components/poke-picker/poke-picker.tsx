@@ -1,5 +1,5 @@
 import React, { FC, Fragment, useEffect } from "react"
-import { Box } from "rebass"
+import { Box, Flex } from "rebass"
 import { Scrollbars as Scroll, ScrollbarProps } from "react-custom-scrollbars"
 import PokemonItem from "../pokemon"
 import Loader from "../loader"
@@ -56,15 +56,16 @@ const PokePicker: FC = () => {
     <Fragment>
       <PokeSearch />
       <PokeFilters />
-      <Box variant="styles.container" sx={{ flexGrow: 1 }}>
+      <Flex variant="styles.container" sx={{ flex: 1 }}>
         <Scroll
+          style={{ flex: 1, height: "auto" }}
           renderThumbHorizontal={renderThumb}
           renderThumbVertical={renderThumb}
         >
           {loading && <Loader />}
           {!!pokemon.length && <PokemonList pokemon={pokemon} />}
         </Scroll>
-      </Box>
+      </Flex>
     </Fragment>
   )
 }

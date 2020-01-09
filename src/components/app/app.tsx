@@ -21,7 +21,6 @@ const App: FC = () => {
               html,
               body {
                 font-size: 100%;
-                height: 100vh;
                 margin: 0;
                 min-height: 100vh;
               }
@@ -29,14 +28,20 @@ const App: FC = () => {
           />
           <Box variant="styles.root">
             <Header />
-            <Box as="main" sx={{ p: 4, flex: "1 1 0" }}>
-              <Flex sx={{ height: "100%" }}>
-                <Flex sx={{ flexDirection: "column" }} width={2 / 5}>
+            <Flex
+              as="main"
+              sx={{ p: [2, 4], flexDirection: "column", flex: "1" }}
+            >
+              <Flex sx={{ flexDirection: "column", flex: "1" }}>
+                <Flex
+                  sx={{ flexDirection: "column", flex: "1" }}
+                  width={[1, 2 / 5]}
+                >
                   <PokePicker />
                 </Flex>
                 <Box />
               </Flex>
-            </Box>
+            </Flex>
           </Box>
         </Fragment>
       </ThemeProvider>
