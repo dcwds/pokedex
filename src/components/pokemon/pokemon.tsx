@@ -2,6 +2,7 @@ import React, { FC } from "react"
 import { Pokemon } from "../../store/pokedex"
 import AspectRatio from "../aspect-ratio"
 import { Box, Text, Image } from "rebass"
+import FadeIn from "../fade-in"
 
 const PokemonItem: FC<Pokemon> = ({ id, name }) => (
   <AspectRatio ratio={1}>
@@ -15,7 +16,16 @@ const PokemonItem: FC<Pokemon> = ({ id, name }) => (
         p: 1
       }}
     >
-      <Image src={`/images/pokemon/${id}.webp`} alt={name} height={40} />
+      <FadeIn>
+        {onLoad => (
+          <Image
+            src={`/images/pokemon/${id}.webp`}
+            alt={name}
+            height={40}
+            onLoad={onLoad}
+          />
+        )}
+      </FadeIn>
       <Text
         as="span"
         variant="styles.ellipse"
