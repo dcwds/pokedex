@@ -1,30 +1,65 @@
 import React, { FC } from "react"
 import { useSelector } from "react-redux"
 import { PokeType, pokedexSelectors } from "../../store/pokedex"
-import { Flex, Box } from "rebass"
-import { lowerCase, map } from "lodash/fp"
+import { Button, Box } from "rebass"
+import { pokeColors } from "../../styles/poke-colors"
 
-const PokeFilter: FC<PokeType> = ({ id, name }) => (
-  <Box sx={{ height: 30, width: 30 }}>
-    <svg style={{ fill: "white" }} viewBox="0 0 28 28">
-      <title>{name}</title>
-      <use href={`/images/poke-type-icons.svg#${lowerCase(name)}`} />
-    </svg>
-  </Box>
-)
+import { map, prop } from "lodash/fp"
+
+const PokeFilter: FC<PokeType> = ({ name }) => {
+  const pokeTypeColor: string = prop(name, pokeColors)
+
+  return (
+    <Button
+      variant="buttons.listPrimary"
+      sx={{
+        bg: "gray.0",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        p: 2,
+        "&:hover": {
+          bg: pokeTypeColor,
+          "& > svg": {
+            fill: "white"
+          }
+        },
+        "& > svg": {
+          fill: pokeTypeColor,
+          height: "20px",
+          width: "20px",
+          transition: "fill 0.2s ease-in-out"
+        }
+      }}
+    >
+      <svg viewBox="0 0 12 12">
+        <title>{name}</title>
+        <use href={`/images/poke-type-icons.svg#${name}`} />
+      </svg>
+    </Button>
+  )
+}
 
 const PokeFilters: FC = () => {
   const filters = useSelector(pokedexSelectors.selectPokeTypes)
 
   return (
-    <Flex>
+    <Box
+      sx={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fill, minmax(40px, 1fr))",
+        gridGap: ".25rem",
+        mb: 2
+      }}
+    >
       {map(
         f => (
           <PokeFilter key={f.id} {...f} />
         ),
         filters
       )}
-    </Flex>
+    </Box>
   )
 }
 

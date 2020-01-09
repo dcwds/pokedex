@@ -1,6 +1,6 @@
 import { Pokemon, PokeType } from "../store/pokedex"
 import { formatName } from "../utils"
-import { concat, find, map, reverse, reduce } from "lodash/fp"
+import { concat, find, map, reverse, reduce, lowerCase } from "lodash/fp"
 
 import { AppState } from "../store"
 
@@ -12,7 +12,7 @@ export const getAllPokemon = (state: AppState) => {
 
     const pokeName = formatName(data.name)
     const pokeTypes = map(
-      ({ type }) => formatName(type.name),
+      ({ type }) => lowerCase(type.name),
       reverse(data.types)
     )
     const pokeKeywords = concat(pokeName, pokeTypes)

@@ -2,23 +2,23 @@ import { createSlice, PayloadAction } from "redux-starter-kit"
 import { PokedexState, Pokemon, PokeType } from "."
 
 const primitivePokeTypes = [
-  "Normal",
-  "Fighting",
-  "Flying",
-  "Poison",
-  "Ground",
-  "Rock",
-  "Bug",
-  "Ghost",
-  "Steel",
-  "Fire",
-  "Water",
-  "Grass",
-  "Electric",
-  "Psychic",
-  "Ice",
-  "Dragon",
-  "Fairy"
+  "bug",
+  "dragon",
+  "electric",
+  "fairy",
+  "fighting",
+  "fire",
+  "flying",
+  "ghost",
+  "grass",
+  "ground",
+  "ice",
+  "normal",
+  "poison",
+  "psychic",
+  "rock",
+  "steel",
+  "water"
 ]
 
 const pokeTypes = primitivePokeTypes.reduce(
