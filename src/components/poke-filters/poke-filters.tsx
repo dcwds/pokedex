@@ -1,19 +1,25 @@
 import React, { FC } from "react"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { PokeType, pokedexSelectors } from "../../store/pokedex"
+import { filtersActions, filtersSelectors } from "../../store/filters"
 import { Button, Box } from "rebass"
 import { pokeColors } from "../../styles/poke-colors"
 
-import { map, prop } from "lodash/fp"
+import { includes, map, prop } from "lodash/fp"
 
-const PokeFilter: FC<PokeType> = ({ name }) => {
+type PokeFilterProps = {
+  active: boolean
+} & PokeType
+
+const PokeFilter: FC<PokeFilterProps> = ({ id, name, active }) => {
+  const dispatch = useDispatch()
   const pokeTypeColor: string = prop(name, pokeColors)
 
   return (
     <Button
       variant="buttons.listPrimary"
       sx={{
-        bg: "gray.0",
+        bg: active ? pokeTypeColor : "gray.0",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -26,12 +32,13 @@ const PokeFilter: FC<PokeType> = ({ name }) => {
           }
         },
         "& > svg": {
-          fill: pokeTypeColor,
+          fill: active ? "white" : pokeTypeColor,
           height: "20px",
           width: "20px",
           transition: "fill 0.2s ease-in-out"
         }
       }}
+      onClick={() => dispatch(filtersActions.setFilter(id))}
     >
       <svg viewBox="0 0 12 12">
         <title>{name}</title>
@@ -43,6 +50,7 @@ const PokeFilter: FC<PokeType> = ({ name }) => {
 
 const PokeFilters: FC = () => {
   const filters = useSelector(pokedexSelectors.selectPokeTypes)
+  const activeFiltersById = useSelector(filtersSelectors.selectActiveFilterIds)
 
   return (
     <Box
@@ -53,12 +61,11 @@ const PokeFilters: FC = () => {
         mb: 2
       }}
     >
-      {map(
-        f => (
-          <PokeFilter key={f.id} {...f} />
-        ),
-        filters
-      )}
+      {map(f => {
+        const active = includes(f.id, activeFiltersById)
+
+        return <PokeFilter key={f.id} active={active} {...f} />
+      }, filters)}
     </Box>
   )
 }

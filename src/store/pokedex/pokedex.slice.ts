@@ -1,5 +1,5 @@
-import { createSlice, PayloadAction } from "redux-starter-kit"
-import { PokedexState, Pokemon, PokeType } from "."
+import { createSlice } from "redux-starter-kit"
+import { PokedexState, PokeType } from "."
 
 const primitivePokeTypes = [
   "bug",
@@ -47,11 +47,11 @@ const { actions, reducer } = createSlice({
     setPokedex: (s, _action) => {
       s.loading = true
     },
-    setPokedexSuccess: (s, { payload }: PayloadAction<Pokemon[]>) => {
+    setPokedexSuccess: (s, { payload }) => {
       s.loading = false
       s.pokemon = payload
     },
-    setPokedexFailure: (s, { payload }: PayloadAction<string>) => {
+    setPokedexFailure: (s, { payload }) => {
       s.loading = false
       s.error = payload
     }

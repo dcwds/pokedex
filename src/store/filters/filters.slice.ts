@@ -1,5 +1,7 @@
-import { createSlice, PayloadAction } from "redux-starter-kit"
+import { createSlice } from "redux-starter-kit"
 import { FiltersState } from "."
+
+import { concat, filter, includes } from "lodash/fp"
 
 const initialState: FiltersState = {
   searchTerm: "",
@@ -10,8 +12,15 @@ const { actions, reducer } = createSlice({
   slice: "filters",
   initialState,
   reducers: {
-    setSearchTerm: (s, { payload }: PayloadAction<string>) => {
+    setSearchTerm: (s, { payload }) => {
       s.searchTerm = payload.toLowerCase()
+    },
+    setFilter: (s, { payload }) => {
+      if (includes(payload, s.activeFilterIds)) {
+        s.activeFilterIds = filter(id => id !== payload, s.activeFilterIds)
+      } else {
+        s.activeFilterIds = concat(payload, s.activeFilterIds)
+      }
     }
   }
 })

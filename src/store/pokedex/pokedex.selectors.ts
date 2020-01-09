@@ -1,10 +1,10 @@
 import { AppState } from ".."
 import { createSelector } from "redux-starter-kit"
-import { filterSelectors } from "../filters"
+import { filtersSelectors } from "../filters"
 
-import { filter, includes, join, lowerCase } from "lodash/fp"
+import { every, filter, includes, join, lowerCase } from "lodash/fp"
 
-const { selectSearchTerm } = filterSelectors
+const { selectSearchTerm, selectActiveFilterIds } = filtersSelectors
 
 export const selectPokedexState = (s: AppState) => s.pokedex
 
@@ -39,5 +39,10 @@ export const selectPokemonBySearchTerm = createSelector(
 
 export const selectFilteredPokemon = createSelector(
   selectPokemonBySearchTerm,
-  pokemon => pokemon
+  selectActiveFilterIds,
+  (pokemon, filters) =>
+    // When no filters are set, use all pokemon.
+    filters.length
+      ? filter(p => every(id => includes(id, p.typeIds), filters), pokemon)
+      : pokemon
 )

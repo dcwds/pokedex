@@ -7,3 +7,8 @@ export const selectSearchTerm = createSelector(
   selectFiltersState,
   filters => filters.searchTerm
 )
+
+export const selectActiveFilterIds = createSelector(
+  selectFiltersState,
+  filters => filters.activeFilterIds
+)
