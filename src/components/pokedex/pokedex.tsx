@@ -1,5 +1,5 @@
 import React, { FC, Fragment, useEffect, useState } from "react"
-import usePokeSpriteImg from "../../hooks/usePokeSpriteImg"
+import getPokeSpriteURL from "../../utils/get-poke-sprite-url"
 import preloadImages from "../../utils/preload-images"
 
 import PokePicker from "../poke-picker"
@@ -7,8 +7,8 @@ import { LoaderBlanket } from "../loader"
 import { Flex } from "rebass"
 
 const Pokedex: FC = () => {
-  const [loading, setLoading] = useState(true)
-  const sprite = usePokeSpriteImg()
+  const [loading, setLoading] = useState(false)
+  const sprite = getPokeSpriteURL()
 
   useEffect(() => {
     preloadImages([sprite]).then(() => setLoading(false))

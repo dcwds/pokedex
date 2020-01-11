@@ -2,7 +2,6 @@ import React, { FC, memo } from "react"
 import { Pokemon } from "../../store/pokedex"
 import AspectRatio from "../aspect-ratio"
 import { Box, Text } from "rebass"
-import isRetina from "is-retina"
 
 const PokemonItem: FC<Pokemon> = ({ name, spritePos }) => {
   const size = "40px"
@@ -20,9 +19,7 @@ const PokemonItem: FC<Pokemon> = ({ name, spritePos }) => {
         }}
       >
         <Box
-          variant={
-            isRetina ? "styles.hasRetinaSprite" : "styles.hasNormalSprite"
-          }
+          variant={"styles.hasSprite"}
           sx={{
             backgroundPositionX: `-${spritePos.x}px`,
             backgroundPositionY: `-${spritePos.y}px`,
