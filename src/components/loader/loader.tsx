@@ -19,7 +19,7 @@ const pulse = keyframes`
 const Loader: FC<Props> = ({ size, color }) => (
   <Box
     sx={{
-      bg: color ? color : "#333",
+      bg: color ? color : "rgba(255,255,255, 0.2)",
       height: size ? size : "40px",
       width: size ? size : "40px",
       mx: "auto",

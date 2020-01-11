@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React, { FC, memo } from "react"
 import { Pokemon } from "../../store/pokedex"
 import AspectRatio from "../aspect-ratio"
 import { Box, Text } from "rebass"
@@ -49,4 +49,4 @@ const PokemonItem: FC<Pokemon> = ({ name, spritePos }) => {
     </AspectRatio>
   )
 }
-export default PokemonItem
+export default memo(PokemonItem)

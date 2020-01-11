@@ -1,3 +1,4 @@
 import Loader from "./loader"
+import LoaderBlanket from "./blanket"
 
-export default Loader
+export { Loader as default, LoaderBlanket }
