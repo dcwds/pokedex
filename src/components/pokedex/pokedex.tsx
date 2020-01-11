@@ -7,7 +7,7 @@ import { LoaderBlanket } from "../loader"
 import { Flex } from "rebass"
 
 const Pokedex: FC = () => {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   const sprite = getPokeSpriteURL()
 
   useEffect(() => {
