@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from "react"
+import React, { FC, Fragment, useEffect, useState } from "react"
 import { Box, Flex } from "rebass"
 
 import { Provider } from "react-redux"
@@ -8,10 +8,22 @@ import { ThemeProvider } from "emotion-theming"
 import { Global, css } from "@emotion/core"
 import theme from "../../styles/theme"
 
+import usePokeSpriteImg from "../../hooks/usePokeSpriteImg"
+import preloadImages from "../../utils/preload-images"
+
 import Header from "../header"
 import PokePicker from "../poke-picker"
 
 const App: FC = () => {
+  const [loaded, setLoaded] = useState(true)
+  const sprite = usePokeSpriteImg()
+
+  // TODO: Introduce a loader transition group that animates
+  // based on the `loaded` state value within this component.
+  useEffect(() => {
+    preloadImages([sprite]).then(() => setLoaded(true))
+  }, [sprite])
+
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>

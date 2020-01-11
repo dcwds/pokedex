@@ -1,5 +1,5 @@
 import React, { FC } from "react"
-import isRetina from "is-retina"
+import usePokeSpriteImg from "../../hooks/usePokeSpriteImg"
 import pokeSpriteCoords from "../../data/poke-sprite-coords.json"
 import { Pokemon } from "../../store/pokedex"
 import AspectRatio from "../aspect-ratio"
@@ -8,7 +8,7 @@ import { Box, Text } from "rebass"
 import { prop } from "lodash/fp"
 
 const PokemonItem: FC<Pokemon> = ({ id, name }) => {
-  const sprite = `/images/poke-sprite-x${isRetina() ? "2" : "1"}.png`
+  const sprite = usePokeSpriteImg()
   const coordX = prop("x", prop(id, pokeSpriteCoords))
   const coordY = prop("y", prop(id, pokeSpriteCoords))
   const size = "40px"
