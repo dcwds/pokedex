@@ -1,17 +1,9 @@
-import { Dispatch } from "redux"
-import { PayloadAction, Action } from "redux-starter-kit"
-
 import * as pokedexSelectors from "./pokedex.selectors"
 import { pokedexActions, pokedexReducer } from "./pokedex.slice"
-import { getAllPokemon } from "../../api"
 
-import { AppState } from "../"
-
-export type Pokemon = {
-  id: number
+export type PokeStat = {
   name: string
-  keywords: string[]
-  typeIds: number[]
+  amount: number
 }
 
 export type PokeType = {
@@ -19,24 +11,24 @@ export type PokeType = {
   name: string
 }
 
-export type PokedexState = {
-  loading: boolean
-  error: string | null
-  pokemon: Pokemon[]
-  types: PokeType[]
+export type Pokemon = {
+  id: number
+  name: string
+  height: number // in decimeters
+  weight: number // in hectometers
+  keywords: string[]
+  typeIds: number[]
+  stats: PokeStat[]
+  spritePos: {
+    x: number
+    y: number
+  }
 }
 
-export const fetchPokemon = () => async (
-  dispatch: Dispatch<PayloadAction>,
-  getState: () => AppState
-): Promise<Action> => {
-  dispatch(pokedexActions.setPokedex())
-  try {
-    const pokemon = await getAllPokemon(getState())
-    return dispatch(pokedexActions.setPokedexSuccess(pokemon))
-  } catch (e) {
-    return dispatch(pokedexActions.setPokedexFailure(e.message))
-  }
+export type PokedexState = {
+  pokemon: Pokemon[]
+  selectedPokemonId: number | null
+  types: PokeType[]
 }
 
 export { pokedexActions, pokedexReducer, pokedexSelectors }

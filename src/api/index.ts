@@ -1,6 +1,7 @@
-import { Pokemon, PokeType } from "../store/pokedex"
+import { Pokemon, PokeType, PokeStat } from "../store/pokedex"
+import pokeCoords from "../data/poke-sprite-coords.json"
 import { formatName } from "../utils"
-import { concat, find, map, reverse, reduce, lowerCase } from "lodash/fp"
+import { concat, find, map, reverse, reduce, lowerCase, prop } from "lodash/fp"
 
 import { AppState } from "../store"
 
@@ -20,6 +21,8 @@ export const getAllPokemon = (state: AppState) => {
     return {
       id: data.id,
       name: pokeName,
+      height: data.height,
+      weight: data.weight,
       typeIds: reduce(
         (ids: number[], type: PokeType) => {
           if (find(name => name === type.name, pokeTypes)) {
@@ -31,7 +34,22 @@ export const getAllPokemon = (state: AppState) => {
         [],
         state.pokedex.types
       ),
-      keywords: pokeKeywords
+      stats: reduce(
+        (stats: PokeStat[], stat) => {
+          stats.push({
+            name: formatName(stat.stat.name),
+            amount: stat.base_stat
+          })
+          return stats
+        },
+        [],
+        reverse(data.stats)
+      ),
+      keywords: pokeKeywords,
+      spritePos: {
+        x: prop("x", prop(data.id, pokeCoords)),
+        y: prop("y", prop(data.id, pokeCoords))
+      }
     } as Pokemon
   }, pokeIds)
 

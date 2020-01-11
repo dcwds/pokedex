@@ -1,0 +1,5740 @@
+[
+  {
+    "id": 1,
+    "name": "Bulbasaur",
+    "height": 7,
+    "weight": 69,
+    "typeIds": [9, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 45
+      },
+      {
+        "name": "Attack",
+        "amount": 49
+      },
+      {
+        "name": "Defense",
+        "amount": 49
+      },
+      {
+        "name": "Special Attack",
+        "amount": 65
+      },
+      {
+        "name": "Special Defense",
+        "amount": 65
+      },
+      {
+        "name": "Speed",
+        "amount": 45
+      }
+    ],
+    "keywords": ["Bulbasaur", "grass", "poison"],
+    "spritePos": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ivysaur",
+    "height": 10,
+    "weight": 130,
+    "typeIds": [9, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 62
+      },
+      {
+        "name": "Defense",
+        "amount": 63
+      },
+      {
+        "name": "Special Attack",
+        "amount": 80
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 60
+      }
+    ],
+    "keywords": ["Ivysaur", "grass", "poison"],
+    "spritePos": {
+      "x": 40,
+      "y": 0
+    }
+  },
+  {
+    "id": 3,
+    "name": "Venusaur",
+    "height": 20,
+    "weight": 1000,
+    "typeIds": [9, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 80
+      },
+      {
+        "name": "Attack",
+        "amount": 82
+      },
+      {
+        "name": "Defense",
+        "amount": 83
+      },
+      {
+        "name": "Special Attack",
+        "amount": 100
+      },
+      {
+        "name": "Special Defense",
+        "amount": 100
+      },
+      {
+        "name": "Speed",
+        "amount": 80
+      }
+    ],
+    "keywords": ["Venusaur", "grass", "poison"],
+    "spritePos": {
+      "x": 0,
+      "y": 40
+    }
+  },
+  {
+    "id": 4,
+    "name": "Charmander",
+    "height": 6,
+    "weight": 85,
+    "typeIds": [6],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 39
+      },
+      {
+        "name": "Attack",
+        "amount": 52
+      },
+      {
+        "name": "Defense",
+        "amount": 43
+      },
+      {
+        "name": "Special Attack",
+        "amount": 60
+      },
+      {
+        "name": "Special Defense",
+        "amount": 50
+      },
+      {
+        "name": "Speed",
+        "amount": 65
+      }
+    ],
+    "keywords": ["Charmander", "fire"],
+    "spritePos": {
+      "x": 40,
+      "y": 40
+    }
+  },
+  {
+    "id": 5,
+    "name": "Charmeleon",
+    "height": 11,
+    "weight": 190,
+    "typeIds": [6],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 58
+      },
+      {
+        "name": "Attack",
+        "amount": 64
+      },
+      {
+        "name": "Defense",
+        "amount": 58
+      },
+      {
+        "name": "Special Attack",
+        "amount": 80
+      },
+      {
+        "name": "Special Defense",
+        "amount": 65
+      },
+      {
+        "name": "Speed",
+        "amount": 80
+      }
+    ],
+    "keywords": ["Charmeleon", "fire"],
+    "spritePos": {
+      "x": 80,
+      "y": 0
+    }
+  },
+  {
+    "id": 6,
+    "name": "Charizard",
+    "height": 17,
+    "weight": 905,
+    "typeIds": [6, 7],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 78
+      },
+      {
+        "name": "Attack",
+        "amount": 84
+      },
+      {
+        "name": "Defense",
+        "amount": 78
+      },
+      {
+        "name": "Special Attack",
+        "amount": 109
+      },
+      {
+        "name": "Special Defense",
+        "amount": 85
+      },
+      {
+        "name": "Speed",
+        "amount": 100
+      }
+    ],
+    "keywords": ["Charizard", "fire", "flying"],
+    "spritePos": {
+      "x": 80,
+      "y": 40
+    }
+  },
+  {
+    "id": 7,
+    "name": "Squirtle",
+    "height": 5,
+    "weight": 90,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 44
+      },
+      {
+        "name": "Attack",
+        "amount": 48
+      },
+      {
+        "name": "Defense",
+        "amount": 65
+      },
+      {
+        "name": "Special Attack",
+        "amount": 50
+      },
+      {
+        "name": "Special Defense",
+        "amount": 64
+      },
+      {
+        "name": "Speed",
+        "amount": 43
+      }
+    ],
+    "keywords": ["Squirtle", "water"],
+    "spritePos": {
+      "x": 0,
+      "y": 80
+    }
+  },
+  {
+    "id": 8,
+    "name": "Wartortle",
+    "height": 10,
+    "weight": 225,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 59
+      },
+      {
+        "name": "Attack",
+        "amount": 63
+      },
+      {
+        "name": "Defense",
+        "amount": 80
+      },
+      {
+        "name": "Special Attack",
+        "amount": 65
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 58
+      }
+    ],
+    "keywords": ["Wartortle", "water"],
+    "spritePos": {
+      "x": 40,
+      "y": 80
+    }
+  },
+  {
+    "id": 9,
+    "name": "Blastoise",
+    "height": 16,
+    "weight": 855,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 79
+      },
+      {
+        "name": "Attack",
+        "amount": 83
+      },
+      {
+        "name": "Defense",
+        "amount": 100
+      },
+      {
+        "name": "Special Attack",
+        "amount": 85
+      },
+      {
+        "name": "Special Defense",
+        "amount": 105
+      },
+      {
+        "name": "Speed",
+        "amount": 78
+      }
+    ],
+    "keywords": ["Blastoise", "water"],
+    "spritePos": {
+      "x": 80,
+      "y": 80
+    }
+  },
+  {
+    "id": 10,
+    "name": "Caterpie",
+    "height": 3,
+    "weight": 29,
+    "typeIds": [1],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 45
+      },
+      {
+        "name": "Attack",
+        "amount": 30
+      },
+      {
+        "name": "Defense",
+        "amount": 35
+      },
+      {
+        "name": "Special Attack",
+        "amount": 20
+      },
+      {
+        "name": "Special Defense",
+        "amount": 20
+      },
+      {
+        "name": "Speed",
+        "amount": 45
+      }
+    ],
+    "keywords": ["Caterpie", "bug"],
+    "spritePos": {
+      "x": 120,
+      "y": 0
+    }
+  },
+  {
+    "id": 11,
+    "name": "Metapod",
+    "height": 7,
+    "weight": 99,
+    "typeIds": [1],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 50
+      },
+      {
+        "name": "Attack",
+        "amount": 20
+      },
+      {
+        "name": "Defense",
+        "amount": 55
+      },
+      {
+        "name": "Special Attack",
+        "amount": 25
+      },
+      {
+        "name": "Special Defense",
+        "amount": 25
+      },
+      {
+        "name": "Speed",
+        "amount": 30
+      }
+    ],
+    "keywords": ["Metapod", "bug"],
+    "spritePos": {
+      "x": 120,
+      "y": 40
+    }
+  },
+  {
+    "id": 12,
+    "name": "Butterfree",
+    "height": 11,
+    "weight": 320,
+    "typeIds": [1, 7],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 45
+      },
+      {
+        "name": "Defense",
+        "amount": 50
+      },
+      {
+        "name": "Special Attack",
+        "amount": 90
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 70
+      }
+    ],
+    "keywords": ["Butterfree", "bug", "flying"],
+    "spritePos": {
+      "x": 120,
+      "y": 80
+    }
+  },
+  {
+    "id": 13,
+    "name": "Weedle",
+    "height": 3,
+    "weight": 32,
+    "typeIds": [1, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 35
+      },
+      {
+        "name": "Defense",
+        "amount": 30
+      },
+      {
+        "name": "Special Attack",
+        "amount": 20
+      },
+      {
+        "name": "Special Defense",
+        "amount": 20
+      },
+      {
+        "name": "Speed",
+        "amount": 50
+      }
+    ],
+    "keywords": ["Weedle", "bug", "poison"],
+    "spritePos": {
+      "x": 0,
+      "y": 120
+    }
+  },
+  {
+    "id": 14,
+    "name": "Kakuna",
+    "height": 6,
+    "weight": 100,
+    "typeIds": [1, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 45
+      },
+      {
+        "name": "Attack",
+        "amount": 25
+      },
+      {
+        "name": "Defense",
+        "amount": 50
+      },
+      {
+        "name": "Special Attack",
+        "amount": 25
+      },
+      {
+        "name": "Special Defense",
+        "amount": 25
+      },
+      {
+        "name": "Speed",
+        "amount": 35
+      }
+    ],
+    "keywords": ["Kakuna", "bug", "poison"],
+    "spritePos": {
+      "x": 40,
+      "y": 120
+    }
+  },
+  {
+    "id": 15,
+    "name": "Beedrill",
+    "height": 10,
+    "weight": 295,
+    "typeIds": [1, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 90
+      },
+      {
+        "name": "Defense",
+        "amount": 40
+      },
+      {
+        "name": "Special Attack",
+        "amount": 45
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 75
+      }
+    ],
+    "keywords": ["Beedrill", "bug", "poison"],
+    "spritePos": {
+      "x": 80,
+      "y": 120
+    }
+  },
+  {
+    "id": 16,
+    "name": "Pidgey",
+    "height": 3,
+    "weight": 18,
+    "typeIds": [7, 12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 45
+      },
+      {
+        "name": "Defense",
+        "amount": 40
+      },
+      {
+        "name": "Special Attack",
+        "amount": 35
+      },
+      {
+        "name": "Special Defense",
+        "amount": 35
+      },
+      {
+        "name": "Speed",
+        "amount": 56
+      }
+    ],
+    "keywords": ["Pidgey", "normal", "flying"],
+    "spritePos": {
+      "x": 120,
+      "y": 120
+    }
+  },
+  {
+    "id": 17,
+    "name": "Pidgeotto",
+    "height": 11,
+    "weight": 300,
+    "typeIds": [7, 12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 63
+      },
+      {
+        "name": "Attack",
+        "amount": 60
+      },
+      {
+        "name": "Defense",
+        "amount": 55
+      },
+      {
+        "name": "Special Attack",
+        "amount": 50
+      },
+      {
+        "name": "Special Defense",
+        "amount": 50
+      },
+      {
+        "name": "Speed",
+        "amount": 71
+      }
+    ],
+    "keywords": ["Pidgeotto", "normal", "flying"],
+    "spritePos": {
+      "x": 160,
+      "y": 0
+    }
+  },
+  {
+    "id": 18,
+    "name": "Pidgeot",
+    "height": 15,
+    "weight": 395,
+    "typeIds": [7, 12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 83
+      },
+      {
+        "name": "Attack",
+        "amount": 80
+      },
+      {
+        "name": "Defense",
+        "amount": 75
+      },
+      {
+        "name": "Special Attack",
+        "amount": 70
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 101
+      }
+    ],
+    "keywords": ["Pidgeot", "normal", "flying"],
+    "spritePos": {
+      "x": 160,
+      "y": 40
+    }
+  },
+  {
+    "id": 19,
+    "name": "Rattata",
+    "height": 3,
+    "weight": 35,
+    "typeIds": [12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 30
+      },
+      {
+        "name": "Attack",
+        "amount": 56
+      },
+      {
+        "name": "Defense",
+        "amount": 35
+      },
+      {
+        "name": "Special Attack",
+        "amount": 25
+      },
+      {
+        "name": "Special Defense",
+        "amount": 35
+      },
+      {
+        "name": "Speed",
+        "amount": 72
+      }
+    ],
+    "keywords": ["Rattata", "normal"],
+    "spritePos": {
+      "x": 160,
+      "y": 80
+    }
+  },
+  {
+    "id": 20,
+    "name": "Raticate",
+    "height": 7,
+    "weight": 185,
+    "typeIds": [12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 55
+      },
+      {
+        "name": "Attack",
+        "amount": 81
+      },
+      {
+        "name": "Defense",
+        "amount": 60
+      },
+      {
+        "name": "Special Attack",
+        "amount": 50
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 97
+      }
+    ],
+    "keywords": ["Raticate", "normal"],
+    "spritePos": {
+      "x": 160,
+      "y": 120
+    }
+  },
+  {
+    "id": 21,
+    "name": "Spearow",
+    "height": 3,
+    "weight": 20,
+    "typeIds": [7, 12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 60
+      },
+      {
+        "name": "Defense",
+        "amount": 30
+      },
+      {
+        "name": "Special Attack",
+        "amount": 31
+      },
+      {
+        "name": "Special Defense",
+        "amount": 31
+      },
+      {
+        "name": "Speed",
+        "amount": 70
+      }
+    ],
+    "keywords": ["Spearow", "normal", "flying"],
+    "spritePos": {
+      "x": 0,
+      "y": 160
+    }
+  },
+  {
+    "id": 22,
+    "name": "Fearow",
+    "height": 12,
+    "weight": 380,
+    "typeIds": [7, 12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 90
+      },
+      {
+        "name": "Defense",
+        "amount": 65
+      },
+      {
+        "name": "Special Attack",
+        "amount": 61
+      },
+      {
+        "name": "Special Defense",
+        "amount": 61
+      },
+      {
+        "name": "Speed",
+        "amount": 100
+      }
+    ],
+    "keywords": ["Fearow", "normal", "flying"],
+    "spritePos": {
+      "x": 40,
+      "y": 160
+    }
+  },
+  {
+    "id": 23,
+    "name": "Ekans",
+    "height": 20,
+    "weight": 69,
+    "typeIds": [13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 35
+      },
+      {
+        "name": "Attack",
+        "amount": 60
+      },
+      {
+        "name": "Defense",
+        "amount": 44
+      },
+      {
+        "name": "Special Attack",
+        "amount": 40
+      },
+      {
+        "name": "Special Defense",
+        "amount": 54
+      },
+      {
+        "name": "Speed",
+        "amount": 55
+      }
+    ],
+    "keywords": ["Ekans", "poison"],
+    "spritePos": {
+      "x": 80,
+      "y": 160
+    }
+  },
+  {
+    "id": 24,
+    "name": "Arbok",
+    "height": 35,
+    "weight": 650,
+    "typeIds": [13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 95
+      },
+      {
+        "name": "Defense",
+        "amount": 69
+      },
+      {
+        "name": "Special Attack",
+        "amount": 65
+      },
+      {
+        "name": "Special Defense",
+        "amount": 79
+      },
+      {
+        "name": "Speed",
+        "amount": 80
+      }
+    ],
+    "keywords": ["Arbok", "poison"],
+    "spritePos": {
+      "x": 120,
+      "y": 160
+    }
+  },
+  {
+    "id": 25,
+    "name": "Pikachu",
+    "height": 4,
+    "weight": 60,
+    "typeIds": [3],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 35
+      },
+      {
+        "name": "Attack",
+        "amount": 55
+      },
+      {
+        "name": "Defense",
+        "amount": 40
+      },
+      {
+        "name": "Special Attack",
+        "amount": 50
+      },
+      {
+        "name": "Special Defense",
+        "amount": 50
+      },
+      {
+        "name": "Speed",
+        "amount": 90
+      }
+    ],
+    "keywords": ["Pikachu", "electric"],
+    "spritePos": {
+      "x": 160,
+      "y": 160
+    }
+  },
+  {
+    "id": 26,
+    "name": "Raichu",
+    "height": 8,
+    "weight": 300,
+    "typeIds": [3],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 90
+      },
+      {
+        "name": "Defense",
+        "amount": 55
+      },
+      {
+        "name": "Special Attack",
+        "amount": 90
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 110
+      }
+    ],
+    "keywords": ["Raichu", "electric"],
+    "spritePos": {
+      "x": 200,
+      "y": 0
+    }
+  },
+  {
+    "id": 27,
+    "name": "Sandshrew",
+    "height": 6,
+    "weight": 120,
+    "typeIds": [10],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 50
+      },
+      {
+        "name": "Attack",
+        "amount": 75
+      },
+      {
+        "name": "Defense",
+        "amount": 85
+      },
+      {
+        "name": "Special Attack",
+        "amount": 20
+      },
+      {
+        "name": "Special Defense",
+        "amount": 30
+      },
+      {
+        "name": "Speed",
+        "amount": 40
+      }
+    ],
+    "keywords": ["Sandshrew", "ground"],
+    "spritePos": {
+      "x": 200,
+      "y": 40
+    }
+  },
+  {
+    "id": 28,
+    "name": "Sandslash",
+    "height": 10,
+    "weight": 295,
+    "typeIds": [10],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 75
+      },
+      {
+        "name": "Attack",
+        "amount": 100
+      },
+      {
+        "name": "Defense",
+        "amount": 110
+      },
+      {
+        "name": "Special Attack",
+        "amount": 45
+      },
+      {
+        "name": "Special Defense",
+        "amount": 55
+      },
+      {
+        "name": "Speed",
+        "amount": 65
+      }
+    ],
+    "keywords": ["Sandslash", "ground"],
+    "spritePos": {
+      "x": 200,
+      "y": 80
+    }
+  },
+  {
+    "id": 29,
+    "name": "Nidoran F",
+    "height": 4,
+    "weight": 70,
+    "typeIds": [13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 55
+      },
+      {
+        "name": "Attack",
+        "amount": 47
+      },
+      {
+        "name": "Defense",
+        "amount": 52
+      },
+      {
+        "name": "Special Attack",
+        "amount": 40
+      },
+      {
+        "name": "Special Defense",
+        "amount": 40
+      },
+      {
+        "name": "Speed",
+        "amount": 41
+      }
+    ],
+    "keywords": ["Nidoran F", "poison"],
+    "spritePos": {
+      "x": 200,
+      "y": 120
+    }
+  },
+  {
+    "id": 30,
+    "name": "Nidorina",
+    "height": 8,
+    "weight": 200,
+    "typeIds": [13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 70
+      },
+      {
+        "name": "Attack",
+        "amount": 62
+      },
+      {
+        "name": "Defense",
+        "amount": 67
+      },
+      {
+        "name": "Special Attack",
+        "amount": 55
+      },
+      {
+        "name": "Special Defense",
+        "amount": 55
+      },
+      {
+        "name": "Speed",
+        "amount": 56
+      }
+    ],
+    "keywords": ["Nidorina", "poison"],
+    "spritePos": {
+      "x": 200,
+      "y": 160
+    }
+  },
+  {
+    "id": 31,
+    "name": "Nidoqueen",
+    "height": 13,
+    "weight": 600,
+    "typeIds": [10, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 90
+      },
+      {
+        "name": "Attack",
+        "amount": 92
+      },
+      {
+        "name": "Defense",
+        "amount": 87
+      },
+      {
+        "name": "Special Attack",
+        "amount": 75
+      },
+      {
+        "name": "Special Defense",
+        "amount": 85
+      },
+      {
+        "name": "Speed",
+        "amount": 76
+      }
+    ],
+    "keywords": ["Nidoqueen", "poison", "ground"],
+    "spritePos": {
+      "x": 0,
+      "y": 200
+    }
+  },
+  {
+    "id": 32,
+    "name": "Nidoran M",
+    "height": 5,
+    "weight": 90,
+    "typeIds": [13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 46
+      },
+      {
+        "name": "Attack",
+        "amount": 57
+      },
+      {
+        "name": "Defense",
+        "amount": 40
+      },
+      {
+        "name": "Special Attack",
+        "amount": 40
+      },
+      {
+        "name": "Special Defense",
+        "amount": 40
+      },
+      {
+        "name": "Speed",
+        "amount": 50
+      }
+    ],
+    "keywords": ["Nidoran M", "poison"],
+    "spritePos": {
+      "x": 40,
+      "y": 200
+    }
+  },
+  {
+    "id": 33,
+    "name": "Nidorino",
+    "height": 9,
+    "weight": 195,
+    "typeIds": [13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 61
+      },
+      {
+        "name": "Attack",
+        "amount": 72
+      },
+      {
+        "name": "Defense",
+        "amount": 57
+      },
+      {
+        "name": "Special Attack",
+        "amount": 55
+      },
+      {
+        "name": "Special Defense",
+        "amount": 55
+      },
+      {
+        "name": "Speed",
+        "amount": 65
+      }
+    ],
+    "keywords": ["Nidorino", "poison"],
+    "spritePos": {
+      "x": 80,
+      "y": 200
+    }
+  },
+  {
+    "id": 34,
+    "name": "Nidoking",
+    "height": 14,
+    "weight": 620,
+    "typeIds": [10, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 81
+      },
+      {
+        "name": "Attack",
+        "amount": 102
+      },
+      {
+        "name": "Defense",
+        "amount": 77
+      },
+      {
+        "name": "Special Attack",
+        "amount": 85
+      },
+      {
+        "name": "Special Defense",
+        "amount": 75
+      },
+      {
+        "name": "Speed",
+        "amount": 85
+      }
+    ],
+    "keywords": ["Nidoking", "poison", "ground"],
+    "spritePos": {
+      "x": 120,
+      "y": 200
+    }
+  },
+  {
+    "id": 35,
+    "name": "Clefairy",
+    "height": 6,
+    "weight": 75,
+    "typeIds": [4],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 70
+      },
+      {
+        "name": "Attack",
+        "amount": 45
+      },
+      {
+        "name": "Defense",
+        "amount": 48
+      },
+      {
+        "name": "Special Attack",
+        "amount": 60
+      },
+      {
+        "name": "Special Defense",
+        "amount": 65
+      },
+      {
+        "name": "Speed",
+        "amount": 35
+      }
+    ],
+    "keywords": ["Clefairy", "fairy"],
+    "spritePos": {
+      "x": 160,
+      "y": 200
+    }
+  },
+  {
+    "id": 36,
+    "name": "Clefable",
+    "height": 13,
+    "weight": 400,
+    "typeIds": [4],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 95
+      },
+      {
+        "name": "Attack",
+        "amount": 70
+      },
+      {
+        "name": "Defense",
+        "amount": 73
+      },
+      {
+        "name": "Special Attack",
+        "amount": 95
+      },
+      {
+        "name": "Special Defense",
+        "amount": 90
+      },
+      {
+        "name": "Speed",
+        "amount": 60
+      }
+    ],
+    "keywords": ["Clefable", "fairy"],
+    "spritePos": {
+      "x": 200,
+      "y": 200
+    }
+  },
+  {
+    "id": 37,
+    "name": "Vulpix",
+    "height": 6,
+    "weight": 99,
+    "typeIds": [6],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 38
+      },
+      {
+        "name": "Attack",
+        "amount": 41
+      },
+      {
+        "name": "Defense",
+        "amount": 40
+      },
+      {
+        "name": "Special Attack",
+        "amount": 50
+      },
+      {
+        "name": "Special Defense",
+        "amount": 65
+      },
+      {
+        "name": "Speed",
+        "amount": 65
+      }
+    ],
+    "keywords": ["Vulpix", "fire"],
+    "spritePos": {
+      "x": 240,
+      "y": 0
+    }
+  },
+  {
+    "id": 38,
+    "name": "Ninetales",
+    "height": 11,
+    "weight": 199,
+    "typeIds": [6],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 73
+      },
+      {
+        "name": "Attack",
+        "amount": 76
+      },
+      {
+        "name": "Defense",
+        "amount": 75
+      },
+      {
+        "name": "Special Attack",
+        "amount": 81
+      },
+      {
+        "name": "Special Defense",
+        "amount": 100
+      },
+      {
+        "name": "Speed",
+        "amount": 100
+      }
+    ],
+    "keywords": ["Ninetales", "fire"],
+    "spritePos": {
+      "x": 240,
+      "y": 40
+    }
+  },
+  {
+    "id": 39,
+    "name": "Jigglypuff",
+    "height": 5,
+    "weight": 55,
+    "typeIds": [4, 12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 115
+      },
+      {
+        "name": "Attack",
+        "amount": 45
+      },
+      {
+        "name": "Defense",
+        "amount": 20
+      },
+      {
+        "name": "Special Attack",
+        "amount": 45
+      },
+      {
+        "name": "Special Defense",
+        "amount": 25
+      },
+      {
+        "name": "Speed",
+        "amount": 20
+      }
+    ],
+    "keywords": ["Jigglypuff", "normal", "fairy"],
+    "spritePos": {
+      "x": 240,
+      "y": 80
+    }
+  },
+  {
+    "id": 40,
+    "name": "Wigglytuff",
+    "height": 10,
+    "weight": 120,
+    "typeIds": [4, 12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 140
+      },
+      {
+        "name": "Attack",
+        "amount": 70
+      },
+      {
+        "name": "Defense",
+        "amount": 45
+      },
+      {
+        "name": "Special Attack",
+        "amount": 85
+      },
+      {
+        "name": "Special Defense",
+        "amount": 50
+      },
+      {
+        "name": "Speed",
+        "amount": 45
+      }
+    ],
+    "keywords": ["Wigglytuff", "normal", "fairy"],
+    "spritePos": {
+      "x": 240,
+      "y": 120
+    }
+  },
+  {
+    "id": 41,
+    "name": "Zubat",
+    "height": 8,
+    "weight": 75,
+    "typeIds": [7, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 45
+      },
+      {
+        "name": "Defense",
+        "amount": 35
+      },
+      {
+        "name": "Special Attack",
+        "amount": 30
+      },
+      {
+        "name": "Special Defense",
+        "amount": 40
+      },
+      {
+        "name": "Speed",
+        "amount": 55
+      }
+    ],
+    "keywords": ["Zubat", "poison", "flying"],
+    "spritePos": {
+      "x": 240,
+      "y": 160
+    }
+  },
+  {
+    "id": 42,
+    "name": "Golbat",
+    "height": 16,
+    "weight": 550,
+    "typeIds": [7, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 75
+      },
+      {
+        "name": "Attack",
+        "amount": 80
+      },
+      {
+        "name": "Defense",
+        "amount": 70
+      },
+      {
+        "name": "Special Attack",
+        "amount": 65
+      },
+      {
+        "name": "Special Defense",
+        "amount": 75
+      },
+      {
+        "name": "Speed",
+        "amount": 90
+      }
+    ],
+    "keywords": ["Golbat", "poison", "flying"],
+    "spritePos": {
+      "x": 240,
+      "y": 200
+    }
+  },
+  {
+    "id": 43,
+    "name": "Oddish",
+    "height": 5,
+    "weight": 54,
+    "typeIds": [9, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 45
+      },
+      {
+        "name": "Attack",
+        "amount": 50
+      },
+      {
+        "name": "Defense",
+        "amount": 55
+      },
+      {
+        "name": "Special Attack",
+        "amount": 75
+      },
+      {
+        "name": "Special Defense",
+        "amount": 65
+      },
+      {
+        "name": "Speed",
+        "amount": 30
+      }
+    ],
+    "keywords": ["Oddish", "grass", "poison"],
+    "spritePos": {
+      "x": 0,
+      "y": 240
+    }
+  },
+  {
+    "id": 44,
+    "name": "Gloom",
+    "height": 8,
+    "weight": 86,
+    "typeIds": [9, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 65
+      },
+      {
+        "name": "Defense",
+        "amount": 70
+      },
+      {
+        "name": "Special Attack",
+        "amount": 85
+      },
+      {
+        "name": "Special Defense",
+        "amount": 75
+      },
+      {
+        "name": "Speed",
+        "amount": 40
+      }
+    ],
+    "keywords": ["Gloom", "grass", "poison"],
+    "spritePos": {
+      "x": 40,
+      "y": 240
+    }
+  },
+  {
+    "id": 45,
+    "name": "Vileplume",
+    "height": 12,
+    "weight": 186,
+    "typeIds": [9, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 75
+      },
+      {
+        "name": "Attack",
+        "amount": 80
+      },
+      {
+        "name": "Defense",
+        "amount": 85
+      },
+      {
+        "name": "Special Attack",
+        "amount": 110
+      },
+      {
+        "name": "Special Defense",
+        "amount": 90
+      },
+      {
+        "name": "Speed",
+        "amount": 50
+      }
+    ],
+    "keywords": ["Vileplume", "grass", "poison"],
+    "spritePos": {
+      "x": 80,
+      "y": 240
+    }
+  },
+  {
+    "id": 46,
+    "name": "Paras",
+    "height": 3,
+    "weight": 54,
+    "typeIds": [1, 9],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 35
+      },
+      {
+        "name": "Attack",
+        "amount": 70
+      },
+      {
+        "name": "Defense",
+        "amount": 55
+      },
+      {
+        "name": "Special Attack",
+        "amount": 45
+      },
+      {
+        "name": "Special Defense",
+        "amount": 55
+      },
+      {
+        "name": "Speed",
+        "amount": 25
+      }
+    ],
+    "keywords": ["Paras", "bug", "grass"],
+    "spritePos": {
+      "x": 120,
+      "y": 240
+    }
+  },
+  {
+    "id": 47,
+    "name": "Parasect",
+    "height": 10,
+    "weight": 295,
+    "typeIds": [1, 9],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 95
+      },
+      {
+        "name": "Defense",
+        "amount": 80
+      },
+      {
+        "name": "Special Attack",
+        "amount": 60
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 30
+      }
+    ],
+    "keywords": ["Parasect", "bug", "grass"],
+    "spritePos": {
+      "x": 160,
+      "y": 240
+    }
+  },
+  {
+    "id": 48,
+    "name": "Venonat",
+    "height": 10,
+    "weight": 300,
+    "typeIds": [1, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 55
+      },
+      {
+        "name": "Defense",
+        "amount": 50
+      },
+      {
+        "name": "Special Attack",
+        "amount": 40
+      },
+      {
+        "name": "Special Defense",
+        "amount": 55
+      },
+      {
+        "name": "Speed",
+        "amount": 45
+      }
+    ],
+    "keywords": ["Venonat", "bug", "poison"],
+    "spritePos": {
+      "x": 200,
+      "y": 240
+    }
+  },
+  {
+    "id": 49,
+    "name": "Venomoth",
+    "height": 15,
+    "weight": 125,
+    "typeIds": [1, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 70
+      },
+      {
+        "name": "Attack",
+        "amount": 65
+      },
+      {
+        "name": "Defense",
+        "amount": 60
+      },
+      {
+        "name": "Special Attack",
+        "amount": 90
+      },
+      {
+        "name": "Special Defense",
+        "amount": 75
+      },
+      {
+        "name": "Speed",
+        "amount": 90
+      }
+    ],
+    "keywords": ["Venomoth", "bug", "poison"],
+    "spritePos": {
+      "x": 240,
+      "y": 240
+    }
+  },
+  {
+    "id": 50,
+    "name": "Diglett",
+    "height": 2,
+    "weight": 8,
+    "typeIds": [10],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 10
+      },
+      {
+        "name": "Attack",
+        "amount": 55
+      },
+      {
+        "name": "Defense",
+        "amount": 25
+      },
+      {
+        "name": "Special Attack",
+        "amount": 35
+      },
+      {
+        "name": "Special Defense",
+        "amount": 45
+      },
+      {
+        "name": "Speed",
+        "amount": 95
+      }
+    ],
+    "keywords": ["Diglett", "ground"],
+    "spritePos": {
+      "x": 280,
+      "y": 0
+    }
+  },
+  {
+    "id": 51,
+    "name": "Dugtrio",
+    "height": 7,
+    "weight": 333,
+    "typeIds": [10],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 35
+      },
+      {
+        "name": "Attack",
+        "amount": 100
+      },
+      {
+        "name": "Defense",
+        "amount": 50
+      },
+      {
+        "name": "Special Attack",
+        "amount": 50
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 120
+      }
+    ],
+    "keywords": ["Dugtrio", "ground"],
+    "spritePos": {
+      "x": 280,
+      "y": 40
+    }
+  },
+  {
+    "id": 52,
+    "name": "Meowth",
+    "height": 4,
+    "weight": 42,
+    "typeIds": [12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 45
+      },
+      {
+        "name": "Defense",
+        "amount": 35
+      },
+      {
+        "name": "Special Attack",
+        "amount": 40
+      },
+      {
+        "name": "Special Defense",
+        "amount": 40
+      },
+      {
+        "name": "Speed",
+        "amount": 90
+      }
+    ],
+    "keywords": ["Meowth", "normal"],
+    "spritePos": {
+      "x": 280,
+      "y": 80
+    }
+  },
+  {
+    "id": 53,
+    "name": "Persian",
+    "height": 10,
+    "weight": 320,
+    "typeIds": [12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 70
+      },
+      {
+        "name": "Defense",
+        "amount": 60
+      },
+      {
+        "name": "Special Attack",
+        "amount": 65
+      },
+      {
+        "name": "Special Defense",
+        "amount": 65
+      },
+      {
+        "name": "Speed",
+        "amount": 115
+      }
+    ],
+    "keywords": ["Persian", "normal"],
+    "spritePos": {
+      "x": 280,
+      "y": 120
+    }
+  },
+  {
+    "id": 54,
+    "name": "Psyduck",
+    "height": 8,
+    "weight": 196,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 50
+      },
+      {
+        "name": "Attack",
+        "amount": 52
+      },
+      {
+        "name": "Defense",
+        "amount": 48
+      },
+      {
+        "name": "Special Attack",
+        "amount": 65
+      },
+      {
+        "name": "Special Defense",
+        "amount": 50
+      },
+      {
+        "name": "Speed",
+        "amount": 55
+      }
+    ],
+    "keywords": ["Psyduck", "water"],
+    "spritePos": {
+      "x": 280,
+      "y": 160
+    }
+  },
+  {
+    "id": 55,
+    "name": "Golduck",
+    "height": 17,
+    "weight": 766,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 80
+      },
+      {
+        "name": "Attack",
+        "amount": 82
+      },
+      {
+        "name": "Defense",
+        "amount": 78
+      },
+      {
+        "name": "Special Attack",
+        "amount": 95
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 85
+      }
+    ],
+    "keywords": ["Golduck", "water"],
+    "spritePos": {
+      "x": 280,
+      "y": 200
+    }
+  },
+  {
+    "id": 56,
+    "name": "Mankey",
+    "height": 5,
+    "weight": 280,
+    "typeIds": [5],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 80
+      },
+      {
+        "name": "Defense",
+        "amount": 35
+      },
+      {
+        "name": "Special Attack",
+        "amount": 35
+      },
+      {
+        "name": "Special Defense",
+        "amount": 45
+      },
+      {
+        "name": "Speed",
+        "amount": 70
+      }
+    ],
+    "keywords": ["Mankey", "fighting"],
+    "spritePos": {
+      "x": 280,
+      "y": 240
+    }
+  },
+  {
+    "id": 57,
+    "name": "Primeape",
+    "height": 10,
+    "weight": 320,
+    "typeIds": [5],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 105
+      },
+      {
+        "name": "Defense",
+        "amount": 60
+      },
+      {
+        "name": "Special Attack",
+        "amount": 60
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 95
+      }
+    ],
+    "keywords": ["Primeape", "fighting"],
+    "spritePos": {
+      "x": 0,
+      "y": 280
+    }
+  },
+  {
+    "id": 58,
+    "name": "Growlithe",
+    "height": 7,
+    "weight": 190,
+    "typeIds": [6],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 55
+      },
+      {
+        "name": "Attack",
+        "amount": 70
+      },
+      {
+        "name": "Defense",
+        "amount": 45
+      },
+      {
+        "name": "Special Attack",
+        "amount": 70
+      },
+      {
+        "name": "Special Defense",
+        "amount": 50
+      },
+      {
+        "name": "Speed",
+        "amount": 60
+      }
+    ],
+    "keywords": ["Growlithe", "fire"],
+    "spritePos": {
+      "x": 40,
+      "y": 280
+    }
+  },
+  {
+    "id": 59,
+    "name": "Arcanine",
+    "height": 19,
+    "weight": 1550,
+    "typeIds": [6],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 90
+      },
+      {
+        "name": "Attack",
+        "amount": 110
+      },
+      {
+        "name": "Defense",
+        "amount": 80
+      },
+      {
+        "name": "Special Attack",
+        "amount": 100
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 95
+      }
+    ],
+    "keywords": ["Arcanine", "fire"],
+    "spritePos": {
+      "x": 80,
+      "y": 280
+    }
+  },
+  {
+    "id": 60,
+    "name": "Poliwag",
+    "height": 6,
+    "weight": 124,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 50
+      },
+      {
+        "name": "Defense",
+        "amount": 40
+      },
+      {
+        "name": "Special Attack",
+        "amount": 40
+      },
+      {
+        "name": "Special Defense",
+        "amount": 40
+      },
+      {
+        "name": "Speed",
+        "amount": 90
+      }
+    ],
+    "keywords": ["Poliwag", "water"],
+    "spritePos": {
+      "x": 120,
+      "y": 280
+    }
+  },
+  {
+    "id": 61,
+    "name": "Poliwhirl",
+    "height": 10,
+    "weight": 200,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 65
+      },
+      {
+        "name": "Defense",
+        "amount": 65
+      },
+      {
+        "name": "Special Attack",
+        "amount": 50
+      },
+      {
+        "name": "Special Defense",
+        "amount": 50
+      },
+      {
+        "name": "Speed",
+        "amount": 90
+      }
+    ],
+    "keywords": ["Poliwhirl", "water"],
+    "spritePos": {
+      "x": 160,
+      "y": 280
+    }
+  },
+  {
+    "id": 62,
+    "name": "Poliwrath",
+    "height": 13,
+    "weight": 540,
+    "typeIds": [5, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 90
+      },
+      {
+        "name": "Attack",
+        "amount": 95
+      },
+      {
+        "name": "Defense",
+        "amount": 95
+      },
+      {
+        "name": "Special Attack",
+        "amount": 70
+      },
+      {
+        "name": "Special Defense",
+        "amount": 90
+      },
+      {
+        "name": "Speed",
+        "amount": 70
+      }
+    ],
+    "keywords": ["Poliwrath", "water", "fighting"],
+    "spritePos": {
+      "x": 200,
+      "y": 280
+    }
+  },
+  {
+    "id": 63,
+    "name": "Abra",
+    "height": 9,
+    "weight": 195,
+    "typeIds": [14],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 25
+      },
+      {
+        "name": "Attack",
+        "amount": 20
+      },
+      {
+        "name": "Defense",
+        "amount": 15
+      },
+      {
+        "name": "Special Attack",
+        "amount": 105
+      },
+      {
+        "name": "Special Defense",
+        "amount": 55
+      },
+      {
+        "name": "Speed",
+        "amount": 90
+      }
+    ],
+    "keywords": ["Abra", "psychic"],
+    "spritePos": {
+      "x": 240,
+      "y": 280
+    }
+  },
+  {
+    "id": 64,
+    "name": "Kadabra",
+    "height": 13,
+    "weight": 565,
+    "typeIds": [14],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 35
+      },
+      {
+        "name": "Defense",
+        "amount": 30
+      },
+      {
+        "name": "Special Attack",
+        "amount": 120
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 105
+      }
+    ],
+    "keywords": ["Kadabra", "psychic"],
+    "spritePos": {
+      "x": 280,
+      "y": 280
+    }
+  },
+  {
+    "id": 65,
+    "name": "Alakazam",
+    "height": 15,
+    "weight": 480,
+    "typeIds": [14],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 55
+      },
+      {
+        "name": "Attack",
+        "amount": 50
+      },
+      {
+        "name": "Defense",
+        "amount": 45
+      },
+      {
+        "name": "Special Attack",
+        "amount": 135
+      },
+      {
+        "name": "Special Defense",
+        "amount": 95
+      },
+      {
+        "name": "Speed",
+        "amount": 120
+      }
+    ],
+    "keywords": ["Alakazam", "psychic"],
+    "spritePos": {
+      "x": 320,
+      "y": 0
+    }
+  },
+  {
+    "id": 66,
+    "name": "Machop",
+    "height": 8,
+    "weight": 195,
+    "typeIds": [5],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 70
+      },
+      {
+        "name": "Attack",
+        "amount": 80
+      },
+      {
+        "name": "Defense",
+        "amount": 50
+      },
+      {
+        "name": "Special Attack",
+        "amount": 35
+      },
+      {
+        "name": "Special Defense",
+        "amount": 35
+      },
+      {
+        "name": "Speed",
+        "amount": 35
+      }
+    ],
+    "keywords": ["Machop", "fighting"],
+    "spritePos": {
+      "x": 320,
+      "y": 40
+    }
+  },
+  {
+    "id": 67,
+    "name": "Machoke",
+    "height": 15,
+    "weight": 705,
+    "typeIds": [5],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 80
+      },
+      {
+        "name": "Attack",
+        "amount": 100
+      },
+      {
+        "name": "Defense",
+        "amount": 70
+      },
+      {
+        "name": "Special Attack",
+        "amount": 50
+      },
+      {
+        "name": "Special Defense",
+        "amount": 60
+      },
+      {
+        "name": "Speed",
+        "amount": 45
+      }
+    ],
+    "keywords": ["Machoke", "fighting"],
+    "spritePos": {
+      "x": 320,
+      "y": 80
+    }
+  },
+  {
+    "id": 68,
+    "name": "Machamp",
+    "height": 16,
+    "weight": 1300,
+    "typeIds": [5],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 90
+      },
+      {
+        "name": "Attack",
+        "amount": 130
+      },
+      {
+        "name": "Defense",
+        "amount": 80
+      },
+      {
+        "name": "Special Attack",
+        "amount": 65
+      },
+      {
+        "name": "Special Defense",
+        "amount": 85
+      },
+      {
+        "name": "Speed",
+        "amount": 55
+      }
+    ],
+    "keywords": ["Machamp", "fighting"],
+    "spritePos": {
+      "x": 320,
+      "y": 120
+    }
+  },
+  {
+    "id": 69,
+    "name": "Bellsprout",
+    "height": 7,
+    "weight": 40,
+    "typeIds": [9, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 50
+      },
+      {
+        "name": "Attack",
+        "amount": 75
+      },
+      {
+        "name": "Defense",
+        "amount": 35
+      },
+      {
+        "name": "Special Attack",
+        "amount": 70
+      },
+      {
+        "name": "Special Defense",
+        "amount": 30
+      },
+      {
+        "name": "Speed",
+        "amount": 40
+      }
+    ],
+    "keywords": ["Bellsprout", "grass", "poison"],
+    "spritePos": {
+      "x": 320,
+      "y": 160
+    }
+  },
+  {
+    "id": 70,
+    "name": "Weepinbell",
+    "height": 10,
+    "weight": 64,
+    "typeIds": [9, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 90
+      },
+      {
+        "name": "Defense",
+        "amount": 50
+      },
+      {
+        "name": "Special Attack",
+        "amount": 85
+      },
+      {
+        "name": "Special Defense",
+        "amount": 45
+      },
+      {
+        "name": "Speed",
+        "amount": 55
+      }
+    ],
+    "keywords": ["Weepinbell", "grass", "poison"],
+    "spritePos": {
+      "x": 320,
+      "y": 200
+    }
+  },
+  {
+    "id": 71,
+    "name": "Victreebel",
+    "height": 17,
+    "weight": 155,
+    "typeIds": [9, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 80
+      },
+      {
+        "name": "Attack",
+        "amount": 105
+      },
+      {
+        "name": "Defense",
+        "amount": 65
+      },
+      {
+        "name": "Special Attack",
+        "amount": 100
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 70
+      }
+    ],
+    "keywords": ["Victreebel", "grass", "poison"],
+    "spritePos": {
+      "x": 320,
+      "y": 240
+    }
+  },
+  {
+    "id": 72,
+    "name": "Tentacool",
+    "height": 9,
+    "weight": 455,
+    "typeIds": [13, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 40
+      },
+      {
+        "name": "Defense",
+        "amount": 35
+      },
+      {
+        "name": "Special Attack",
+        "amount": 50
+      },
+      {
+        "name": "Special Defense",
+        "amount": 100
+      },
+      {
+        "name": "Speed",
+        "amount": 70
+      }
+    ],
+    "keywords": ["Tentacool", "water", "poison"],
+    "spritePos": {
+      "x": 320,
+      "y": 280
+    }
+  },
+  {
+    "id": 73,
+    "name": "Tentacruel",
+    "height": 16,
+    "weight": 550,
+    "typeIds": [13, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 80
+      },
+      {
+        "name": "Attack",
+        "amount": 70
+      },
+      {
+        "name": "Defense",
+        "amount": 65
+      },
+      {
+        "name": "Special Attack",
+        "amount": 80
+      },
+      {
+        "name": "Special Defense",
+        "amount": 120
+      },
+      {
+        "name": "Speed",
+        "amount": 100
+      }
+    ],
+    "keywords": ["Tentacruel", "water", "poison"],
+    "spritePos": {
+      "x": 0,
+      "y": 320
+    }
+  },
+  {
+    "id": 74,
+    "name": "Geodude",
+    "height": 4,
+    "weight": 200,
+    "typeIds": [10, 15],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 80
+      },
+      {
+        "name": "Defense",
+        "amount": 100
+      },
+      {
+        "name": "Special Attack",
+        "amount": 30
+      },
+      {
+        "name": "Special Defense",
+        "amount": 30
+      },
+      {
+        "name": "Speed",
+        "amount": 20
+      }
+    ],
+    "keywords": ["Geodude", "rock", "ground"],
+    "spritePos": {
+      "x": 40,
+      "y": 320
+    }
+  },
+  {
+    "id": 75,
+    "name": "Graveler",
+    "height": 10,
+    "weight": 1050,
+    "typeIds": [10, 15],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 55
+      },
+      {
+        "name": "Attack",
+        "amount": 95
+      },
+      {
+        "name": "Defense",
+        "amount": 115
+      },
+      {
+        "name": "Special Attack",
+        "amount": 45
+      },
+      {
+        "name": "Special Defense",
+        "amount": 45
+      },
+      {
+        "name": "Speed",
+        "amount": 35
+      }
+    ],
+    "keywords": ["Graveler", "rock", "ground"],
+    "spritePos": {
+      "x": 80,
+      "y": 320
+    }
+  },
+  {
+    "id": 76,
+    "name": "Golem",
+    "height": 14,
+    "weight": 3000,
+    "typeIds": [10, 15],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 80
+      },
+      {
+        "name": "Attack",
+        "amount": 120
+      },
+      {
+        "name": "Defense",
+        "amount": 130
+      },
+      {
+        "name": "Special Attack",
+        "amount": 55
+      },
+      {
+        "name": "Special Defense",
+        "amount": 65
+      },
+      {
+        "name": "Speed",
+        "amount": 45
+      }
+    ],
+    "keywords": ["Golem", "rock", "ground"],
+    "spritePos": {
+      "x": 120,
+      "y": 320
+    }
+  },
+  {
+    "id": 77,
+    "name": "Ponyta",
+    "height": 10,
+    "weight": 300,
+    "typeIds": [6],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 50
+      },
+      {
+        "name": "Attack",
+        "amount": 85
+      },
+      {
+        "name": "Defense",
+        "amount": 55
+      },
+      {
+        "name": "Special Attack",
+        "amount": 65
+      },
+      {
+        "name": "Special Defense",
+        "amount": 65
+      },
+      {
+        "name": "Speed",
+        "amount": 90
+      }
+    ],
+    "keywords": ["Ponyta", "fire"],
+    "spritePos": {
+      "x": 160,
+      "y": 320
+    }
+  },
+  {
+    "id": 78,
+    "name": "Rapidash",
+    "height": 17,
+    "weight": 950,
+    "typeIds": [6],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 100
+      },
+      {
+        "name": "Defense",
+        "amount": 70
+      },
+      {
+        "name": "Special Attack",
+        "amount": 80
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 105
+      }
+    ],
+    "keywords": ["Rapidash", "fire"],
+    "spritePos": {
+      "x": 200,
+      "y": 320
+    }
+  },
+  {
+    "id": 79,
+    "name": "Slowpoke",
+    "height": 12,
+    "weight": 360,
+    "typeIds": [14, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 90
+      },
+      {
+        "name": "Attack",
+        "amount": 65
+      },
+      {
+        "name": "Defense",
+        "amount": 65
+      },
+      {
+        "name": "Special Attack",
+        "amount": 40
+      },
+      {
+        "name": "Special Defense",
+        "amount": 40
+      },
+      {
+        "name": "Speed",
+        "amount": 15
+      }
+    ],
+    "keywords": ["Slowpoke", "water", "psychic"],
+    "spritePos": {
+      "x": 240,
+      "y": 320
+    }
+  },
+  {
+    "id": 80,
+    "name": "Slowbro",
+    "height": 16,
+    "weight": 785,
+    "typeIds": [14, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 95
+      },
+      {
+        "name": "Attack",
+        "amount": 75
+      },
+      {
+        "name": "Defense",
+        "amount": 110
+      },
+      {
+        "name": "Special Attack",
+        "amount": 100
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 30
+      }
+    ],
+    "keywords": ["Slowbro", "water", "psychic"],
+    "spritePos": {
+      "x": 280,
+      "y": 320
+    }
+  },
+  {
+    "id": 81,
+    "name": "Magnemite",
+    "height": 3,
+    "weight": 60,
+    "typeIds": [3, 16],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 25
+      },
+      {
+        "name": "Attack",
+        "amount": 35
+      },
+      {
+        "name": "Defense",
+        "amount": 70
+      },
+      {
+        "name": "Special Attack",
+        "amount": 95
+      },
+      {
+        "name": "Special Defense",
+        "amount": 55
+      },
+      {
+        "name": "Speed",
+        "amount": 45
+      }
+    ],
+    "keywords": ["Magnemite", "electric", "steel"],
+    "spritePos": {
+      "x": 320,
+      "y": 320
+    }
+  },
+  {
+    "id": 82,
+    "name": "Magneton",
+    "height": 10,
+    "weight": 600,
+    "typeIds": [3, 16],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 50
+      },
+      {
+        "name": "Attack",
+        "amount": 60
+      },
+      {
+        "name": "Defense",
+        "amount": 95
+      },
+      {
+        "name": "Special Attack",
+        "amount": 120
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 70
+      }
+    ],
+    "keywords": ["Magneton", "electric", "steel"],
+    "spritePos": {
+      "x": 360,
+      "y": 0
+    }
+  },
+  {
+    "id": 83,
+    "name": "Farfetchd",
+    "height": 8,
+    "weight": 150,
+    "typeIds": [7, 12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 52
+      },
+      {
+        "name": "Attack",
+        "amount": 90
+      },
+      {
+        "name": "Defense",
+        "amount": 55
+      },
+      {
+        "name": "Special Attack",
+        "amount": 58
+      },
+      {
+        "name": "Special Defense",
+        "amount": 62
+      },
+      {
+        "name": "Speed",
+        "amount": 60
+      }
+    ],
+    "keywords": ["Farfetchd", "normal", "flying"],
+    "spritePos": {
+      "x": 360,
+      "y": 40
+    }
+  },
+  {
+    "id": 84,
+    "name": "Doduo",
+    "height": 14,
+    "weight": 392,
+    "typeIds": [7, 12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 35
+      },
+      {
+        "name": "Attack",
+        "amount": 85
+      },
+      {
+        "name": "Defense",
+        "amount": 45
+      },
+      {
+        "name": "Special Attack",
+        "amount": 35
+      },
+      {
+        "name": "Special Defense",
+        "amount": 35
+      },
+      {
+        "name": "Speed",
+        "amount": 75
+      }
+    ],
+    "keywords": ["Doduo", "normal", "flying"],
+    "spritePos": {
+      "x": 360,
+      "y": 80
+    }
+  },
+  {
+    "id": 85,
+    "name": "Dodrio",
+    "height": 18,
+    "weight": 852,
+    "typeIds": [7, 12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 110
+      },
+      {
+        "name": "Defense",
+        "amount": 70
+      },
+      {
+        "name": "Special Attack",
+        "amount": 60
+      },
+      {
+        "name": "Special Defense",
+        "amount": 60
+      },
+      {
+        "name": "Speed",
+        "amount": 110
+      }
+    ],
+    "keywords": ["Dodrio", "normal", "flying"],
+    "spritePos": {
+      "x": 360,
+      "y": 120
+    }
+  },
+  {
+    "id": 86,
+    "name": "Seel",
+    "height": 11,
+    "weight": 900,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 45
+      },
+      {
+        "name": "Defense",
+        "amount": 55
+      },
+      {
+        "name": "Special Attack",
+        "amount": 45
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 45
+      }
+    ],
+    "keywords": ["Seel", "water"],
+    "spritePos": {
+      "x": 360,
+      "y": 160
+    }
+  },
+  {
+    "id": 87,
+    "name": "Dewgong",
+    "height": 17,
+    "weight": 1200,
+    "typeIds": [11, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 90
+      },
+      {
+        "name": "Attack",
+        "amount": 70
+      },
+      {
+        "name": "Defense",
+        "amount": 80
+      },
+      {
+        "name": "Special Attack",
+        "amount": 70
+      },
+      {
+        "name": "Special Defense",
+        "amount": 95
+      },
+      {
+        "name": "Speed",
+        "amount": 70
+      }
+    ],
+    "keywords": ["Dewgong", "water", "ice"],
+    "spritePos": {
+      "x": 360,
+      "y": 200
+    }
+  },
+  {
+    "id": 88,
+    "name": "Grimer",
+    "height": 9,
+    "weight": 300,
+    "typeIds": [13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 80
+      },
+      {
+        "name": "Attack",
+        "amount": 80
+      },
+      {
+        "name": "Defense",
+        "amount": 50
+      },
+      {
+        "name": "Special Attack",
+        "amount": 40
+      },
+      {
+        "name": "Special Defense",
+        "amount": 50
+      },
+      {
+        "name": "Speed",
+        "amount": 25
+      }
+    ],
+    "keywords": ["Grimer", "poison"],
+    "spritePos": {
+      "x": 360,
+      "y": 240
+    }
+  },
+  {
+    "id": 89,
+    "name": "Muk",
+    "height": 12,
+    "weight": 300,
+    "typeIds": [13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 105
+      },
+      {
+        "name": "Attack",
+        "amount": 105
+      },
+      {
+        "name": "Defense",
+        "amount": 75
+      },
+      {
+        "name": "Special Attack",
+        "amount": 65
+      },
+      {
+        "name": "Special Defense",
+        "amount": 100
+      },
+      {
+        "name": "Speed",
+        "amount": 50
+      }
+    ],
+    "keywords": ["Muk", "poison"],
+    "spritePos": {
+      "x": 360,
+      "y": 280
+    }
+  },
+  {
+    "id": 90,
+    "name": "Shellder",
+    "height": 3,
+    "weight": 40,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 30
+      },
+      {
+        "name": "Attack",
+        "amount": 65
+      },
+      {
+        "name": "Defense",
+        "amount": 100
+      },
+      {
+        "name": "Special Attack",
+        "amount": 45
+      },
+      {
+        "name": "Special Defense",
+        "amount": 25
+      },
+      {
+        "name": "Speed",
+        "amount": 40
+      }
+    ],
+    "keywords": ["Shellder", "water"],
+    "spritePos": {
+      "x": 360,
+      "y": 320
+    }
+  },
+  {
+    "id": 91,
+    "name": "Cloyster",
+    "height": 15,
+    "weight": 1325,
+    "typeIds": [11, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 50
+      },
+      {
+        "name": "Attack",
+        "amount": 95
+      },
+      {
+        "name": "Defense",
+        "amount": 180
+      },
+      {
+        "name": "Special Attack",
+        "amount": 85
+      },
+      {
+        "name": "Special Defense",
+        "amount": 45
+      },
+      {
+        "name": "Speed",
+        "amount": 70
+      }
+    ],
+    "keywords": ["Cloyster", "water", "ice"],
+    "spritePos": {
+      "x": 0,
+      "y": 360
+    }
+  },
+  {
+    "id": 92,
+    "name": "Gastly",
+    "height": 13,
+    "weight": 1,
+    "typeIds": [8, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 30
+      },
+      {
+        "name": "Attack",
+        "amount": 35
+      },
+      {
+        "name": "Defense",
+        "amount": 30
+      },
+      {
+        "name": "Special Attack",
+        "amount": 100
+      },
+      {
+        "name": "Special Defense",
+        "amount": 35
+      },
+      {
+        "name": "Speed",
+        "amount": 80
+      }
+    ],
+    "keywords": ["Gastly", "ghost", "poison"],
+    "spritePos": {
+      "x": 40,
+      "y": 360
+    }
+  },
+  {
+    "id": 93,
+    "name": "Haunter",
+    "height": 16,
+    "weight": 1,
+    "typeIds": [8, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 45
+      },
+      {
+        "name": "Attack",
+        "amount": 50
+      },
+      {
+        "name": "Defense",
+        "amount": 45
+      },
+      {
+        "name": "Special Attack",
+        "amount": 115
+      },
+      {
+        "name": "Special Defense",
+        "amount": 55
+      },
+      {
+        "name": "Speed",
+        "amount": 95
+      }
+    ],
+    "keywords": ["Haunter", "ghost", "poison"],
+    "spritePos": {
+      "x": 80,
+      "y": 360
+    }
+  },
+  {
+    "id": 94,
+    "name": "Gengar",
+    "height": 15,
+    "weight": 405,
+    "typeIds": [8, 13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 65
+      },
+      {
+        "name": "Defense",
+        "amount": 60
+      },
+      {
+        "name": "Special Attack",
+        "amount": 130
+      },
+      {
+        "name": "Special Defense",
+        "amount": 75
+      },
+      {
+        "name": "Speed",
+        "amount": 110
+      }
+    ],
+    "keywords": ["Gengar", "ghost", "poison"],
+    "spritePos": {
+      "x": 120,
+      "y": 360
+    }
+  },
+  {
+    "id": 95,
+    "name": "Onix",
+    "height": 88,
+    "weight": 2100,
+    "typeIds": [10, 15],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 35
+      },
+      {
+        "name": "Attack",
+        "amount": 45
+      },
+      {
+        "name": "Defense",
+        "amount": 160
+      },
+      {
+        "name": "Special Attack",
+        "amount": 30
+      },
+      {
+        "name": "Special Defense",
+        "amount": 45
+      },
+      {
+        "name": "Speed",
+        "amount": 70
+      }
+    ],
+    "keywords": ["Onix", "rock", "ground"],
+    "spritePos": {
+      "x": 160,
+      "y": 360
+    }
+  },
+  {
+    "id": 96,
+    "name": "Drowzee",
+    "height": 10,
+    "weight": 324,
+    "typeIds": [14],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 48
+      },
+      {
+        "name": "Defense",
+        "amount": 45
+      },
+      {
+        "name": "Special Attack",
+        "amount": 43
+      },
+      {
+        "name": "Special Defense",
+        "amount": 90
+      },
+      {
+        "name": "Speed",
+        "amount": 42
+      }
+    ],
+    "keywords": ["Drowzee", "psychic"],
+    "spritePos": {
+      "x": 200,
+      "y": 360
+    }
+  },
+  {
+    "id": 97,
+    "name": "Hypno",
+    "height": 16,
+    "weight": 756,
+    "typeIds": [14],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 85
+      },
+      {
+        "name": "Attack",
+        "amount": 73
+      },
+      {
+        "name": "Defense",
+        "amount": 70
+      },
+      {
+        "name": "Special Attack",
+        "amount": 73
+      },
+      {
+        "name": "Special Defense",
+        "amount": 115
+      },
+      {
+        "name": "Speed",
+        "amount": 67
+      }
+    ],
+    "keywords": ["Hypno", "psychic"],
+    "spritePos": {
+      "x": 240,
+      "y": 360
+    }
+  },
+  {
+    "id": 98,
+    "name": "Krabby",
+    "height": 4,
+    "weight": 65,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 30
+      },
+      {
+        "name": "Attack",
+        "amount": 105
+      },
+      {
+        "name": "Defense",
+        "amount": 90
+      },
+      {
+        "name": "Special Attack",
+        "amount": 25
+      },
+      {
+        "name": "Special Defense",
+        "amount": 25
+      },
+      {
+        "name": "Speed",
+        "amount": 50
+      }
+    ],
+    "keywords": ["Krabby", "water"],
+    "spritePos": {
+      "x": 280,
+      "y": 360
+    }
+  },
+  {
+    "id": 99,
+    "name": "Kingler",
+    "height": 13,
+    "weight": 600,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 55
+      },
+      {
+        "name": "Attack",
+        "amount": 130
+      },
+      {
+        "name": "Defense",
+        "amount": 115
+      },
+      {
+        "name": "Special Attack",
+        "amount": 50
+      },
+      {
+        "name": "Special Defense",
+        "amount": 50
+      },
+      {
+        "name": "Speed",
+        "amount": 75
+      }
+    ],
+    "keywords": ["Kingler", "water"],
+    "spritePos": {
+      "x": 320,
+      "y": 360
+    }
+  },
+  {
+    "id": 100,
+    "name": "Voltorb",
+    "height": 5,
+    "weight": 104,
+    "typeIds": [3],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 30
+      },
+      {
+        "name": "Defense",
+        "amount": 50
+      },
+      {
+        "name": "Special Attack",
+        "amount": 55
+      },
+      {
+        "name": "Special Defense",
+        "amount": 55
+      },
+      {
+        "name": "Speed",
+        "amount": 100
+      }
+    ],
+    "keywords": ["Voltorb", "electric"],
+    "spritePos": {
+      "x": 360,
+      "y": 360
+    }
+  },
+  {
+    "id": 101,
+    "name": "Electrode",
+    "height": 12,
+    "weight": 666,
+    "typeIds": [3],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 50
+      },
+      {
+        "name": "Defense",
+        "amount": 70
+      },
+      {
+        "name": "Special Attack",
+        "amount": 80
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 150
+      }
+    ],
+    "keywords": ["Electrode", "electric"],
+    "spritePos": {
+      "x": 400,
+      "y": 0
+    }
+  },
+  {
+    "id": 102,
+    "name": "Exeggcute",
+    "height": 4,
+    "weight": 25,
+    "typeIds": [9, 14],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 40
+      },
+      {
+        "name": "Defense",
+        "amount": 80
+      },
+      {
+        "name": "Special Attack",
+        "amount": 60
+      },
+      {
+        "name": "Special Defense",
+        "amount": 45
+      },
+      {
+        "name": "Speed",
+        "amount": 40
+      }
+    ],
+    "keywords": ["Exeggcute", "grass", "psychic"],
+    "spritePos": {
+      "x": 400,
+      "y": 40
+    }
+  },
+  {
+    "id": 103,
+    "name": "Exeggutor",
+    "height": 20,
+    "weight": 1200,
+    "typeIds": [9, 14],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 95
+      },
+      {
+        "name": "Attack",
+        "amount": 95
+      },
+      {
+        "name": "Defense",
+        "amount": 85
+      },
+      {
+        "name": "Special Attack",
+        "amount": 125
+      },
+      {
+        "name": "Special Defense",
+        "amount": 75
+      },
+      {
+        "name": "Speed",
+        "amount": 55
+      }
+    ],
+    "keywords": ["Exeggutor", "grass", "psychic"],
+    "spritePos": {
+      "x": 400,
+      "y": 80
+    }
+  },
+  {
+    "id": 104,
+    "name": "Cubone",
+    "height": 4,
+    "weight": 65,
+    "typeIds": [10],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 50
+      },
+      {
+        "name": "Attack",
+        "amount": 50
+      },
+      {
+        "name": "Defense",
+        "amount": 95
+      },
+      {
+        "name": "Special Attack",
+        "amount": 40
+      },
+      {
+        "name": "Special Defense",
+        "amount": 50
+      },
+      {
+        "name": "Speed",
+        "amount": 35
+      }
+    ],
+    "keywords": ["Cubone", "ground"],
+    "spritePos": {
+      "x": 400,
+      "y": 120
+    }
+  },
+  {
+    "id": 105,
+    "name": "Marowak",
+    "height": 10,
+    "weight": 450,
+    "typeIds": [10],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 80
+      },
+      {
+        "name": "Defense",
+        "amount": 110
+      },
+      {
+        "name": "Special Attack",
+        "amount": 50
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 45
+      }
+    ],
+    "keywords": ["Marowak", "ground"],
+    "spritePos": {
+      "x": 400,
+      "y": 160
+    }
+  },
+  {
+    "id": 106,
+    "name": "Hitmonlee",
+    "height": 15,
+    "weight": 498,
+    "typeIds": [5],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 50
+      },
+      {
+        "name": "Attack",
+        "amount": 120
+      },
+      {
+        "name": "Defense",
+        "amount": 53
+      },
+      {
+        "name": "Special Attack",
+        "amount": 35
+      },
+      {
+        "name": "Special Defense",
+        "amount": 110
+      },
+      {
+        "name": "Speed",
+        "amount": 87
+      }
+    ],
+    "keywords": ["Hitmonlee", "fighting"],
+    "spritePos": {
+      "x": 400,
+      "y": 200
+    }
+  },
+  {
+    "id": 107,
+    "name": "Hitmonchan",
+    "height": 14,
+    "weight": 502,
+    "typeIds": [5],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 50
+      },
+      {
+        "name": "Attack",
+        "amount": 105
+      },
+      {
+        "name": "Defense",
+        "amount": 79
+      },
+      {
+        "name": "Special Attack",
+        "amount": 35
+      },
+      {
+        "name": "Special Defense",
+        "amount": 110
+      },
+      {
+        "name": "Speed",
+        "amount": 76
+      }
+    ],
+    "keywords": ["Hitmonchan", "fighting"],
+    "spritePos": {
+      "x": 400,
+      "y": 240
+    }
+  },
+  {
+    "id": 108,
+    "name": "Lickitung",
+    "height": 12,
+    "weight": 655,
+    "typeIds": [12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 90
+      },
+      {
+        "name": "Attack",
+        "amount": 55
+      },
+      {
+        "name": "Defense",
+        "amount": 75
+      },
+      {
+        "name": "Special Attack",
+        "amount": 60
+      },
+      {
+        "name": "Special Defense",
+        "amount": 75
+      },
+      {
+        "name": "Speed",
+        "amount": 30
+      }
+    ],
+    "keywords": ["Lickitung", "normal"],
+    "spritePos": {
+      "x": 400,
+      "y": 280
+    }
+  },
+  {
+    "id": 109,
+    "name": "Koffing",
+    "height": 6,
+    "weight": 10,
+    "typeIds": [13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 65
+      },
+      {
+        "name": "Defense",
+        "amount": 95
+      },
+      {
+        "name": "Special Attack",
+        "amount": 60
+      },
+      {
+        "name": "Special Defense",
+        "amount": 45
+      },
+      {
+        "name": "Speed",
+        "amount": 35
+      }
+    ],
+    "keywords": ["Koffing", "poison"],
+    "spritePos": {
+      "x": 400,
+      "y": 320
+    }
+  },
+  {
+    "id": 110,
+    "name": "Weezing",
+    "height": 12,
+    "weight": 95,
+    "typeIds": [13],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 90
+      },
+      {
+        "name": "Defense",
+        "amount": 120
+      },
+      {
+        "name": "Special Attack",
+        "amount": 85
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 60
+      }
+    ],
+    "keywords": ["Weezing", "poison"],
+    "spritePos": {
+      "x": 400,
+      "y": 360
+    }
+  },
+  {
+    "id": 111,
+    "name": "Rhyhorn",
+    "height": 10,
+    "weight": 1150,
+    "typeIds": [10, 15],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 80
+      },
+      {
+        "name": "Attack",
+        "amount": 85
+      },
+      {
+        "name": "Defense",
+        "amount": 95
+      },
+      {
+        "name": "Special Attack",
+        "amount": 30
+      },
+      {
+        "name": "Special Defense",
+        "amount": 30
+      },
+      {
+        "name": "Speed",
+        "amount": 25
+      }
+    ],
+    "keywords": ["Rhyhorn", "ground", "rock"],
+    "spritePos": {
+      "x": 0,
+      "y": 400
+    }
+  },
+  {
+    "id": 112,
+    "name": "Rhydon",
+    "height": 19,
+    "weight": 1200,
+    "typeIds": [10, 15],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 105
+      },
+      {
+        "name": "Attack",
+        "amount": 130
+      },
+      {
+        "name": "Defense",
+        "amount": 120
+      },
+      {
+        "name": "Special Attack",
+        "amount": 45
+      },
+      {
+        "name": "Special Defense",
+        "amount": 45
+      },
+      {
+        "name": "Speed",
+        "amount": 40
+      }
+    ],
+    "keywords": ["Rhydon", "ground", "rock"],
+    "spritePos": {
+      "x": 40,
+      "y": 400
+    }
+  },
+  {
+    "id": 113,
+    "name": "Chansey",
+    "height": 11,
+    "weight": 346,
+    "typeIds": [12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 250
+      },
+      {
+        "name": "Attack",
+        "amount": 5
+      },
+      {
+        "name": "Defense",
+        "amount": 5
+      },
+      {
+        "name": "Special Attack",
+        "amount": 35
+      },
+      {
+        "name": "Special Defense",
+        "amount": 105
+      },
+      {
+        "name": "Speed",
+        "amount": 50
+      }
+    ],
+    "keywords": ["Chansey", "normal"],
+    "spritePos": {
+      "x": 80,
+      "y": 400
+    }
+  },
+  {
+    "id": 114,
+    "name": "Tangela",
+    "height": 10,
+    "weight": 350,
+    "typeIds": [9],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 55
+      },
+      {
+        "name": "Defense",
+        "amount": 115
+      },
+      {
+        "name": "Special Attack",
+        "amount": 100
+      },
+      {
+        "name": "Special Defense",
+        "amount": 40
+      },
+      {
+        "name": "Speed",
+        "amount": 60
+      }
+    ],
+    "keywords": ["Tangela", "grass"],
+    "spritePos": {
+      "x": 120,
+      "y": 400
+    }
+  },
+  {
+    "id": 115,
+    "name": "Kangaskhan",
+    "height": 22,
+    "weight": 800,
+    "typeIds": [12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 105
+      },
+      {
+        "name": "Attack",
+        "amount": 95
+      },
+      {
+        "name": "Defense",
+        "amount": 80
+      },
+      {
+        "name": "Special Attack",
+        "amount": 40
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 90
+      }
+    ],
+    "keywords": ["Kangaskhan", "normal"],
+    "spritePos": {
+      "x": 160,
+      "y": 400
+    }
+  },
+  {
+    "id": 116,
+    "name": "Horsea",
+    "height": 4,
+    "weight": 80,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 30
+      },
+      {
+        "name": "Attack",
+        "amount": 40
+      },
+      {
+        "name": "Defense",
+        "amount": 70
+      },
+      {
+        "name": "Special Attack",
+        "amount": 70
+      },
+      {
+        "name": "Special Defense",
+        "amount": 25
+      },
+      {
+        "name": "Speed",
+        "amount": 60
+      }
+    ],
+    "keywords": ["Horsea", "water"],
+    "spritePos": {
+      "x": 200,
+      "y": 400
+    }
+  },
+  {
+    "id": 117,
+    "name": "Seadra",
+    "height": 12,
+    "weight": 250,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 55
+      },
+      {
+        "name": "Attack",
+        "amount": 65
+      },
+      {
+        "name": "Defense",
+        "amount": 95
+      },
+      {
+        "name": "Special Attack",
+        "amount": 95
+      },
+      {
+        "name": "Special Defense",
+        "amount": 45
+      },
+      {
+        "name": "Speed",
+        "amount": 85
+      }
+    ],
+    "keywords": ["Seadra", "water"],
+    "spritePos": {
+      "x": 240,
+      "y": 400
+    }
+  },
+  {
+    "id": 118,
+    "name": "Goldeen",
+    "height": 6,
+    "weight": 150,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 45
+      },
+      {
+        "name": "Attack",
+        "amount": 67
+      },
+      {
+        "name": "Defense",
+        "amount": 60
+      },
+      {
+        "name": "Special Attack",
+        "amount": 35
+      },
+      {
+        "name": "Special Defense",
+        "amount": 50
+      },
+      {
+        "name": "Speed",
+        "amount": 63
+      }
+    ],
+    "keywords": ["Goldeen", "water"],
+    "spritePos": {
+      "x": 280,
+      "y": 400
+    }
+  },
+  {
+    "id": 119,
+    "name": "Seaking",
+    "height": 13,
+    "weight": 390,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 80
+      },
+      {
+        "name": "Attack",
+        "amount": 92
+      },
+      {
+        "name": "Defense",
+        "amount": 65
+      },
+      {
+        "name": "Special Attack",
+        "amount": 65
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 68
+      }
+    ],
+    "keywords": ["Seaking", "water"],
+    "spritePos": {
+      "x": 320,
+      "y": 400
+    }
+  },
+  {
+    "id": 120,
+    "name": "Staryu",
+    "height": 8,
+    "weight": 345,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 30
+      },
+      {
+        "name": "Attack",
+        "amount": 45
+      },
+      {
+        "name": "Defense",
+        "amount": 55
+      },
+      {
+        "name": "Special Attack",
+        "amount": 70
+      },
+      {
+        "name": "Special Defense",
+        "amount": 55
+      },
+      {
+        "name": "Speed",
+        "amount": 85
+      }
+    ],
+    "keywords": ["Staryu", "water"],
+    "spritePos": {
+      "x": 360,
+      "y": 400
+    }
+  },
+  {
+    "id": 121,
+    "name": "Starmie",
+    "height": 11,
+    "weight": 800,
+    "typeIds": [14, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 75
+      },
+      {
+        "name": "Defense",
+        "amount": 85
+      },
+      {
+        "name": "Special Attack",
+        "amount": 100
+      },
+      {
+        "name": "Special Defense",
+        "amount": 85
+      },
+      {
+        "name": "Speed",
+        "amount": 115
+      }
+    ],
+    "keywords": ["Starmie", "water", "psychic"],
+    "spritePos": {
+      "x": 400,
+      "y": 400
+    }
+  },
+  {
+    "id": 122,
+    "name": "Mr Mime",
+    "height": 13,
+    "weight": 545,
+    "typeIds": [4, 14],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 40
+      },
+      {
+        "name": "Attack",
+        "amount": 45
+      },
+      {
+        "name": "Defense",
+        "amount": 65
+      },
+      {
+        "name": "Special Attack",
+        "amount": 100
+      },
+      {
+        "name": "Special Defense",
+        "amount": 120
+      },
+      {
+        "name": "Speed",
+        "amount": 90
+      }
+    ],
+    "keywords": ["Mr Mime", "psychic", "fairy"],
+    "spritePos": {
+      "x": 440,
+      "y": 0
+    }
+  },
+  {
+    "id": 123,
+    "name": "Scyther",
+    "height": 15,
+    "weight": 560,
+    "typeIds": [1, 7],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 70
+      },
+      {
+        "name": "Attack",
+        "amount": 110
+      },
+      {
+        "name": "Defense",
+        "amount": 80
+      },
+      {
+        "name": "Special Attack",
+        "amount": 55
+      },
+      {
+        "name": "Special Defense",
+        "amount": 80
+      },
+      {
+        "name": "Speed",
+        "amount": 105
+      }
+    ],
+    "keywords": ["Scyther", "bug", "flying"],
+    "spritePos": {
+      "x": 440,
+      "y": 40
+    }
+  },
+  {
+    "id": 124,
+    "name": "Jynx",
+    "height": 14,
+    "weight": 406,
+    "typeIds": [11, 14],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 50
+      },
+      {
+        "name": "Defense",
+        "amount": 35
+      },
+      {
+        "name": "Special Attack",
+        "amount": 115
+      },
+      {
+        "name": "Special Defense",
+        "amount": 95
+      },
+      {
+        "name": "Speed",
+        "amount": 95
+      }
+    ],
+    "keywords": ["Jynx", "ice", "psychic"],
+    "spritePos": {
+      "x": 440,
+      "y": 80
+    }
+  },
+  {
+    "id": 125,
+    "name": "Electabuzz",
+    "height": 11,
+    "weight": 300,
+    "typeIds": [3],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 83
+      },
+      {
+        "name": "Defense",
+        "amount": 57
+      },
+      {
+        "name": "Special Attack",
+        "amount": 95
+      },
+      {
+        "name": "Special Defense",
+        "amount": 85
+      },
+      {
+        "name": "Speed",
+        "amount": 105
+      }
+    ],
+    "keywords": ["Electabuzz", "electric"],
+    "spritePos": {
+      "x": 440,
+      "y": 120
+    }
+  },
+  {
+    "id": 126,
+    "name": "Magmar",
+    "height": 13,
+    "weight": 445,
+    "typeIds": [6],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 95
+      },
+      {
+        "name": "Defense",
+        "amount": 57
+      },
+      {
+        "name": "Special Attack",
+        "amount": 100
+      },
+      {
+        "name": "Special Defense",
+        "amount": 85
+      },
+      {
+        "name": "Speed",
+        "amount": 93
+      }
+    ],
+    "keywords": ["Magmar", "fire"],
+    "spritePos": {
+      "x": 440,
+      "y": 160
+    }
+  },
+  {
+    "id": 127,
+    "name": "Pinsir",
+    "height": 15,
+    "weight": 550,
+    "typeIds": [1],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 125
+      },
+      {
+        "name": "Defense",
+        "amount": 100
+      },
+      {
+        "name": "Special Attack",
+        "amount": 55
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 85
+      }
+    ],
+    "keywords": ["Pinsir", "bug"],
+    "spritePos": {
+      "x": 440,
+      "y": 200
+    }
+  },
+  {
+    "id": 128,
+    "name": "Tauros",
+    "height": 14,
+    "weight": 884,
+    "typeIds": [12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 75
+      },
+      {
+        "name": "Attack",
+        "amount": 100
+      },
+      {
+        "name": "Defense",
+        "amount": 95
+      },
+      {
+        "name": "Special Attack",
+        "amount": 40
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 110
+      }
+    ],
+    "keywords": ["Tauros", "normal"],
+    "spritePos": {
+      "x": 440,
+      "y": 240
+    }
+  },
+  {
+    "id": 129,
+    "name": "Magikarp",
+    "height": 9,
+    "weight": 100,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 20
+      },
+      {
+        "name": "Attack",
+        "amount": 10
+      },
+      {
+        "name": "Defense",
+        "amount": 55
+      },
+      {
+        "name": "Special Attack",
+        "amount": 15
+      },
+      {
+        "name": "Special Defense",
+        "amount": 20
+      },
+      {
+        "name": "Speed",
+        "amount": 80
+      }
+    ],
+    "keywords": ["Magikarp", "water"],
+    "spritePos": {
+      "x": 440,
+      "y": 280
+    }
+  },
+  {
+    "id": 130,
+    "name": "Gyarados",
+    "height": 65,
+    "weight": 2350,
+    "typeIds": [7, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 95
+      },
+      {
+        "name": "Attack",
+        "amount": 125
+      },
+      {
+        "name": "Defense",
+        "amount": 79
+      },
+      {
+        "name": "Special Attack",
+        "amount": 60
+      },
+      {
+        "name": "Special Defense",
+        "amount": 100
+      },
+      {
+        "name": "Speed",
+        "amount": 81
+      }
+    ],
+    "keywords": ["Gyarados", "water", "flying"],
+    "spritePos": {
+      "x": 440,
+      "y": 320
+    }
+  },
+  {
+    "id": 131,
+    "name": "Lapras",
+    "height": 25,
+    "weight": 2200,
+    "typeIds": [11, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 130
+      },
+      {
+        "name": "Attack",
+        "amount": 85
+      },
+      {
+        "name": "Defense",
+        "amount": 80
+      },
+      {
+        "name": "Special Attack",
+        "amount": 85
+      },
+      {
+        "name": "Special Defense",
+        "amount": 95
+      },
+      {
+        "name": "Speed",
+        "amount": 60
+      }
+    ],
+    "keywords": ["Lapras", "water", "ice"],
+    "spritePos": {
+      "x": 440,
+      "y": 360
+    }
+  },
+  {
+    "id": 132,
+    "name": "Ditto",
+    "height": 3,
+    "weight": 40,
+    "typeIds": [12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 48
+      },
+      {
+        "name": "Attack",
+        "amount": 48
+      },
+      {
+        "name": "Defense",
+        "amount": 48
+      },
+      {
+        "name": "Special Attack",
+        "amount": 48
+      },
+      {
+        "name": "Special Defense",
+        "amount": 48
+      },
+      {
+        "name": "Speed",
+        "amount": 48
+      }
+    ],
+    "keywords": ["Ditto", "normal"],
+    "spritePos": {
+      "x": 440,
+      "y": 400
+    }
+  },
+  {
+    "id": 133,
+    "name": "Eevee",
+    "height": 3,
+    "weight": 65,
+    "typeIds": [12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 55
+      },
+      {
+        "name": "Attack",
+        "amount": 55
+      },
+      {
+        "name": "Defense",
+        "amount": 50
+      },
+      {
+        "name": "Special Attack",
+        "amount": 45
+      },
+      {
+        "name": "Special Defense",
+        "amount": 65
+      },
+      {
+        "name": "Speed",
+        "amount": 55
+      }
+    ],
+    "keywords": ["Eevee", "normal"],
+    "spritePos": {
+      "x": 0,
+      "y": 440
+    }
+  },
+  {
+    "id": 134,
+    "name": "Vaporeon",
+    "height": 10,
+    "weight": 290,
+    "typeIds": [17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 130
+      },
+      {
+        "name": "Attack",
+        "amount": 65
+      },
+      {
+        "name": "Defense",
+        "amount": 60
+      },
+      {
+        "name": "Special Attack",
+        "amount": 110
+      },
+      {
+        "name": "Special Defense",
+        "amount": 95
+      },
+      {
+        "name": "Speed",
+        "amount": 65
+      }
+    ],
+    "keywords": ["Vaporeon", "water"],
+    "spritePos": {
+      "x": 40,
+      "y": 440
+    }
+  },
+  {
+    "id": 135,
+    "name": "Jolteon",
+    "height": 8,
+    "weight": 245,
+    "typeIds": [3],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 65
+      },
+      {
+        "name": "Defense",
+        "amount": 60
+      },
+      {
+        "name": "Special Attack",
+        "amount": 110
+      },
+      {
+        "name": "Special Defense",
+        "amount": 95
+      },
+      {
+        "name": "Speed",
+        "amount": 130
+      }
+    ],
+    "keywords": ["Jolteon", "electric"],
+    "spritePos": {
+      "x": 80,
+      "y": 440
+    }
+  },
+  {
+    "id": 136,
+    "name": "Flareon",
+    "height": 9,
+    "weight": 250,
+    "typeIds": [6],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 130
+      },
+      {
+        "name": "Defense",
+        "amount": 60
+      },
+      {
+        "name": "Special Attack",
+        "amount": 95
+      },
+      {
+        "name": "Special Defense",
+        "amount": 110
+      },
+      {
+        "name": "Speed",
+        "amount": 65
+      }
+    ],
+    "keywords": ["Flareon", "fire"],
+    "spritePos": {
+      "x": 120,
+      "y": 440
+    }
+  },
+  {
+    "id": 137,
+    "name": "Porygon",
+    "height": 8,
+    "weight": 365,
+    "typeIds": [12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 65
+      },
+      {
+        "name": "Attack",
+        "amount": 60
+      },
+      {
+        "name": "Defense",
+        "amount": 70
+      },
+      {
+        "name": "Special Attack",
+        "amount": 85
+      },
+      {
+        "name": "Special Defense",
+        "amount": 75
+      },
+      {
+        "name": "Speed",
+        "amount": 40
+      }
+    ],
+    "keywords": ["Porygon", "normal"],
+    "spritePos": {
+      "x": 160,
+      "y": 440
+    }
+  },
+  {
+    "id": 138,
+    "name": "Omanyte",
+    "height": 4,
+    "weight": 75,
+    "typeIds": [15, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 35
+      },
+      {
+        "name": "Attack",
+        "amount": 40
+      },
+      {
+        "name": "Defense",
+        "amount": 100
+      },
+      {
+        "name": "Special Attack",
+        "amount": 90
+      },
+      {
+        "name": "Special Defense",
+        "amount": 55
+      },
+      {
+        "name": "Speed",
+        "amount": 35
+      }
+    ],
+    "keywords": ["Omanyte", "rock", "water"],
+    "spritePos": {
+      "x": 200,
+      "y": 440
+    }
+  },
+  {
+    "id": 139,
+    "name": "Omastar",
+    "height": 10,
+    "weight": 350,
+    "typeIds": [15, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 70
+      },
+      {
+        "name": "Attack",
+        "amount": 60
+      },
+      {
+        "name": "Defense",
+        "amount": 125
+      },
+      {
+        "name": "Special Attack",
+        "amount": 115
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 55
+      }
+    ],
+    "keywords": ["Omastar", "rock", "water"],
+    "spritePos": {
+      "x": 240,
+      "y": 440
+    }
+  },
+  {
+    "id": 140,
+    "name": "Kabuto",
+    "height": 5,
+    "weight": 115,
+    "typeIds": [15, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 30
+      },
+      {
+        "name": "Attack",
+        "amount": 80
+      },
+      {
+        "name": "Defense",
+        "amount": 90
+      },
+      {
+        "name": "Special Attack",
+        "amount": 55
+      },
+      {
+        "name": "Special Defense",
+        "amount": 45
+      },
+      {
+        "name": "Speed",
+        "amount": 55
+      }
+    ],
+    "keywords": ["Kabuto", "rock", "water"],
+    "spritePos": {
+      "x": 280,
+      "y": 440
+    }
+  },
+  {
+    "id": 141,
+    "name": "Kabutops",
+    "height": 13,
+    "weight": 405,
+    "typeIds": [15, 17],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 60
+      },
+      {
+        "name": "Attack",
+        "amount": 115
+      },
+      {
+        "name": "Defense",
+        "amount": 105
+      },
+      {
+        "name": "Special Attack",
+        "amount": 65
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 80
+      }
+    ],
+    "keywords": ["Kabutops", "rock", "water"],
+    "spritePos": {
+      "x": 320,
+      "y": 440
+    }
+  },
+  {
+    "id": 142,
+    "name": "Aerodactyl",
+    "height": 18,
+    "weight": 590,
+    "typeIds": [7, 15],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 80
+      },
+      {
+        "name": "Attack",
+        "amount": 105
+      },
+      {
+        "name": "Defense",
+        "amount": 65
+      },
+      {
+        "name": "Special Attack",
+        "amount": 60
+      },
+      {
+        "name": "Special Defense",
+        "amount": 75
+      },
+      {
+        "name": "Speed",
+        "amount": 130
+      }
+    ],
+    "keywords": ["Aerodactyl", "rock", "flying"],
+    "spritePos": {
+      "x": 360,
+      "y": 440
+    }
+  },
+  {
+    "id": 143,
+    "name": "Snorlax",
+    "height": 21,
+    "weight": 4600,
+    "typeIds": [12],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 160
+      },
+      {
+        "name": "Attack",
+        "amount": 110
+      },
+      {
+        "name": "Defense",
+        "amount": 65
+      },
+      {
+        "name": "Special Attack",
+        "amount": 65
+      },
+      {
+        "name": "Special Defense",
+        "amount": 110
+      },
+      {
+        "name": "Speed",
+        "amount": 30
+      }
+    ],
+    "keywords": ["Snorlax", "normal"],
+    "spritePos": {
+      "x": 400,
+      "y": 440
+    }
+  },
+  {
+    "id": 144,
+    "name": "Articuno",
+    "height": 17,
+    "weight": 554,
+    "typeIds": [7, 11],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 90
+      },
+      {
+        "name": "Attack",
+        "amount": 85
+      },
+      {
+        "name": "Defense",
+        "amount": 100
+      },
+      {
+        "name": "Special Attack",
+        "amount": 95
+      },
+      {
+        "name": "Special Defense",
+        "amount": 125
+      },
+      {
+        "name": "Speed",
+        "amount": 85
+      }
+    ],
+    "keywords": ["Articuno", "ice", "flying"],
+    "spritePos": {
+      "x": 440,
+      "y": 440
+    }
+  },
+  {
+    "id": 145,
+    "name": "Zapdos",
+    "height": 16,
+    "weight": 526,
+    "typeIds": [3, 7],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 90
+      },
+      {
+        "name": "Attack",
+        "amount": 90
+      },
+      {
+        "name": "Defense",
+        "amount": 85
+      },
+      {
+        "name": "Special Attack",
+        "amount": 125
+      },
+      {
+        "name": "Special Defense",
+        "amount": 90
+      },
+      {
+        "name": "Speed",
+        "amount": 100
+      }
+    ],
+    "keywords": ["Zapdos", "electric", "flying"],
+    "spritePos": {
+      "x": 480,
+      "y": 0
+    }
+  },
+  {
+    "id": 146,
+    "name": "Moltres",
+    "height": 20,
+    "weight": 600,
+    "typeIds": [6, 7],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 90
+      },
+      {
+        "name": "Attack",
+        "amount": 100
+      },
+      {
+        "name": "Defense",
+        "amount": 90
+      },
+      {
+        "name": "Special Attack",
+        "amount": 125
+      },
+      {
+        "name": "Special Defense",
+        "amount": 85
+      },
+      {
+        "name": "Speed",
+        "amount": 90
+      }
+    ],
+    "keywords": ["Moltres", "fire", "flying"],
+    "spritePos": {
+      "x": 480,
+      "y": 40
+    }
+  },
+  {
+    "id": 147,
+    "name": "Dratini",
+    "height": 18,
+    "weight": 33,
+    "typeIds": [2],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 41
+      },
+      {
+        "name": "Attack",
+        "amount": 64
+      },
+      {
+        "name": "Defense",
+        "amount": 45
+      },
+      {
+        "name": "Special Attack",
+        "amount": 50
+      },
+      {
+        "name": "Special Defense",
+        "amount": 50
+      },
+      {
+        "name": "Speed",
+        "amount": 50
+      }
+    ],
+    "keywords": ["Dratini", "dragon"],
+    "spritePos": {
+      "x": 480,
+      "y": 80
+    }
+  },
+  {
+    "id": 148,
+    "name": "Dragonair",
+    "height": 40,
+    "weight": 165,
+    "typeIds": [2],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 61
+      },
+      {
+        "name": "Attack",
+        "amount": 84
+      },
+      {
+        "name": "Defense",
+        "amount": 65
+      },
+      {
+        "name": "Special Attack",
+        "amount": 70
+      },
+      {
+        "name": "Special Defense",
+        "amount": 70
+      },
+      {
+        "name": "Speed",
+        "amount": 70
+      }
+    ],
+    "keywords": ["Dragonair", "dragon"],
+    "spritePos": {
+      "x": 480,
+      "y": 120
+    }
+  },
+  {
+    "id": 149,
+    "name": "Dragonite",
+    "height": 22,
+    "weight": 2100,
+    "typeIds": [2, 7],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 91
+      },
+      {
+        "name": "Attack",
+        "amount": 134
+      },
+      {
+        "name": "Defense",
+        "amount": 95
+      },
+      {
+        "name": "Special Attack",
+        "amount": 100
+      },
+      {
+        "name": "Special Defense",
+        "amount": 100
+      },
+      {
+        "name": "Speed",
+        "amount": 80
+      }
+    ],
+    "keywords": ["Dragonite", "dragon", "flying"],
+    "spritePos": {
+      "x": 480,
+      "y": 160
+    }
+  },
+  {
+    "id": 150,
+    "name": "Mewtwo",
+    "height": 20,
+    "weight": 1220,
+    "typeIds": [14],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 106
+      },
+      {
+        "name": "Attack",
+        "amount": 110
+      },
+      {
+        "name": "Defense",
+        "amount": 90
+      },
+      {
+        "name": "Special Attack",
+        "amount": 154
+      },
+      {
+        "name": "Special Defense",
+        "amount": 90
+      },
+      {
+        "name": "Speed",
+        "amount": 130
+      }
+    ],
+    "keywords": ["Mewtwo", "psychic"],
+    "spritePos": {
+      "x": 480,
+      "y": 200
+    }
+  },
+  {
+    "id": 151,
+    "name": "Mew",
+    "height": 4,
+    "weight": 40,
+    "typeIds": [14],
+    "stats": [
+      {
+        "name": "HP",
+        "amount": 100
+      },
+      {
+        "name": "Attack",
+        "amount": 100
+      },
+      {
+        "name": "Defense",
+        "amount": 100
+      },
+      {
+        "name": "Special Attack",
+        "amount": 100
+      },
+      {
+        "name": "Special Defense",
+        "amount": 100
+      },
+      {
+        "name": "Speed",
+        "amount": 100
+      }
+    ],
+    "keywords": ["Mew", "psychic"],
+    "spritePos": {
+      "x": 480,
+      "y": 240
+    }
+  }
+]

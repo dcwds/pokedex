@@ -8,11 +8,6 @@ const { selectSearchTerm, selectActiveFilterIds } = filtersSelectors
 
 export const selectPokedexState = (s: AppState) => s.pokedex
 
-export const selectLoading = createSelector(
-  selectPokedexState,
-  pokedex => pokedex.loading
-)
-
 export const selectPokemon = createSelector(
   selectPokedexState,
   pokedex => pokedex.pokemon

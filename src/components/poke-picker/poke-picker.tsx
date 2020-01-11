@@ -1,13 +1,11 @@
-import React, { FC, Fragment, useEffect } from "react"
-import { Box, Flex } from "rebass"
-import { Scrollbars as Scroll, ScrollbarProps } from "react-custom-scrollbars"
+import React, { FC, Fragment } from "react"
+import { useSelector } from "react-redux"
+import { pokedexSelectors, Pokemon } from "../../store/pokedex"
 import PokemonItem from "../pokemon"
-import Loader from "../loader"
 import PokeSearch from "../poke-search"
 import PokeFilters from "../poke-filters"
-
-import { useDispatch, useSelector } from "react-redux"
-import { pokedexSelectors, fetchPokemon, Pokemon } from "../../store/pokedex"
+import { Box, Flex } from "rebass"
+import { Scrollbars as Scroll, ScrollbarProps } from "react-custom-scrollbars"
 
 import { map } from "lodash/fp"
 
@@ -25,7 +23,7 @@ const PokemonList: FC<PokemonListProps> = ({ pokemon }) => (
     }}
   >
     {map(
-      p => (
+      (p: Pokemon) => (
         <PokemonItem key={p.id} {...p} />
       ),
       pokemon
@@ -34,11 +32,7 @@ const PokemonList: FC<PokemonListProps> = ({ pokemon }) => (
 )
 
 const PokePicker: FC = () => {
-  const dispatch = useDispatch()
-  const { selectLoading, selectFilteredPokemon } = pokedexSelectors
-
-  const loading = useSelector(selectLoading)
-  const pokemon = useSelector(selectFilteredPokemon)
+  const pokemon = useSelector(pokedexSelectors.selectFilteredPokemon)
 
   const renderThumb: FC<ScrollbarProps> = (style, ...props) => {
     const thumbStyle = {
@@ -47,10 +41,6 @@ const PokePicker: FC = () => {
     }
     return <div style={{ ...style, ...thumbStyle }} {...props} />
   }
-
-  useEffect(() => {
-    dispatch(fetchPokemon())
-  }, [dispatch])
 
   return (
     <Fragment>
@@ -62,8 +52,7 @@ const PokePicker: FC = () => {
           renderThumbHorizontal={renderThumb}
           renderThumbVertical={renderThumb}
         >
-          {loading && <Loader />}
-          {!!pokemon.length && <PokemonList pokemon={pokemon} />}
+          <PokemonList pokemon={pokemon} />
         </Scroll>
       </Flex>
     </Fragment>

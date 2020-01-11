@@ -1,5 +1,6 @@
 import { createSlice } from "redux-starter-kit"
 import { PokedexState, PokeType } from "."
+import pokemonData from "../../data/pokemon.json"
 
 const primitivePokeTypes = [
   "bug",
@@ -34,9 +35,8 @@ const pokeTypes = primitivePokeTypes.reduce(
 )
 
 const initialState: PokedexState = {
-  loading: false,
-  error: null,
-  pokemon: [],
+  pokemon: pokemonData,
+  selectedPokemonId: null,
   types: pokeTypes
 }
 
@@ -44,16 +44,8 @@ const { actions, reducer } = createSlice({
   slice: "pokedex",
   initialState,
   reducers: {
-    setPokedex: (s, _action) => {
-      s.loading = true
-    },
-    setPokedexSuccess: (s, { payload }) => {
-      s.loading = false
-      s.pokemon = payload
-    },
-    setPokedexFailure: (s, { payload }) => {
-      s.loading = false
-      s.error = payload
+    setSelectedPokemon: (s, { payload }) => {
+      s.selectedPokemonId = payload
     }
   }
 })

@@ -1,3 +1,8 @@
+import {
+  POKE_SPRITE_NORMAL_IMG_URL,
+  POKE_SPRITE_RETINA_IMG_URL
+} from "../constants"
+
 export const SYSTEM_FONT_STACK = `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`
 export const VERTICAL_RHYTHM = 1.5
 
@@ -90,6 +95,12 @@ export const styles = {
   },
   input: {
     ...inputStyles
+  },
+  hasNormalSprite: {
+    backgroundImage: `url(${POKE_SPRITE_NORMAL_IMG_URL})`
+  },
+  hasRetinaSprite: {
+    backgroundImage: `url(${POKE_SPRITE_RETINA_IMG_URL})`
   }
 }
 
