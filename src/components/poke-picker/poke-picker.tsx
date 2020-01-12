@@ -17,8 +17,8 @@ const PokemonList: FC<PokemonListProps> = ({ pokemon }) => (
   <Box
     sx={{
       display: "grid",
-      gap: ".6rem",
-      margin: ".6rem",
+      gap: ".5rem",
+      margin: ".75rem",
       gridTemplateColumns: "repeat(auto-fill, minmax(75px, 1fr))"
     }}
   >
@@ -37,7 +37,12 @@ const PokePicker: FC = () => {
   const renderThumb: FC<ScrollbarProps> = (style, ...props) => {
     const thumbStyle = {
       backgroundColor: "rgba(255,255,255, 0.3)",
-      borderRadius: "5px"
+      borderRadius: "5px",
+      cursor: "pointer",
+      position: "absolute" as "absolute",
+      top: 1,
+      right: 1,
+      width: "100%"
     }
     return <div style={{ ...style, ...thumbStyle }} {...props} />
   }

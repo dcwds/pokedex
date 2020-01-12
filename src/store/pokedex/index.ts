@@ -27,7 +27,7 @@ export type Pokemon = {
 
 export type PokedexState = {
   pokemon: Pokemon[]
-  selectedPokemonId: number | null
+  currentPokemonId: number | null
   types: PokeType[]
 }
 

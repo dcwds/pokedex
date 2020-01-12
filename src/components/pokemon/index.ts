@@ -1,3 +1,4 @@
-import PokemonItem from "./pokemon"
+import PokemonItem from "./list-item"
+import PokeDetails from "./details"
 
-export default PokemonItem
+export { PokemonItem as default, PokeDetails }

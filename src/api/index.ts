@@ -1,11 +1,12 @@
 import { Pokemon, PokeType, PokeStat } from "../store/pokedex"
 import pokeCoords from "../data/poke-sprite-coords.json"
-import { formatName } from "../utils"
+import { pokeFormatters } from "../utils"
 import { concat, find, map, reverse, reduce, lowerCase, prop } from "lodash/fp"
 
 import { AppState } from "../store"
 
 export const getAllPokemon = (state: AppState) => {
+  const { formatName } = pokeFormatters
   const pokeIds = Array.from(Array(152).keys()).slice(1)
   const allPokemon = map(async (id: number) => {
     const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)

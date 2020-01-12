@@ -1,7 +1,3 @@
-import {
-  POKE_SPRITE_NORMAL_IMG_URL,
-  POKE_SPRITE_RETINA_IMG_URL
-} from "../constants"
 import getPokeSpriteURL from "../utils/get-poke-sprite-url"
 
 export const SYSTEM_FONT_STACK = `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`
@@ -100,11 +96,11 @@ export const styles = {
   hasSprite: {
     backgroundImage: `url(${getPokeSpriteURL()})`
   },
-  hasNormalSprite: {
-    backgroundImage: `url(${POKE_SPRITE_NORMAL_IMG_URL})`
-  },
-  hasRetinaSprite: {
-    backgroundImage: `url(${POKE_SPRITE_RETINA_IMG_URL})`
+  label: {
+    color: "rgba(255,255,255, 0.3)",
+    textTransform: "uppercase",
+    letterSpacing: ".2rem",
+    fontSize: 0
   }
 }
 

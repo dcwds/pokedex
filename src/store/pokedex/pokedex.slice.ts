@@ -36,7 +36,7 @@ const pokeTypes = primitivePokeTypes.reduce(
 
 const initialState: PokedexState = {
   pokemon: pokemonData,
-  selectedPokemonId: null,
+  currentPokemonId: 1,
   types: pokeTypes
 }
 
@@ -44,8 +44,8 @@ const { actions, reducer } = createSlice({
   slice: "pokedex",
   initialState,
   reducers: {
-    setSelectedPokemon: (s, { payload }) => {
-      s.selectedPokemonId = payload
+    setCurrentPokemon: (s, { payload }) => {
+      s.currentPokemonId = payload
     }
   }
 })

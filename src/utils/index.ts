@@ -1,6 +1,4 @@
-import { compose, replace, startCase } from "lodash/fp"
+import * as pokeFormatters from "./poke-formatters"
+import getPokeSpriteURL from "./get-poke-sprite-url"
 
-export const formatName = compose(
-  (word: string) => startCase(word),
-  (word: string) => replace("-", " ", word)
-)
+export { pokeFormatters, getPokeSpriteURL }

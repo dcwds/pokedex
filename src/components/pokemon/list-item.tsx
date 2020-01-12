@@ -1,9 +1,12 @@
 import React, { FC, memo } from "react"
-import { Pokemon } from "../../store/pokedex"
+import { useDispatch } from "react-redux"
+import { Pokemon, pokedexActions } from "../../store/pokedex"
 import AspectRatio from "../aspect-ratio"
 import { Box, Text } from "rebass"
 
-const PokemonItem: FC<Pokemon> = ({ name, spritePos }) => {
+const PokemonItem: FC<Pokemon> = ({ id, name, spritePos }) => {
+  const { setCurrentPokemon } = pokedexActions
+  const dispatch = useDispatch()
   const size = "40px"
 
   return (
@@ -17,6 +20,7 @@ const PokemonItem: FC<Pokemon> = ({ name, spritePos }) => {
           justifyContent: "center",
           p: 1
         }}
+        onClick={() => dispatch(setCurrentPokemon(id))}
       >
         <Box
           variant={"styles.hasSprite"}
