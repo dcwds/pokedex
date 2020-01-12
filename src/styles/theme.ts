@@ -46,7 +46,7 @@ export const fontWeights = {
 }
 
 export const lineHeights = {
-  body: 1.5,
+  body: 1.7,
   heading: 1.25
 }
 
@@ -56,8 +56,8 @@ export const text = {
     lineHeight: "heading"
   },
   display: {
-    fontFamily: "heading",
-    lineHeight: "heading"
+    fontFamily: "body",
+    lineHeight: "body"
   }
 }
 
@@ -68,13 +68,14 @@ const inputStyles = {
   borderRadius: radii[0],
   border: "none",
   appearance: "none",
+  outline: "none",
   p: 2
 }
 
 export const styles = {
   root: {
     fontFamily: "body",
-    lineHeight: "heading",
+    lineHeight: "body",
     bg: "gray.1",
     color: "white",
     display: "flex",

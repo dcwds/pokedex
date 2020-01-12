@@ -2,6 +2,7 @@ import React, { FC } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { PokeType, pokedexSelectors } from "../../store/pokedex"
 import { filtersActions, filtersSelectors } from "../../store/filters"
+import PokeTypeIcon from "../poke-type-icon"
 import { Button, Box } from "rebass"
 import { pokeColors } from "../../styles/poke-colors"
 
@@ -33,17 +34,12 @@ const PokeFilter: FC<PokeFilterProps> = ({ id, name, active }) => {
         },
         "& > svg": {
           fill: active ? "white" : pokeTypeColor,
-          height: "20px",
-          width: "20px",
           transition: "fill 0.2s ease-in-out"
         }
       }}
       onClick={() => dispatch(filtersActions.setFilter(id))}
     >
-      <svg viewBox="0 0 12 12">
-        <title>{name}</title>
-        <use href={`/images/poke-type-icons.svg#${name}`} />
-      </svg>
+      <PokeTypeIcon sx={{ lineHeight: 0 }} name={name} size={20} />
     </Button>
   )
 }

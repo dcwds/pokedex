@@ -14,6 +14,7 @@ export type PokeType = {
 export type Pokemon = {
   id: number
   name: string
+  description: string
   height: number // in decimeters
   weight: number // in hectometers
   keywords: string[]

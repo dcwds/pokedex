@@ -39,7 +39,8 @@ const PokemonItem: FC<Pokemon> = ({ id, name, spritePos }) => {
             display: "block",
             fontSize: 0,
             fontWeight: "heading",
-            mt: 1,
+            lineHeight: "body",
+            mt: ".25rem",
             textAlign: "center",
             width: "90%"
           }}
