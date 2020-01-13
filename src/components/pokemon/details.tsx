@@ -1,6 +1,6 @@
-import React, { FC, Fragment } from "react"
+import React, { FC } from "react"
 import { useSelector } from "react-redux"
-import { Pokemon, pokedexSelectors } from "../../store/pokedex"
+import { Pokemon, PokeStat, pokedexSelectors } from "../../store/pokedex"
 import { pokeFormatters } from "../../utils"
 import PokeTypeIcon from "../poke-type-icon"
 import { Box, Flex, Image, Text } from "rebass"
@@ -13,6 +13,13 @@ type Props = {
 type MetaSectionProps = {
   heading: string
 }
+
+const borderBottomStyles = {
+  borderBottomWidth: "4px",
+  borderBottomColor: "gray.1",
+  borderBottomStyle: "solid"
+}
+
 const MetaSection: FC<MetaSectionProps> = ({ heading, children }) => (
   <Box
     sx={{
@@ -23,10 +30,36 @@ const MetaSection: FC<MetaSectionProps> = ({ heading, children }) => (
       "& > span": { fontSize: 1, fontWeight: "heading" }
     }}
   >
-    <Text as="h3" variant="styles.label" sx={{ mb: ".25rem" }}>
+    <Text as="h3" variant="styles.label">
       {heading}
     </Text>
     {children}
+  </Box>
+)
+
+const StatSection: FC<PokeStat> = ({ name, amount }) => (
+  <Box sx={{ mb: 3, "&:last-of-type": { mb: 0 } }}>
+    <Text variant="styles.label" sx={{ fontWeight: 700, mb: 1 }}>
+      {name}
+    </Text>
+    <Box
+      sx={{
+        bg: "gray.1",
+        borderRadius: "6px",
+        height: 6,
+        width: "100%",
+        overflow: "hidden"
+      }}
+    >
+      <Box
+        sx={{
+          bg: "rgba(255,255,255, 0.15)",
+          borderRadius: "6px",
+          height: "100%",
+          width: `${amount / 1.75}%`
+        }}
+      ></Box>
+    </Box>
   </Box>
 )
 
@@ -42,10 +75,9 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
       <Flex
         as="header"
         sx={{
-          borderBottomWidth: "4px",
-          borderBottomColor: "gray.1",
-          borderBottomStyle: "solid",
-          p: 4
+          ...borderBottomStyles,
+          alignItems: "center",
+          p: 5
         }}
       >
         <Box sx={{ mr: 4 }}>
@@ -64,7 +96,7 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
           </Box>
         </Box>
         <Box>
-          <Text as="h2" sx={{ fontSize: 4, mb: 2 }}>
+          <Text as="h2" sx={{ fontSize: 4, lineHeight: "heading", mb: 2 }}>
             {name}
           </Text>
           <Flex>
@@ -75,7 +107,7 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
               <Text as="span">{`${hectogramsToKilograms(weight)}kg`}</Text>
             </MetaSection>
             <MetaSection heading={typeIds.length > 1 ? "Types" : "Type"}>
-              <Box sx={{ lineHeight: "0", mt: ".5rem" }}>
+              <Box sx={{ lineHeight: "0", mt: ".25rem" }}>
                 {map(
                   t => (
                     <PokeTypeIcon
@@ -96,9 +128,25 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
           </Flex>
         </Box>
       </Flex>
-      <Text as="p" sx={{ color: "rgba(255,255,255, 0.5)", fontSize: 1, p: 4 }}>
+      <Text
+        as="p"
+        sx={{
+          ...borderBottomStyles,
+          color: "rgba(255,255,255, 0.5)",
+          fontSize: 1,
+          p: 5
+        }}
+      >
         {description}
       </Text>
+      <Box sx={{ p: 5 }}>
+        {map(
+          s => (
+            <StatSection key={s.name} {...s} />
+          ),
+          stats
+        )}
+      </Box>
     </Box>
   )
 }
