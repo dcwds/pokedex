@@ -24,7 +24,8 @@ const MetaSection: FC<MetaSectionProps> = ({ heading, children }) => (
   <Box
     sx={{
       color: "rgba(255,255,255, 0.8)",
-      minWidth: "6rem",
+      maxWidth: "6rem",
+      width: "100%",
       mr: 2,
       "&:last-of-type": { mr: 0 },
       "& > span": { fontSize: 1, fontWeight: "heading" }
@@ -71,16 +72,16 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
   )
 
   return (
-    <Box variant="styles.container" sx={{ maxWidth: "40rem" }}>
+    <Box variant="styles.card" sx={{ p: 6 }}>
       <Flex
         as="header"
         sx={{
           ...borderBottomStyles,
           alignItems: "center",
-          p: 5
+          p: 4
         }}
       >
-        <Box sx={{ mr: 4 }}>
+        <Box sx={{ mr: 5 }}>
           <Box
             sx={{
               borderColor: "gray.1",
@@ -95,7 +96,7 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
             <Image src={`/images/pokemon/${id}.webp`} alt={name} />
           </Box>
         </Box>
-        <Box>
+        <Box sx={{ flex: 1 }}>
           <Text as="h2" sx={{ fontSize: 4, lineHeight: "heading", mb: 2 }}>
             {name}
           </Text>
@@ -117,7 +118,8 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
                       sx={{
                         display: "inline-block",
                         lineHeight: "inherit",
-                        mr: 2
+                        mr: 2,
+                        "&:last-of-type": { mr: 0 }
                       }}
                     />
                   ),
@@ -134,12 +136,12 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
           ...borderBottomStyles,
           color: "rgba(255,255,255, 0.5)",
           fontSize: 1,
-          p: 5
+          p: 4
         }}
       >
         {description}
       </Text>
-      <Box sx={{ p: 5 }}>
+      <Box sx={{ p: 4 }}>
         {map(
           s => (
             <StatSection key={s.name} {...s} />

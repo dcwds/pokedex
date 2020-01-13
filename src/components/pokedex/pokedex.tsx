@@ -21,14 +21,22 @@ const Pokedex: FC = () => {
   return (
     <Fragment>
       <LoaderBlanket animate={loading} />
-      <Flex as="main" sx={{ p: [2, 5], flexDirection: "column", flex: "1" }}>
+      <Flex
+        as="main"
+        variant="styles.container"
+        sx={{ p: [2, 5], flexDirection: "column", flex: "1" }}
+      >
         <Flex sx={{ flex: "1" }}>
-          <Flex sx={{ flexDirection: "column", flex: "1" }} width={[1, 2 / 5]}>
+          <Flex sx={{ flexDirection: "column", flex: "1 1 auto" }}>
             <PokePicker />
           </Flex>
           <Flex
-            sx={{ flexDirection: "column", flex: "1", ml: 5 }}
-            width={[1, 3 / 5]}
+            sx={{
+              flexDirection: "column",
+              flex: "0 1 auto",
+              ml: 5,
+              maxWidth: "35rem"
+            }}
           >
             <PokeDetails pokemon={currentPokemon} />
           </Flex>

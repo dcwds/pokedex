@@ -2,23 +2,24 @@ import React, { FC } from "react"
 import { Box, Heading } from "rebass"
 
 const Header: FC = () => (
-  <Box
-    as="header"
-    sx={{
-      color: "white",
-      fontSize: 2,
-      mb: [2, 3],
-      p: [2, 5]
-    }}
-  >
-    <Heading
-      as="h1"
+  <Box as="header" sx={{ bg: "gray.0" }}>
+    <Box
+      variant="styles.container"
       sx={{
-        fontSize: 2
+        color: "white",
+        fontSize: 2,
+        p: [2, 5]
       }}
     >
-      Pokédex
-    </Heading>
+      <Heading
+        as="h1"
+        sx={{
+          fontSize: 2
+        }}
+      >
+        Pokédex
+      </Heading>
+    </Box>
   </Box>
 )
 

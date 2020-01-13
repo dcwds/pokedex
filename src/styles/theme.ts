@@ -82,9 +82,14 @@ export const styles = {
     flexDirection: "column",
     minHeight: "100vh"
   },
-  container: {
+  card: {
     bg: "gray.0",
     borderRadius: radii[0]
+  },
+  container: {
+    maxWidth: "90rem",
+    m: "0 auto",
+    width: "100%"
   },
   ellipse: {
     textOverflow: "ellipsis",

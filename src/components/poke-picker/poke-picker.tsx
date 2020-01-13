@@ -51,7 +51,7 @@ const PokePicker: FC = () => {
     <Fragment>
       <PokeSearch />
       <PokeFilters />
-      <Flex variant="styles.container" sx={{ flex: 1 }}>
+      <Flex variant="styles.card" sx={{ flex: 1 }}>
         <Scroll
           style={{ flex: 1, height: "auto" }}
           renderThumbHorizontal={renderThumb}
