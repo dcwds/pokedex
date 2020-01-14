@@ -25,7 +25,8 @@ const PokeFilter: FC<PokeFilterProps> = ({ id, name, active }) => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        p: 2,
+        px: 2,
+        py: 2,
         ":hover": {
           bg: pokeTypeColor,
           "& svg": {

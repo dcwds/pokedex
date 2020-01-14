@@ -72,7 +72,12 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
   )
 
   return (
-    <Box variant="styles.card" sx={{ p: 6 }}>
+    <Box
+      variant="styles.card"
+      sx={{
+        p: 6
+      }}
+    >
       <Flex
         as="header"
         sx={{

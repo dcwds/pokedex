@@ -1,24 +1,29 @@
 import React, { FC, memo } from "react"
-import { useDispatch } from "react-redux"
-import { Pokemon, pokedexActions } from "../../store/pokedex"
+import { useDispatch, useSelector } from "react-redux"
+import { Pokemon, pokedexActions, pokedexSelectors } from "../../store/pokedex"
 import AspectRatio from "../aspect-ratio"
 import { Box, Text } from "rebass"
 
 const PokemonItem: FC<Pokemon> = ({ id, name, spritePos }) => {
   const { setCurrentPokemon } = pokedexActions
+  const { selectCurrentPokemonId } = pokedexSelectors
+
   const dispatch = useDispatch()
+  const isSelected = useSelector(selectCurrentPokemonId) === id ? true : false
   const size = "40px"
 
   return (
     <AspectRatio ratio={1}>
       <Box
-        variant="buttons.listPrimary"
+        variant={`buttons.${isSelected ? "selected" : "listPrimary"}`}
+        role="button"
         sx={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          p: 1
+          px: 1,
+          py: 1
         }}
         onClick={() => dispatch(setCurrentPokemon(id))}
       >
@@ -40,7 +45,6 @@ const PokemonItem: FC<Pokemon> = ({ id, name, spritePos }) => {
             fontSize: 0,
             fontWeight: "heading",
             lineHeight: "body",
-            mt: ".25rem",
             textAlign: "center",
             width: "90%"
           }}

@@ -72,6 +72,12 @@ const inputStyles = {
   p: 2
 }
 
+const ellipseStyles = {
+  textOverflow: "ellipsis",
+  whiteSpace: "nowrap",
+  overflow: "hidden"
+}
+
 export const styles = {
   root: {
     fontFamily: "body",
@@ -92,9 +98,7 @@ export const styles = {
     width: "100%"
   },
   ellipse: {
-    textOverflow: "ellipsis",
-    whiteSpace: "nowrap",
-    overflow: "hidden"
+    ...ellipseStyles
   },
   input: {
     ...inputStyles
@@ -111,6 +115,7 @@ export const styles = {
 }
 
 const buttonStyles = {
+  borderRadius: radii[0],
   cursor: "pointer",
   userSelect: "none",
   outline: "none",
@@ -122,11 +127,18 @@ export const buttons = {
     ...buttonStyles,
     color: "rgba(255,255,255,0.5)",
     bg: "gray.1",
-    borderRadius: radii[0],
     "&:hover": {
       bg: "gray.2",
       color: "white"
     }
+  },
+  selected: {
+    ...buttonStyles,
+    cursor: "initial",
+    pointerEvents: "none",
+    bg: "gray.4",
+    color: "white",
+    boxShadow: "0 0 1rem rgba(0,0,0, .15)"
   }
 }
 
