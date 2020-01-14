@@ -1,22 +1,37 @@
 import React, { FC } from "react"
 import { pokeColors } from "../../styles/poke-colors"
 import { Box, BoxProps } from "rebass"
-import { prop } from "lodash/fp"
+import { merge, prop } from "lodash/fp"
 
 type Props = {
   name: string
   size: number
 } & BoxProps
 
-const PokeTypeIcon: FC<Props> = ({ name, size, css, children, ...rest }) => {
-  const color = prop(name, pokeColors)
+const PokeTypeIcon: FC<Props> = ({
+  name,
+  size,
+  css,
+  children,
+  sx,
+  ...rest
+}) => {
+  const color: string = prop(name, pokeColors)
+  const style = merge(
+    {
+      "& > svg": {
+        fill: color,
+        width: size,
+        height: size,
+        transition: "fill 0.2s ease-in-out"
+      }
+    },
+    sx
+  )
 
   return (
-    <Box {...rest}>
-      <svg
-        style={{ fill: color, width: size, height: size }}
-        viewBox="0 0 12 12"
-      >
+    <Box sx={style} {...rest}>
+      <svg viewBox="0 0 12 12">
         <title>{name}</title>
         <use href={`/images/poke-type-icons.svg#${name}`} />
       </svg>

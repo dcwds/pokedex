@@ -26,15 +26,14 @@ const PokeFilter: FC<PokeFilterProps> = ({ id, name, active }) => {
         alignItems: "center",
         justifyContent: "center",
         p: 2,
-        "&:hover": {
+        ":hover": {
           bg: pokeTypeColor,
-          "& > svg": {
+          "& svg": {
             fill: "white"
           }
         },
-        "& > svg": {
-          fill: active ? "white" : pokeTypeColor,
-          transition: "fill 0.2s ease-in-out"
+        "& svg": {
+          fill: active ? "white" : pokeTypeColor
         }
       }}
       onClick={() => dispatch(filtersActions.setFilter(id))}
