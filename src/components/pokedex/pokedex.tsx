@@ -1,22 +1,43 @@
 import React, { FC, Fragment, useEffect, useState } from "react"
-import { useSelector } from "react-redux"
-import { pokedexSelectors } from "../../store/pokedex"
-import { getPokeSpriteURL } from "../../utils"
-import preloadImages from "../../utils/preload-images"
+import { useSelector, useDispatch } from "react-redux"
+import { pokedexSelectors, pokedexActions } from "../../store/pokedex"
+import { useHistory, useParams } from "react-router-dom"
+import { getPokeSpriteURL, preloadImages } from "../../utils"
 
 import PokePicker from "../poke-picker"
 import { PokeDetails } from "../pokemon"
 import { LoaderBlanket } from "../loader"
 import { Flex } from "rebass"
 
+import { includes } from "lodash/fp"
+
 const Pokedex: FC = () => {
   const [loading, setLoading] = useState(true)
+  const { selectCurrentPokemon, selectPokemonIds } = pokedexSelectors
+  const allPokemonIds = useSelector(selectPokemonIds)
+  const currentPokemon = useSelector(selectCurrentPokemon)
+
+  const { id } = useParams()
+  const pokeId = !isNaN(Number(id)) ? Number(id) : null
+  const pokeIdIsValid = includes(pokeId, allPokemonIds)
+
+  const dispatch = useDispatch()
+  const history = useHistory()
   const sprite = getPokeSpriteURL()
-  const currentPokemon = useSelector(pokedexSelectors.selectCurrentPokemon)
 
   useEffect(() => {
     preloadImages([sprite]).then(() => setLoading(false))
   }, [sprite])
+
+  useEffect(() => {
+    const id = pokeIdIsValid ? pokeId : null
+
+    if (id) {
+      dispatch(pokedexActions.setCurrentPokemon(id))
+    } else {
+      history.push("/")
+    }
+  }, [dispatch, history, pokeId, pokeIdIsValid])
 
   return (
     <Fragment>

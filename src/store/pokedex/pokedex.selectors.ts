@@ -23,6 +23,11 @@ export const selectPokemon = createSelector(
   pokedex => pokedex.pokemon
 )
 
+export const selectPokemonIds = createSelector(
+  selectPokemon,
+  pokemon => map(p => p.id, pokemon)
+)
+
 export const selectCurrentPokemonId = createSelector(
   selectPokedexState,
   pokedex => pokedex.currentPokemonId
