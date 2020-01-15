@@ -8,6 +8,7 @@ import { Global, css } from "@emotion/core"
 import theme from "../../styles/theme"
 
 import Header from "../header"
+import Footer from "../footer"
 import Pokedex from "../pokedex"
 import { Box } from "rebass"
 
@@ -34,6 +35,7 @@ const App: FC = () => {
                   <Pokedex />
                 </Route>
               </Switch>
+              <Footer />
             </Box>
           </Fragment>
         </ThemeProvider>
