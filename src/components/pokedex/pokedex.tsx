@@ -9,7 +9,7 @@ import { PokeDetails } from "../pokemon"
 import { LoaderBlanket } from "../loader"
 import { Flex } from "rebass"
 
-import { includes } from "lodash/fp"
+import { includes, keys, size } from "lodash/fp"
 
 const Pokedex: FC = () => {
   const [loading, setLoading] = useState(true)
@@ -59,7 +59,9 @@ const Pokedex: FC = () => {
               maxWidth: "35rem"
             }}
           >
-            <PokeDetails pokemon={currentPokemon} />
+            {!!size(keys(currentPokemon)) && (
+              <PokeDetails pokemon={currentPokemon} />
+            )}
           </Flex>
         </Flex>
       </Flex>

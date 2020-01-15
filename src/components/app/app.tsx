@@ -1,3 +1,4 @@
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../constants"
 import React, { FC, Fragment } from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { Provider } from "react-redux"
@@ -10,6 +11,7 @@ import theme from "../../styles/theme"
 import Header from "../header"
 import Footer from "../footer"
 import Pokedex from "../pokedex"
+import Helmet from "react-helmet"
 import { Box } from "rebass"
 
 const App: FC = () => {
@@ -28,6 +30,10 @@ const App: FC = () => {
                 }
               `}
             />
+            <Helmet>
+              <title>{SITE_TITLE}</title>
+              <meta name="description" content={SITE_DESCRIPTION} />
+            </Helmet>
             <Box variant="styles.root">
               <Header />
               <Switch>

@@ -1,7 +1,10 @@
-import React, { FC } from "react"
+import { SITE_TITLE_TEMPLATE } from "../../constants"
+import React, { FC, Fragment } from "react"
 import { useSelector } from "react-redux"
 import { Pokemon, PokeStat, pokedexSelectors } from "../../store/pokedex"
 import { pokeFormatters } from "../../utils"
+
+import Helmet from "react-helmet"
 import PokeTypeIcon from "../poke-type-icon"
 import { Box, Flex, Image, Text } from "rebass"
 import { map } from "lodash/fp"
@@ -72,89 +75,95 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
   )
 
   return (
-    <Box
-      variant="styles.card"
-      sx={{
-        p: 6
-      }}
-    >
-      <Flex
-        as="header"
+    <Fragment>
+      <Helmet>
+        <title>{`${name}${SITE_TITLE_TEMPLATE}`}</title>
+        <meta name="description" content={description} />
+      </Helmet>
+      <Box
+        variant="styles.card"
         sx={{
-          ...borderBottomStyles,
-          alignItems: "center",
-          p: 4
+          p: 6
         }}
       >
-        <Box sx={{ mr: 5 }}>
-          <Box
-            sx={{
-              borderColor: "gray.1",
-              borderWidth: 4,
-              borderStyle: "solid",
-              width: 120,
-              borderRadius: "100%",
-              overflow: "hidden",
-              p: 3
-            }}
-          >
-            <Image src={`/images/pokemon/${id}.webp`} alt={name} />
+        <Flex
+          as="header"
+          sx={{
+            ...borderBottomStyles,
+            alignItems: "center",
+            p: 4
+          }}
+        >
+          <Box sx={{ mr: 5 }}>
+            <Box
+              sx={{
+                borderColor: "gray.1",
+                borderWidth: 4,
+                borderStyle: "solid",
+                width: 120,
+                borderRadius: "100%",
+                overflow: "hidden",
+                p: 3
+              }}
+            >
+              <Image src={`/images/pokemon/${id}.webp`} alt={name} />
+            </Box>
           </Box>
+          <Box sx={{ flex: 1 }}>
+            <Text as="h2" sx={{ fontSize: 4, lineHeight: "heading", mb: 2 }}>
+              {name}
+            </Text>
+            <Flex>
+              <MetaSection heading="Height">
+                <Text as="span">{`${decimetersToMeters(height)}m`}</Text>
+              </MetaSection>
+              <MetaSection heading="Weight">
+                <Text as="span">{`${hectogramsToKilograms(weight)}kg`}</Text>
+              </MetaSection>
+              <MetaSection heading={typeIds.length > 1 ? "Types" : "Type"}>
+                <Box sx={{ lineHeight: "0", mt: ".25rem" }}>
+                  {map(
+                    t => (
+                      <PokeTypeIcon
+                        key={t}
+                        name={t}
+                        size={24}
+                        sx={{
+                          display: "inline-block",
+                          lineHeight: "inherit",
+                          mr: 2,
+                          "&:last-of-type": { mr: 0 }
+                        }}
+                      />
+                    ),
+                    pokeTypeNames
+                  )}
+                </Box>
+              </MetaSection>
+            </Flex>
+          </Box>
+        </Flex>
+        <Text
+          as="p"
+          sx={{
+            ...borderBottomStyles,
+            color: "rgba(255,255,255, 0.5)",
+            fontSize: 1,
+            p: 4
+          }}
+        >
+          {description}
+        </Text>
+        <Box sx={{ p: 4 }}>
+          {map(
+            s => (
+              <StatSection key={s.name} {...s} />
+            ),
+            stats
+          )}
         </Box>
-        <Box sx={{ flex: 1 }}>
-          <Text as="h2" sx={{ fontSize: 4, lineHeight: "heading", mb: 2 }}>
-            {name}
-          </Text>
-          <Flex>
-            <MetaSection heading="Height">
-              <Text as="span">{`${decimetersToMeters(height)}m`}</Text>
-            </MetaSection>
-            <MetaSection heading="Weight">
-              <Text as="span">{`${hectogramsToKilograms(weight)}kg`}</Text>
-            </MetaSection>
-            <MetaSection heading={typeIds.length > 1 ? "Types" : "Type"}>
-              <Box sx={{ lineHeight: "0", mt: ".25rem" }}>
-                {map(
-                  t => (
-                    <PokeTypeIcon
-                      key={t}
-                      name={t}
-                      size={24}
-                      sx={{
-                        display: "inline-block",
-                        lineHeight: "inherit",
-                        mr: 2,
-                        "&:last-of-type": { mr: 0 }
-                      }}
-                    />
-                  ),
-                  pokeTypeNames
-                )}
-              </Box>
-            </MetaSection>
-          </Flex>
-        </Box>
-      </Flex>
-      <Text
-        as="p"
-        sx={{
-          ...borderBottomStyles,
-          color: "rgba(255,255,255, 0.5)",
-          fontSize: 1,
-          p: 4
-        }}
-      >
-        {description}
-      </Text>
-      <Box sx={{ p: 4 }}>
-        {map(
-          s => (
-            <StatSection key={s.name} {...s} />
-          ),
-          stats
-        )}
       </Box>
-    </Box>
+    </Fragment>
   )
 }
 

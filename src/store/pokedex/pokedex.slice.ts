@@ -36,7 +36,7 @@ const pokeTypes = primitivePokeTypes.reduce(
 
 const initialState: PokedexState = {
   pokemon: pokemonData,
-  currentPokemonId: 1,
+  currentPokemonId: null,
   types: pokeTypes
 }
 
