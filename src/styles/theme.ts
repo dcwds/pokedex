@@ -1,7 +1,7 @@
 import getPokeSpriteURL from "../utils/get-poke-sprite-url"
 
 export const SYSTEM_FONT_STACK = `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`
-export const VERTICAL_RHYTHM = 1.5
+export const VERTICAL_RHYTHM = 1.7
 
 export const intervals = [0, 0.25, 0.5, 0.75, 1, 1.25, 2, 4, 8, 16]
 export const breakpoints = ["40rem", "52rem", "60rem"]
@@ -9,7 +9,7 @@ export const breakpoints = ["40rem", "52rem", "60rem"]
 export const colors = {
   text: "#868686",
   background: "#1E1E1E",
-  primary: "#FED828",
+  primary: "#81A5F8",
   accent: "white",
   highlight: "#525252",
   raised: "#2D2D2D",
@@ -86,6 +86,7 @@ export const variants = {
   },
   link: {
     color: "primary",
+    fontWeight: "semiBold",
     textDecoration: "none",
     transition: "color 0.2s ease-in-out",
     ":hover": {

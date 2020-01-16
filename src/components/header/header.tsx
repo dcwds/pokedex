@@ -1,6 +1,6 @@
 import { SITE_TITLE } from "../../constants"
 import React, { FC } from "react"
-import { Link } from "react-router-dom"
+import { InternalLink } from "../link"
 import { Box, Heading } from "rebass"
 
 const Header: FC = () => (
@@ -13,7 +13,7 @@ const Header: FC = () => (
         p: [2, 5]
       }}
     >
-      <Link to="/">
+      <InternalLink to="/" sx={{ color: "accent", display: "inline-block" }}>
         <Heading
           as="h2"
           sx={{
@@ -22,7 +22,7 @@ const Header: FC = () => (
         >
           {SITE_TITLE}
         </Heading>
-      </Link>
+      </InternalLink>
     </Box>
   </Box>
 )
