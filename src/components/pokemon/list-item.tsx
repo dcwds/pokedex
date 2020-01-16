@@ -15,7 +15,6 @@ const PokemonItem: FC<Pokemon> = ({ id, name, spritePos }) => {
       <AspectRatio ratio={1}>
         <Box
           variant={`buttons.${isSelected ? "selected" : "listPrimary"}`}
-          role="button"
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -41,7 +40,7 @@ const PokemonItem: FC<Pokemon> = ({ id, name, spritePos }) => {
             sx={{
               display: "block",
               fontSize: 0,
-              fontWeight: "heading",
+              fontWeight: "semiBold",
               lineHeight: "body",
               textAlign: "center",
               width: "90%"

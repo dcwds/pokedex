@@ -12,7 +12,7 @@ const PokeSearch: FC = () => {
         mb: 2
       }}
       type="text"
-      placeholder="Search for Pokémon by name or type."
+      placeholder="Search..."
       onChange={e =>
         dispatch(filtersActions.setSearchTerm(e.currentTarget.value))
       }

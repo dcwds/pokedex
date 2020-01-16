@@ -10,7 +10,7 @@ type Props = {
 const duration = 500
 
 const defaultStyle = {
-  backgroundColor: colors.gray[0],
+  backgroundColor: colors.muted,
   display: "flex",
   transition: `opacity ${duration}ms ease`,
   opacity: 1,

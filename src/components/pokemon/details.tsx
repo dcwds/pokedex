@@ -6,7 +6,7 @@ import { pokeFormatters } from "../../utils"
 
 import Helmet from "react-helmet"
 import PokeTypeIcon from "../poke-type-icon"
-import { Box, Flex, Image, Text } from "rebass"
+import { Box, Card, Flex, Heading, Image, Text } from "rebass"
 import { map } from "lodash/fp"
 
 type Props = {
@@ -19,14 +19,14 @@ type MetaSectionProps = {
 
 const borderBottomStyles = {
   borderBottomWidth: "4px",
-  borderBottomColor: "gray.1",
+  borderBottomColor: "background",
   borderBottomStyle: "solid"
 }
 
 const MetaSection: FC<MetaSectionProps> = ({ heading, children }) => (
   <Box
     sx={{
-      color: "rgba(255,255,255, 0.8)",
+      color: "accent",
       maxWidth: "6rem",
       width: "100%",
       mr: 2,
@@ -48,7 +48,7 @@ const StatSection: FC<PokeStat> = ({ name, amount }) => (
     </Text>
     <Box
       sx={{
-        bg: "gray.1",
+        bg: "background",
         borderRadius: "6px",
         height: 6,
         width: "100%",
@@ -57,7 +57,7 @@ const StatSection: FC<PokeStat> = ({ name, amount }) => (
     >
       <Box
         sx={{
-          bg: "rgba(255,255,255, 0.15)",
+          bg: "highlight",
           borderRadius: "6px",
           height: "100%",
           width: `${amount / 1.75}%`
@@ -80,8 +80,7 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
         <title>{`${name}${SITE_TITLE_TEMPLATE}`}</title>
         <meta name="description" content={description} />
       </Helmet>
-      <Box
-        variant="styles.card"
+      <Card
         sx={{
           p: 6
         }}
@@ -97,7 +96,7 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
           <Box sx={{ mr: 5 }}>
             <Box
               sx={{
-                borderColor: "gray.1",
+                borderColor: "background",
                 borderWidth: 4,
                 borderStyle: "solid",
                 width: 120,
@@ -110,9 +109,9 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
             </Box>
           </Box>
           <Box sx={{ flex: 1 }}>
-            <Text as="h2" sx={{ fontSize: 4, lineHeight: "heading", mb: 2 }}>
+            <Heading as="h1" sx={{ color: "accent", fontSize: 4, mb: 2 }}>
               {name}
-            </Text>
+            </Heading>
             <Flex>
               <MetaSection heading="Height">
                 <Text as="span">{`${decimetersToMeters(height)}m`}</Text>
@@ -147,7 +146,6 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
           as="p"
           sx={{
             ...borderBottomStyles,
-            color: "rgba(255,255,255, 0.5)",
             fontSize: 1,
             p: 4
           }}
@@ -162,7 +160,7 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
             stats
           )}
         </Box>
-      </Box>
+      </Card>
     </Fragment>
   )
 }

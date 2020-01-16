@@ -20,7 +20,7 @@ const PokeFilter: FC<PokeFilterProps> = ({ id, name, active }) => {
     <Button
       variant="buttons.listPrimary"
       sx={{
-        bg: active ? pokeTypeColor : "gray.0",
+        bg: active ? pokeTypeColor : "muted",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

@@ -7,18 +7,13 @@ export const intervals = [0, 0.25, 0.5, 0.75, 1, 1.25, 2, 4, 8, 16]
 export const breakpoints = ["40rem", "52rem", "60rem"]
 
 export const colors = {
-  gray: [
-    "#1A1A1A",
-    "#1E1E1E",
-    "#232323",
-    "#252525",
-    "#272727",
-    "#2C2C2C",
-    "#2E2E2E",
-    "#333333",
-    "#363636",
-    "#383838"
-  ]
+  text: "#868686",
+  background: "#1E1E1E",
+  primary: "#FED828",
+  accent: "white",
+  highlight: "#525252",
+  raised: "#2D2D2D",
+  muted: "#1A1A1A"
 }
 
 export const space = intervals.map(num => `${num * VERTICAL_RHYTHM}rem`)
@@ -52,6 +47,7 @@ export const lineHeights = {
 
 export const text = {
   heading: {
+    color: "accent",
     fontFamily: "heading",
     lineHeight: "heading"
   },
@@ -64,12 +60,17 @@ export const text = {
 export const radii = [".25rem"]
 
 const inputStyles = {
-  bg: "gray.0",
+  bg: "muted",
   borderRadius: radii[0],
   border: "none",
+  color: "accent",
   appearance: "none",
   outline: "none",
-  p: 2
+  fontWeight: "semiBold",
+  p: 2,
+  "&::placeholder": {
+    color: "highlight"
+  }
 }
 
 const ellipseStyles = {
@@ -78,19 +79,30 @@ const ellipseStyles = {
   overflow: "hidden"
 }
 
+export const variants = {
+  card: {
+    bg: "muted",
+    borderRadius: radii[0]
+  },
+  link: {
+    color: "primary",
+    textDecoration: "none",
+    transition: "color 0.2s ease-in-out",
+    ":hover": {
+      color: "accent"
+    }
+  }
+}
+
 export const styles = {
   root: {
     fontFamily: "body",
     lineHeight: "body",
-    bg: "gray.1",
-    color: "white",
+    bg: "background",
+    color: "text",
     display: "flex",
     flexDirection: "column",
     minHeight: "100vh"
-  },
-  card: {
-    bg: "gray.0",
-    borderRadius: radii[0]
   },
   container: {
     maxWidth: "90rem",
@@ -107,7 +119,7 @@ export const styles = {
     backgroundImage: `url(${getPokeSpriteURL()})`
   },
   label: {
-    color: "rgba(255,255,255, 0.3)",
+    color: "highlight",
     textTransform: "uppercase",
     letterSpacing: ".2rem",
     fontSize: 0
@@ -125,19 +137,19 @@ const buttonStyles = {
 export const buttons = {
   listPrimary: {
     ...buttonStyles,
-    color: "rgba(255,255,255,0.5)",
-    bg: "gray.1",
+    bg: "background",
+    color: "text",
     "&:hover": {
-      bg: "gray.2",
-      color: "white"
+      bg: "raised",
+      color: "accent"
     }
   },
   selected: {
     ...buttonStyles,
     cursor: "initial",
     pointerEvents: "none",
-    bg: "gray.4",
-    color: "white",
+    bg: "raised",
+    color: "accent",
     boxShadow: "0 0 1rem rgba(0,0,0, .15)"
   }
 }
@@ -152,6 +164,7 @@ export default {
   lineHeights,
   text,
   radii,
+  variants,
   styles,
   buttons
 }

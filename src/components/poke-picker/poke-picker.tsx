@@ -4,7 +4,7 @@ import { pokedexSelectors, Pokemon } from "../../store/pokedex"
 import PokemonItem from "../pokemon"
 import PokeSearch from "../poke-search"
 import PokeFilters from "../poke-filters"
-import { Box, Flex } from "rebass"
+import { Box, Card } from "rebass"
 import { Scrollbars as Scroll, ScrollbarProps } from "react-custom-scrollbars"
 
 import { map } from "lodash/fp"
@@ -51,7 +51,7 @@ const PokePicker: FC = () => {
     <Fragment>
       <PokeSearch />
       <PokeFilters />
-      <Flex variant="styles.card" sx={{ flex: 1 }}>
+      <Card sx={{ display: "flex", flex: 1 }}>
         <Scroll
           style={{ flex: 1, height: "auto" }}
           renderThumbHorizontal={renderThumb}
@@ -59,7 +59,7 @@ const PokePicker: FC = () => {
         >
           <PokemonList pokemon={pokemon} />
         </Scroll>
-      </Flex>
+      </Card>
     </Fragment>
   )
 }
