@@ -1,5 +1,6 @@
 import { SITE_TITLE_TEMPLATE } from "../../constants"
 import React, { FC, Fragment } from "react"
+import { useLocation } from "react-router-dom"
 import { useSelector } from "react-redux"
 import { Pokemon, PokeStat, pokedexSelectors } from "../../store/pokedex"
 import { pokeFormatters } from "../../utils"
@@ -70,6 +71,8 @@ const StatSection: FC<PokeStat> = ({ name, amount }) => (
 const PokeDetails: FC<Props> = ({ pokemon }) => {
   const { id, name, description, height, weight, typeIds, stats } = pokemon
   const { decimetersToMeters, hectogramsToKilograms } = pokeFormatters
+  const { pathname } = useLocation()
+  const pageTitle = `${name}${SITE_TITLE_TEMPLATE}`
   const pokeTypeNames = useSelector(
     pokedexSelectors.selectTypeNamesOfCurrentPokemon
   )
@@ -77,8 +80,12 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
   return (
     <Fragment>
       <Helmet>
-        <title>{`${name}${SITE_TITLE_TEMPLATE}`}</title>
+        <title>{pageTitle}</title>
         <meta name="description" content={description} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:url" content={pathname} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={`/images/pokemon/${id}.webp`} />
       </Helmet>
       <Card
         sx={{
