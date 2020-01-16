@@ -36,6 +36,7 @@ const Pokedex: FC = () => {
       dispatch(pokedexActions.setCurrentPokemon(id))
     } else {
       history.push("/")
+      dispatch(pokedexActions.setCurrentPokemon(null))
     }
   }, [dispatch, history, pokeId, pokeIdIsValid])
 

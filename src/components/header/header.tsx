@@ -1,4 +1,6 @@
+import { SITE_TITLE } from "../../constants"
 import React, { FC } from "react"
+import { Link } from "react-router-dom"
 import { Box, Heading } from "rebass"
 
 const Header: FC = () => (
@@ -11,14 +13,16 @@ const Header: FC = () => (
         p: [2, 5]
       }}
     >
-      <Heading
-        as="h1"
-        sx={{
-          fontSize: 2
-        }}
-      >
-        Pokédex
-      </Heading>
+      <Link to="/">
+        <Heading
+          as="h1"
+          sx={{
+            fontSize: 2
+          }}
+        >
+          {SITE_TITLE}
+        </Heading>
+      </Link>
     </Box>
   </Box>
 )

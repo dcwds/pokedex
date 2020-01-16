@@ -14,40 +14,38 @@ import Pokedex from "../pokedex"
 import Helmet from "react-helmet"
 import { Box } from "rebass"
 
-const App: FC = () => {
-  return (
-    <Provider store={store}>
-      <Router>
-        <ThemeProvider theme={theme}>
-          <Fragment>
-            <Global
-              styles={css`
-                html,
-                body {
-                  font-size: 100%;
-                  margin: 0;
-                  min-height: 100vh;
-                }
-              `}
-            />
-            <Helmet>
-              <title>{SITE_TITLE}</title>
-              <meta name="description" content={SITE_DESCRIPTION} />
-            </Helmet>
-            <Box variant="styles.root">
-              <Header />
-              <Switch>
-                <Route exact path={["/", "/pokemon", "/pokemon/:id"]}>
-                  <Pokedex />
-                </Route>
-              </Switch>
-              <Footer />
-            </Box>
-          </Fragment>
-        </ThemeProvider>
-      </Router>
-    </Provider>
-  )
-}
+const App: FC = () => (
+  <Provider store={store}>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <Fragment>
+          <Global
+            styles={css`
+              html,
+              body {
+                font-size: 100%;
+                margin: 0;
+                min-height: 100vh;
+              }
+            `}
+          />
+          <Helmet>
+            <title>{SITE_TITLE}</title>
+            <meta name="description" content={SITE_DESCRIPTION} />
+          </Helmet>
+          <Box variant="styles.root">
+            <Header />
+            <Switch>
+              <Route exact path={["/", "/pokemon", "/pokemon/:id"]}>
+                <Pokedex />
+              </Route>
+            </Switch>
+            <Footer />
+          </Box>
+        </Fragment>
+      </ThemeProvider>
+    </Router>
+  </Provider>
+)
 
 export default App
