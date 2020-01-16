@@ -1,4 +1,4 @@
-export const SITE_URL = process.env.URL || ""
+export const SITE_URL = process.env.REACT_APP_URL || ""
 export const SITE_TITLE = "Pokédex"
 export const SITE_TITLE_TEMPLATE = ` · ${SITE_TITLE}`
 export const SITE_DESCRIPTION = "Learn about the first generation of Pokémon."
