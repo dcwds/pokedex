@@ -1,4 +1,4 @@
-import { SITE_TITLE_TEMPLATE } from "../../constants"
+import { SITE_URL, SITE_TITLE_TEMPLATE } from "../../constants"
 import React, { FC, Fragment } from "react"
 import { useLocation } from "react-router-dom"
 import { useSelector } from "react-redux"
@@ -83,9 +83,12 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
         <title>{pageTitle}</title>
         <meta name="description" content={description} />
         <meta property="og:title" content={pageTitle} />
-        <meta property="og:url" content={pathname} />
+        <meta property="og:url" content={`${SITE_URL}${pathname}`} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={`/images/pokemon/${id}.webp`} />
+        <meta
+          property="og:image"
+          content={`${SITE_URL}/images/pokemon/${id}.webp`}
+        />
       </Helmet>
       <Card
         sx={{
