@@ -66,6 +66,7 @@ const inputStyles = {
   color: "accent",
   appearance: "none",
   outline: "none",
+  fontFamily: "inherit",
   fontWeight: "semiBold",
   p: 2,
   "&::placeholder": {
