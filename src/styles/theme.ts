@@ -70,7 +70,7 @@ const inputStyles = {
   fontWeight: "semiBold",
   p: 2,
   "&::placeholder": {
-    color: "highlight"
+    color: "text"
   }
 }
 

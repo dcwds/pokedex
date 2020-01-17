@@ -6,6 +6,7 @@ import store from "../../store"
 
 import { ThemeProvider } from "emotion-theming"
 import { Global, css } from "@emotion/core"
+import tooltipStyles from "../../styles/tooltip"
 import theme from "../../styles/theme"
 
 import Header from "../header"
@@ -27,6 +28,7 @@ const App: FC = () => (
                 margin: 0;
                 min-height: 100vh;
               }
+              ${tooltipStyles}
             `}
           />
           <Helmet>

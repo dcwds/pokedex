@@ -3,10 +3,11 @@ import { useDispatch, useSelector } from "react-redux"
 import { PokeType, pokedexSelectors } from "../../store/pokedex"
 import { filtersActions, filtersSelectors } from "../../store/filters"
 import PokeTypeIcon from "../poke-type-icon"
+import Tooltip from "rc-tooltip"
 import { Button, Box } from "rebass"
 import { pokeColors } from "../../styles/poke-colors"
 
-import { includes, map, prop } from "lodash/fp"
+import { includes, map, prop, capitalize } from "lodash/fp"
 
 type PokeFilterProps = {
   active: boolean
@@ -17,30 +18,35 @@ const PokeFilter: FC<PokeFilterProps> = ({ id, name, active }) => {
   const pokeTypeColor: string = prop(name, pokeColors)
 
   return (
-    <Button
-      variant="buttons.listPrimary"
-      sx={{
-        bg: active ? pokeTypeColor : "muted",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        px: 2,
-        py: 2,
-        ":hover": {
-          bg: pokeTypeColor,
-          "& svg": {
-            fill: "white"
-          }
-        },
-        "& svg": {
-          fill: active ? "white" : pokeTypeColor
-        }
-      }}
-      onClick={() => dispatch(filtersActions.setFilter(id))}
+    <Tooltip
+      overlay={<span style={{ color: pokeTypeColor }}>{capitalize(name)}</span>}
+      placement="bottom"
     >
-      <PokeTypeIcon sx={{ lineHeight: 0 }} name={name} size={20} />
-    </Button>
+      <Button
+        variant="buttons.listPrimary"
+        sx={{
+          bg: active ? pokeTypeColor : "muted",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          px: 2,
+          py: 2,
+          ":hover": {
+            bg: pokeTypeColor,
+            "& svg": {
+              fill: "white"
+            }
+          },
+          "& svg": {
+            fill: active ? "white" : pokeTypeColor
+          }
+        }}
+        onClick={() => dispatch(filtersActions.setFilter(id))}
+      >
+        <PokeTypeIcon sx={{ lineHeight: 0 }} name={name} size={20} />
+      </Button>
+    </Tooltip>
   )
 }
 

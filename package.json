@@ -45,6 +45,7 @@
     "emotion-theming": "^10.0.19",
     "is-retina": "^1.0.3",
     "lodash": "^4.17.15",
+    "rc-tooltip": "^4.0.0-alpha.3",
     "react": "^16.9.0",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.9.0",

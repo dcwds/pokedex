@@ -32,7 +32,6 @@ const PokeTypeIcon: FC<Props> = ({
   return (
     <Box sx={style} {...rest}>
       <svg viewBox="0 0 12 12">
-        <title>{name}</title>
         <use href={`/images/poke-type-icons.svg#${name}`} />
       </svg>
     </Box>

@@ -9,7 +9,7 @@ import { PokeDetails } from "../pokemon"
 import { LoaderBlanket } from "../loader"
 import { Flex } from "rebass"
 
-import { includes, keys, size } from "lodash/fp"
+import { includes, isEmpty } from "lodash/fp"
 
 const Pokedex: FC = () => {
   const [loading, setLoading] = useState(true)
@@ -60,7 +60,7 @@ const Pokedex: FC = () => {
               maxWidth: "35rem"
             }}
           >
-            {!!size(keys(currentPokemon)) && (
+            {!isEmpty(currentPokemon) && (
               <PokeDetails pokemon={currentPokemon} />
             )}
           </Flex>
