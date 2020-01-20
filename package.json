@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"npm:start:*\"",
-    "start:client": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -26,8 +25,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.17",
     "@rebass/forms": "^4.0.6",
-    "@types/imagemin": "^7.0.0",
-    "@types/imagemin-webp": "^5.1.0",
+    "@reduxjs/toolkit": "^1.2.3",
     "@types/jest": "24.0.18",
     "@types/lodash": "^4.14.138",
     "@types/node": "12.7.5",
@@ -43,7 +41,6 @@
     "@types/redux-logger": "^3.0.7",
     "emotion": "^10.0.17",
     "emotion-theming": "^10.0.19",
-    "is-retina": "^1.0.3",
     "lodash": "^4.17.15",
     "rc-tooltip": "^4.0.0-alpha.3",
     "react": "^16.9.0",
@@ -56,23 +53,14 @@
     "react-transition-group": "^4.3.0",
     "rebass": "^4.0.5",
     "redux": "^4.0.4",
-    "redux-starter-kit": "^0.7.0",
-    "redux-thunk": "^2.3.0",
     "typescript": "3.6.3"
   },
   "devDependencies": {
-    "concurrently": "^5.0.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.0",
-    "fs": "0.0.1-security",
     "husky": "^3.0.5",
-    "imagemin": "^7.0.1",
-    "imagemin-pngquant": "^8.0.0",
-    "imagemin-webp": "^5.1.0",
     "lint-staged": "^9.2.5",
     "prettier": "^1.18.2",
-    "redux-logger": "^3.0.6",
-    "spritesmith": "^3.4.0",
-    "ts-node": "^8.5.4"
+    "redux-logger": "^3.0.6"
   }
 }

@@ -1,4 +1,4 @@
-import { createSlice } from "redux-starter-kit"
+import { createSlice } from "@reduxjs/toolkit"
 import { PokedexState, PokeType } from "."
 import pokemonData from "../../data/pokemon.json"
 
@@ -41,7 +41,7 @@ const initialState: PokedexState = {
 }
 
 const { actions, reducer } = createSlice({
-  slice: "pokedex",
+  name: "pokedex",
   initialState,
   reducers: {
     setCurrentPokemon: (s, { payload }) => {

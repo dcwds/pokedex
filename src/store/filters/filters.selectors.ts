@@ -1,5 +1,5 @@
 import { AppState } from ".."
-import { createSelector } from "redux-starter-kit"
+import { createSelector } from "@reduxjs/toolkit"
 
 export const selectFiltersState = (s: AppState) => s.filters
 

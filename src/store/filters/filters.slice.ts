@@ -1,4 +1,4 @@
-import { createSlice } from "redux-starter-kit"
+import { createSlice } from "@reduxjs/toolkit"
 import { FiltersState } from "."
 
 import { concat, filter, includes } from "lodash/fp"
@@ -9,7 +9,7 @@ const initialState: FiltersState = {
 }
 
 const { actions, reducer } = createSlice({
-  slice: "filters",
+  name: "filters",
   initialState,
   reducers: {
     setSearchTerm: (s, { payload }) => {

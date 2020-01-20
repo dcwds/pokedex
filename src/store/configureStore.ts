@@ -1,7 +1,6 @@
-import { configureStore, getDefaultMiddleware } from "redux-starter-kit"
+import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit"
 import { pokedexReducer } from "./pokedex"
 import { filtersReducer } from "./filters"
-import thunk from "redux-thunk"
 import logger from "redux-logger"
 
 export const reducer = {
@@ -9,7 +8,7 @@ export const reducer = {
   filters: filtersReducer
 }
 
-const middleware = [...getDefaultMiddleware(), thunk, logger]
+const middleware = [...getDefaultMiddleware(), logger]
 
 const store = configureStore({
   reducer,

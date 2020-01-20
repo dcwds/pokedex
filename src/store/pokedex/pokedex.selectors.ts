@@ -1,6 +1,6 @@
 import { AppState } from ".."
 import { Pokemon } from "."
-import { createSelector } from "redux-starter-kit"
+import { createSelector } from "@reduxjs/toolkit"
 import { filtersSelectors } from "../filters"
 
 import {
