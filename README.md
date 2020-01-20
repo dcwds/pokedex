@@ -26,7 +26,7 @@ To reduce the number of requests on page load, I decided to use an image sprite 
 
 ## License
 
-Pokémon are &copy; Nintendo/Creatures Inc./GAME FREAK Inc.
+Pokémon are © Nintendo/Creatures Inc./GAME FREAK Inc.
 
 Pokémon type icons (used in the filters and Pokémon details components) are governed by the [Creative Commons Attribution 3.0 United States](https://creativecommons.org/licenses/by/3.0/us) license.
 
