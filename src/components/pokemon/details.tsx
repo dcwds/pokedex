@@ -109,6 +109,7 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
                 borderColor: "background",
                 borderWidth: 4,
                 borderStyle: "solid",
+                height: 120,
                 width: 120,
                 borderRadius: "100%",
                 overflow: "hidden",
