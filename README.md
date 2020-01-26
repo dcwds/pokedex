@@ -1,4 +1,4 @@
-# Pokédex Classic
+# Pokédex
 
 View the details of your favorite first generation Pokémon with helpful features like search and filters.
 

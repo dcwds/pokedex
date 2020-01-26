@@ -18,12 +18,6 @@ type MetaSectionProps = {
   heading: string
 }
 
-const borderBottomStyles = {
-  borderBottomWidth: "4px",
-  borderBottomColor: "background",
-  borderBottomStyle: "solid"
-}
-
 const MetaSection: FC<MetaSectionProps> = ({ heading, children }) => (
   <Box
     sx={{
@@ -98,9 +92,7 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
         <Flex
           as="header"
           sx={{
-            ...borderBottomStyles,
-            alignItems: "center",
-            p: 4
+            alignItems: "center"
           }}
         >
           <Box sx={{ mr: 5 }}>
@@ -156,14 +148,13 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
         <Text
           as="p"
           sx={{
-            ...borderBottomStyles,
             fontSize: 1,
-            p: 4
+            py: 6
           }}
         >
           {description}
         </Text>
-        <Box sx={{ p: 4 }}>
+        <Box>
           {map(
             s => (
               <StatSection key={s.name} {...s} />

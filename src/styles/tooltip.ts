@@ -2,12 +2,12 @@ import { css, keyframes } from "@emotion/core"
 import { SYSTEM_FONT_STACK } from "./theme"
 
 const rcToolTipZoomIn = keyframes`
-  0% {
+  from {
     opacity: 0;
     transform-origin: 50% 50%;
     transform: scale(0, 0);
   }
-  100% {
+  to {
     opacity: 1;
     transform-origin: 50% 50%;
     transform: scale(1, 1);
@@ -15,12 +15,12 @@ const rcToolTipZoomIn = keyframes`
 `
 
 const rcToolTipZoomOut = keyframes`
-  0% {
+  from {
     opacity: 1;
     transform-origin: 50% 50%;
     transform: scale(1, 1);
   }
-  100% {
+  to {
     opacity: 0;
     transform-origin: 50% 50%;
     transform: scale(0, 0);

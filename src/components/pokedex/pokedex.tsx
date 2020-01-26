@@ -57,7 +57,7 @@ const Pokedex: FC = () => {
               flexDirection: "column",
               flex: "0 1 auto",
               ml: 5,
-              maxWidth: "35rem"
+              maxWidth: "32rem"
             }}
           >
             {!isEmpty(currentPokemon) && (

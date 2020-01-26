@@ -1,10 +1,15 @@
+import { BREAKPOINTS as sharedBreakpoints } from "../constants"
 import getPokeSpriteURL from "../utils/get-poke-sprite-url"
 
 export const SYSTEM_FONT_STACK = `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`
 export const VERTICAL_RHYTHM = 1.7
 
 export const intervals = [0, 0.25, 0.5, 0.75, 1, 1.25, 2, 4, 8, 16]
-export const breakpoints = ["40rem", "52rem", "60rem"]
+
+// Breakpoints are defined outside the theme as
+// they are referenced via `react-responsive` components.
+const { sm, md, lg } = sharedBreakpoints
+export const breakpoints = [sm, md, lg]
 
 export const colors = {
   text: "#868686",
