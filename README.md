@@ -24,6 +24,11 @@ Initially, most of the Pokémon data was being fetched via [PokéAPI](https://po
 
 To reduce the number of requests on page load, I decided to use an image sprite for Pokémon within the `PokePicker` component. I used [Spritesmith](https://github.com/twolfson/spritesmith) to compose the image and produce position coordinates, however, I found it difficult to have this process entirely automated&ndash; it probably should be but given the (small) scope of this project, it's hard to justify.
 
+## Todos
+
+- [ ] [Fix Pokémon details modal on smaller devices.](https://github.com/dcwds/pokedex/issues/1)
+- [ ] [A logo for use in header, favicon, and documentation.](https://github.com/dcwds/pokedex/issues/2)
+
 ## License
 
 Pokémon are &copy; Nintendo/Creatures Inc./GAME FREAK Inc.
