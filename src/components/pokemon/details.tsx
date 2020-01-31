@@ -86,7 +86,7 @@ const PokeDetails: FC<Props> = ({ pokemon }) => {
       </Helmet>
       <Card
         sx={{
-          p: 6
+          p: [2, null, 6]
         }}
       >
         <Flex

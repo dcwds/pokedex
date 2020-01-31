@@ -5,7 +5,8 @@ import { useHistory, useParams } from "react-router-dom"
 import { getPokeSpriteURL, preloadImages } from "../../utils"
 
 import PokePicker from "../poke-picker"
-import { PokeDetails } from "../pokemon"
+import { LargeScreen, NotLargeScreen } from "../media-queries"
+import { PokeDetails, PokeDetailsModal } from "../pokemon"
 import { LoaderBlanket } from "../loader"
 import { Flex } from "rebass"
 
@@ -16,6 +17,7 @@ const Pokedex: FC = () => {
   const { selectCurrentPokemon, selectPokemonIds } = pokedexSelectors
   const allPokemonIds = useSelector(selectPokemonIds)
   const currentPokemon = useSelector(selectCurrentPokemon)
+  const pokemonIsSelected = !isEmpty(currentPokemon)
 
   const { id } = useParams()
   const pokeId = !isNaN(Number(id)) ? Number(id) : null
@@ -24,6 +26,8 @@ const Pokedex: FC = () => {
   const dispatch = useDispatch()
   const history = useHistory()
   const sprite = getPokeSpriteURL()
+
+  console.log(`Pokemon is selected: ${pokemonIsSelected}`)
 
   useEffect(() => {
     preloadImages([sprite]).then(() => setLoading(false))
@@ -52,18 +56,26 @@ const Pokedex: FC = () => {
           <Flex sx={{ flexDirection: "column", flex: "1 1 auto" }}>
             <PokePicker />
           </Flex>
-          <Flex
-            sx={{
-              flexDirection: "column",
-              flex: "0 1 auto",
-              ml: 5,
-              maxWidth: "32rem"
-            }}
-          >
-            {!isEmpty(currentPokemon) && (
-              <PokeDetails pokemon={currentPokemon} />
+          <LargeScreen>
+            {pokemonIsSelected && (
+              <Flex
+                sx={{
+                  flexDirection: "column",
+                  flex: "0 1 auto",
+                  ml: 5,
+                  maxWidth: "32rem"
+                }}
+              >
+                <PokeDetails pokemon={currentPokemon} />
+              </Flex>
             )}
-          </Flex>
+          </LargeScreen>
+          <NotLargeScreen>
+            <PokeDetailsModal
+              pokemon={currentPokemon}
+              animate={pokemonIsSelected}
+            />
+          </NotLargeScreen>
         </Flex>
       </Flex>
     </Fragment>

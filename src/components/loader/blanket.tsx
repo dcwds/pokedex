@@ -20,7 +20,7 @@ const defaultStyle = {
   height: "100%",
   width: "100%",
   willChange: "opacity",
-  zIndex: 1
+  zIndex: 2
 }
 
 const transitionStyles = {

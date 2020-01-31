@@ -19,7 +19,11 @@ const PokemonList: FC<PokemonListProps> = ({ pokemon }) => (
       display: "grid",
       gap: ".5rem",
       margin: ".75rem",
-      gridTemplateColumns: "repeat(auto-fill, minmax(75px, 1fr))"
+      gridTemplateColumns: [
+        "repeat(auto-fill, minmax(60px, 1fr))",
+        null,
+        "repeat(auto-fill, minmax(75px, 1fr))"
+      ]
     }}
   >
     {map(
@@ -53,7 +57,7 @@ const PokePicker: FC = () => {
       <PokeFilters />
       <Card sx={{ display: "flex", flex: 1 }}>
         <Scroll
-          style={{ flex: 1, height: "auto" }}
+          style={{ minHeight: 400 }}
           renderThumbHorizontal={renderThumb}
           renderThumbVertical={renderThumb}
         >

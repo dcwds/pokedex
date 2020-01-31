@@ -2,11 +2,16 @@ import { FC } from "react"
 import { BREAKPOINTS } from "../../constants"
 import { useMediaQuery } from "react-responsive"
 
-const { sm, md, xmd, lg } = BREAKPOINTS
+const { base, md, xmd, lg } = BREAKPOINTS
 
 const LargeScreen: FC = ({ children }) => {
   const isLargeScreen = useMediaQuery({ minWidth: lg })
   return isLargeScreen ? children : (null as any)
+}
+
+const NotLargeScreen: FC = ({ children }) => {
+  const isNotLargeScreen = useMediaQuery({ minWidth: base, maxWidth: xmd })
+  return isNotLargeScreen ? children : (null as any)
 }
 
 const MediumScreen: FC = ({ children }) => {
@@ -15,7 +20,7 @@ const MediumScreen: FC = ({ children }) => {
 }
 
 const SmallScreen: FC = ({ children }) => {
-  const isSmallScreen = useMediaQuery({ minWidth: sm })
+  const isSmallScreen = useMediaQuery({ minWidth: base })
   return isSmallScreen ? children : (null as any)
 }
 
@@ -24,4 +29,10 @@ const NotSmallScreen: FC = ({ children }) => {
   return isNotSmallScreen ? children : (null as any)
 }
 
-export { LargeScreen, MediumScreen, SmallScreen, NotSmallScreen }
+export {
+  LargeScreen,
+  NotLargeScreen,
+  MediumScreen,
+  SmallScreen,
+  NotSmallScreen
+}
