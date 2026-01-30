@@ -42,7 +42,7 @@
     "@types/redux-logger": "^3.0.7",
     "emotion": "^10.0.17",
     "emotion-theming": "^10.0.19",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.23",
     "rc-tooltip": "^4.0.0-alpha.3",
     "react": "^16.9.0",
     "react-custom-scrollbars": "^4.2.1",
